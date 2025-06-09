@@ -1,7 +1,6 @@
 import FiveSteps from "@/components/template/CryptoFinance/FiveSteps";
 import Sellcrypto from "@/components/template/CryptoFinance/Buysellcrypto";
 import FAQ from "@/components/template/home/FAQ";
-import { BuySell } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 
 const BuySellCrypto = () => {

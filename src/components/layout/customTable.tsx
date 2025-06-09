@@ -39,10 +39,10 @@ export function DataTable<TData, TValue>({
       <Table>
         <TableHeader className="rounded-tl-[8px] rounded-tr-[8px]">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow className="bg-[#F2F2F7] py-2 px-6 rounded-[8px]" key={headerGroup.id}>
+            <TableRow className="bg-[#F2F2F7] py-2 px-6 gap-6 w-full rounded-[8px]" key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
                 return (
-                  <TableHead key={header.id}>
+                  <TableHead className="" key={header.id}>
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -55,10 +55,11 @@ export function DataTable<TData, TValue>({
             </TableRow>
           ))}
         </TableHeader>
-        <TableBody>
+        <TableBody className="border border-[#D9D9D9]">
           { loading ? <Skeleton className="w-full" /> : (table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow
+                className="border-none"
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
               >

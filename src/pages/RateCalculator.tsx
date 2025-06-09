@@ -50,8 +50,8 @@ const RateCalculator = () => {
         <h1 className="text-[32px] font-[400] leading-[44.8px]">
           Asset market
         </h1>
-        <div className="">
-          <DataTable loading={loading} data={data} columns={columns} />
+        <div className="font-[600] text-[20px] leading-[28px]">
+          <DataTable<CoinProps, unknown> loading={loading} data={data} columns={columns} />
         </div>
       </div>
     </div>

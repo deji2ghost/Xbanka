@@ -14,6 +14,8 @@
   --color-lightCyan: var(--lightCyan);
   --color-abstractCyan: var(--abstractCyan);
   --color-subCyan: var(--subCyan);
+  --color-mainGreen: var(--mainGreen);
+  --color-mainRed: var(--mainRed);
   --color-deepBlue: var(--deepBlue);
   --color-offWhite: var(--offWhite);
   --color-black: var(--black);
@@ -54,6 +56,8 @@
   --foreground: #1E1E1E;
   --customCyan: #CFF7F2;
   --abstractCyan: #00EDD0;
+  --mainGreen: #14AE5C;
+  --mainRed: #C00F0C;
   --lightCyan: #E3FFFB;
   --subCyan: #0198AF;
   --deepBlue: #04153E;
