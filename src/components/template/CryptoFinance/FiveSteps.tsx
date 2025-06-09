@@ -2,7 +2,7 @@ import { BuySell } from "@/lib/data";
 
 const FiveSteps = () => {
   return (
-    <div className="bg-[#F2FFFD] px-[120px]">
+    <div className="bg-[#F2FFFD] px-[120px] py-[148px] flex flex-col gap-6">
       <div>
         <h1 className="font-[400] text-[48px] text-center px-[248px] leading-[52px]">5-steps to buy crypto with us</h1>
         <p className="font-[400] text-[24px] text-center px-[248px] leading-[33.6px]">A step-by-step guide to purchasing cryptocurrency safely and easily. Learn the best platforms, payment methods, and tips for first-time buyers.</p>

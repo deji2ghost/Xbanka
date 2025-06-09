@@ -65,11 +65,10 @@ export const columns: ColumnDef<CoinProps, unknown>[] = [
     accessorKey: "symbol",
     header: "Action",
     cell: ({ getValue }) => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const item = getValue();
       return (
         <DropdownMenu>
-          <DropdownMenuTrigger className="cursor-pointer" asChild>
+          <DropdownMenuTrigger onClick={() => console.log(item)} className="cursor-pointer" asChild>
             <div className="h-[24px] w-[24px] p-0">
               {/* <span className="sr-only">Open menu</span> */}
               <MoreHorizontal />
