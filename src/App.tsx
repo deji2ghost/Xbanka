@@ -3,6 +3,8 @@ import './App.css'
 import Navbar from './components/layout/navbar';
 import Footer from './components/layout/footer';
 import { lazy } from 'react';
+import CryptoFinance from './components/layout/cryptolayout/layout';
+import BuySellCrypto from './pages/BuySellCrypto';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -12,9 +14,8 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/ratecalculator" element={<RateCalculator />} />
-      <Route path="/blog" element={<CryptoFinance />}>
-          <Route index element={<BlogList />} /> {/* /blog */}
-          <Route path=":postId" element={<BlogPost />} /> {/* /blog/some-post-id */}
+      <Route path="/cryptoFinance" element={<CryptoFinance />}>
+          <Route path='buysell' element={<BuySellCrypto />} />
       </Route>
     </Routes>
   );

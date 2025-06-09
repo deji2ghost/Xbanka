@@ -10,7 +10,7 @@ interface SelectBoxProps {
 
 const SelectBox = ({label, image, text, item}: SelectBoxProps) => {
   return (
-    <div className='w-full border'>
+    <div className='w-full flex flex-col gap-2 p-4'>
         <Label>{label}</Label>
         <CustomSelect image={image} text={text} item={item} />
     </div>

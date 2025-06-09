@@ -37,6 +37,9 @@ import adaobi from "@/assets/Adaobi.svg"
 import chinedu from "@/assets/Chinedu.svg"
 import ifeoma from "@/assets/ifeoma.svg"
 import fat from "@/assets/fat.svg"
+import step1 from "@/assets/step 1.svg"
+import step2 from "@/assets/step 2.svg"
+import step5 from "@/assets/Step 4.svg"
 
 export const giftCardsOne = [
   {
@@ -337,5 +340,38 @@ export const FAQData= [
   {
     header: "Do you charge fees for withdrawals or card sales?",
     body: "You can easily trade your Apple gift card by logging into your Xbanka account, selecting 'Sell Gift Card,' uploading the card details, and choosing to receive payment in Nigerian Naira, USD, or crypto.",
+  },
+]
+
+export const BuySell = [
+  {
+    step: "step 1",
+    image: step1,
+    header: "Open your free account",
+    body: "Buying cryptocurrency on Xbanka is simple. Sign up for a free account in seconds from our app. Then add a few personal details to verify your identity."
+  },
+  {
+    step: "step 2",
+    image: step2,
+    header: "Choose the crypto to buy",
+    body: "Pick from over 100 cryptocurrencies, like Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Tether (USDT), USD Coin (USDC) and more"
+  },
+  {
+    step: "step 3",
+    image: step1,
+    header: "Enter your wallet address",
+    body: "Xbanka supports most non-custodial wallets, and you can easily set one up at checkout. Coming through a partner? Your wallet address is auto-filled"
+  },
+  {
+    step: "step 4",
+    image: step1,
+    header: "Top up your balance",
+    body: "Top up your Xbanka balance to buy crypto faster, with lower fees, higher approval rates, and free fiat withdrawals"
+  },
+  {
+    step: "step 5",
+    image: step5,
+    header: "Checkout and pay",
+    body: "Prefer not to use balance? Pay with card, Apple Pay, Google Pay, Paypal or local options like SEPA, UK Faster payments, Pix, Venmo and U.S. bank transfers. We'll take care of the rest"
   },
 ]
