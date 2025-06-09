@@ -35,11 +35,11 @@ export function DataTable<TData, TValue>({
   })
 
   return (
-    <div className="rounded-md border">
+    <div className="rounded-[8px]">
       <Table>
-        <TableHeader>
+        <TableHeader className="rounded-tl-[8px] rounded-tr-[8px]">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
+            <TableRow className="bg-[#F2F2F7] py-2 px-6 rounded-[8px]" key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead key={header.id}>
