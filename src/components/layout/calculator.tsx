@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import SelectBox from "./selectBox";
-import usa from "@/assets/United States of America (US).svg";
+import usa from "@/assets/USA.svg";
 import btc from "@/assets/btc.svg";
 
 const Calculator = () => {

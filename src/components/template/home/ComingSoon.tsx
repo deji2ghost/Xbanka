@@ -2,7 +2,7 @@ import BoxHeader from "@/components/ui/boxHeader";
 import { Button } from "@/components/ui/button";
 import AppleWhite from "@/assets/AppleWhite.svg";
 import googlePlay from "@/assets/PlaystoreDark.svg";
-import iphone12 from "@/assets/iPhone 12 Pro (2) 1.svg";
+import iphone12 from "@/assets/iPhone12Pro.svg";
 
 const ComingSoon = () => {
   return (

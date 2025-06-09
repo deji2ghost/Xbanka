@@ -37,9 +37,9 @@ import adaobi from "@/assets/Adaobi.svg"
 import chinedu from "@/assets/Chinedu.svg"
 import ifeoma from "@/assets/ifeoma.svg"
 import fat from "@/assets/fat.svg"
-import step1 from "@/assets/step 1.svg"
-import step2 from "@/assets/step 2.svg"
-import step5 from "@/assets/Step 4.svg"
+import step1 from "@/assets/step1.svg"
+import step2 from "@/assets/Step2.svg"
+import step5 from "@/assets/Step4.svg"
 
 export const giftCardsOne = [
   {

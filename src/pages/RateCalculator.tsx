@@ -1,4 +1,4 @@
-import pattern from "@/assets/pattern 2.svg";
+import pattern from "@/assets/pattern2.svg";
 import Calculator from "@/components/layout/calculator";
 import { DataTable } from "@/components/layout/customTable";
 import { columns } from "@/components/tablecolumns/liveTableColumns";

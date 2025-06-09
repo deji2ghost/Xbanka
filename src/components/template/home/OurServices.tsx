@@ -1,4 +1,4 @@
-import pattern from "@/assets/pattern 1.svg";
+import pattern from "@/assets/pattern1.svg";
 import BoxHeader from "@/components/ui/boxHeader";
 import Card from "@/components/ui/card";
 import { services } from "@/lib/data";

@@ -8,7 +8,7 @@ const BuySellCrypto = () => {
     <div>
       <Sellcrypto />
       <FiveSteps />
-      <div>
+      <div className="px-[120px] py-[148px]">
         <div>
             <h1>How Ads Facebook billing works</h1>
             <p>Facebook charges advertisers based on how much they spend and under certain billing conditions.</p>

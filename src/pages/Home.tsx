@@ -1,7 +1,7 @@
 import HeroSection from "@/components/template/home/HeroSection"
 import SellGift from "@/components/template/home/SellGift"
 import { Button } from "@/components/ui/button"
-import pattern from "@/assets/pattern 2.svg"
+import pattern from "@/assets/pattern2.svg"
 import { rowFive, rowFour, rowOne, rowSix, rowThree, rowTwo } from "@/lib/data"
 import GiftCards from "@/components/ui/giftCards"
 import OurServices from "@/components/template/home/OurServices"

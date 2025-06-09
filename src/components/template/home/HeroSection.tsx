@@ -1,4 +1,4 @@
-import pattern from "@/assets/pattern 1.svg";
+import pattern from "@/assets/pattern1.svg";
 import card from "@/assets/card-bg-preview.svg";
 import { Button } from "@/components/ui/button";
 
