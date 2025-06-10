@@ -390,3 +390,30 @@ export const FaceBookAds = [
     body: "If a previous payment fails, Facebook will attempt to charge you for the unpaid balance."
   },
 ]
+
+export const CryptoAndFinance = [
+  {
+    linkName: "Buy & Sell Cryptocurrency",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Pay Bills & airtime",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Professional Crypto Tools",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Convert Crypto to Naira",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Crypto Transactions Explained",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Withdrawal & Payment Methods",
+    link: "/cryptoFinance/buysell"
+  },
+]

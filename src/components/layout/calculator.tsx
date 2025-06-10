@@ -11,7 +11,7 @@ const Calculator = () => {
     setText(e.target.value);
   };
   return (
-    <div className="rounded-[8px] p-6 bg-[#F7F7F7] flex flex-col gap-4">
+    <div className="rounded-[8px] p-4 bg-[#F7F7F7] flex flex-col gap-4">
       <div className="w-[103px] flex flex-col">
         <h1 className="font-[400] text-[16px] leading-[22.4px]">
           Enter amount
@@ -41,7 +41,7 @@ const Calculator = () => {
             text="USD"
           />
         </div>
-        <Button className="border border-[#0EA08E] w-full p-4 rounded-[8px]">
+        <Button size="sm" className="border border-[#0EA08E] flex items-center justify-between w-full p-2 rounded-[8px]">
           <div className="flex items-center text-[24px] font-[600] leading-[33.6px]">
             <p>130 BTC</p>
             <span>=</span>
