@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import phone from "@/assets/phoneCoin.svg";
+import { Link } from "react-router";
 
 const Sellcrypto = () => {
   return (
@@ -10,8 +11,12 @@ const Sellcrypto = () => {
           <p className="font-[400] text-[24px] leading-[33.6px]">Convert your unused gift cards to cash or crypto in minutes. Fast payouts, secure transactions, and the best market rates — all in one place.</p>
         </div>
         <div className="flex items-center gap-6">
-          <Button size="lg">Get started</Button>
-          <Button size="lg" className="bg-transparent">Start trading</Button>
+          <Link className="" to="https://wa.me/2349039716418">
+            <Button size="lg">Get started</Button>
+          </Link>
+          <Link className="" to="https://wa.me/2349039716418">
+            <Button size="lg" className="bg-transparent">Start trading</Button>
+          </Link>
         </div>
       </div>
       <div className="w-[835px"><img src={phone} className="w-full" alt="phone"/></div>

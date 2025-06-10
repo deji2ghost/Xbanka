@@ -1,6 +1,7 @@
 import pattern from "@/assets/pattern1.svg";
 import card from "@/assets/card-bg-preview.svg";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 const HeroSection = () => {
   // pt-[196px] pb-[241px]
@@ -22,10 +23,16 @@ const HeroSection = () => {
         </h1>
         <p className="mb-[48px] font-[600] text-[24px] text-offWhite leading-[33.6px]">
           Xbanka makes it easy to trade gift cards, convert crypto, and pay for
-          services — all in Naira, USD, or Crypto. <span className="font-[400]">Fast, flexible, and
-          transparent digital asset management, all in one place.</span>
+          services — all in Naira, USD, or Crypto.{" "}
+          <span className="font-[400]">
+            Fast, flexible, and transparent digital asset management, all in one
+            place.
+          </span>
         </p>
-        <Button size="lg">Get started</Button>
+
+        <Link className="" to="https://wa.me/2349039716418">
+          <Button size="lg">Get started</Button>
+        </Link>
       </div>
       <div className="w-full absolute bottom-0 pointer-events-none left-1/2 translate-x-[-50%] translate-y-[45%]">
         <img src={card} loading="lazy" className="w-full" alt="gift cards" />

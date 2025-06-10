@@ -16,6 +16,10 @@ export const getCoinData = async () => {
     );
     return response
   } catch (error) {
-     console.log(error)
+     if (error instanceof Error) {
+      throw error; // ✅ this is now safe
+    } else {
+      throw new Error("Unknown error occurred");
+    }
   }
 };

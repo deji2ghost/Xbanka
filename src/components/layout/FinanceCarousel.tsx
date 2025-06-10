@@ -68,7 +68,7 @@ export function CarouselCustom({items}: CarouselCustomProps) {
                     isActive ? "scale-110 shadow-xl" : "scale-95 opacity-70"
                   )}
                 >
-                  <div className="flex aspect-square items-center justify-center text-3xl font-bold">
+                  <div className="flex aspect-square items-start justify-center text-3xl font-bold">
                     <img className="w-full" src={item.image} alt={item.step}/>
                   </div>
                 </div>

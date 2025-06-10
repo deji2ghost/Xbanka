@@ -4,6 +4,7 @@ import { DataTable } from "@/components/layout/customTable";
 import { columns } from "@/components/tablecolumns/liveTableColumns";
 import { getCoinData } from "@/lib/calls";
 import type { CoinProps } from "@/lib/types";
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 const RateCalculator = () => {
@@ -17,8 +18,16 @@ const RateCalculator = () => {
       console.log(response?.data);
       setData(response?.data);
     } catch (error) {
-      console.log(error);
-      setLoading(false);
+      if (axios.isAxiosError(error)) {
+      console.error("Axios error:", error.message);
+      throw new Error("Failed to fetch coin data from the server.");
+    } else if (error instanceof Error) {
+      console.error("Unexpected error:", error.message);
+      throw error;
+    } else {
+      console.error("Unknown error:", error);
+      throw new Error("An unknown error occurred.");
+    }
     }
   };
   useEffect(() => {

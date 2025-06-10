@@ -18,8 +18,10 @@ const Navbar = () => {
         <Link className="cursor-pointer" to="/">Our blog</Link>
       </div>
       <div className="flex items-center gap-6">
-        <Button variant="destructive" size="sm">Login</Button>
-        <Button size="sm">Get started</Button>
+        <Button variant="destructive" size="sm" className="cursor-not-allowed">Login</Button>
+        <Link className="" to="https://wa.me/2349039716418">
+        <Button size="sm" >Get started</Button>
+        </Link>
       </div>
     </div>
   );
