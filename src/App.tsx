@@ -13,7 +13,7 @@ function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/ratecalculator" element={<RateCalculator />} />
+      <Route path="/rateCalculator" element={<RateCalculator />} />
       <Route path="/cryptoFinance" element={<CryptoFinance />}>
           <Route path='buysell' element={<BuySellCrypto />} />
       </Route>

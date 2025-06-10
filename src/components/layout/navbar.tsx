@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="text-[16px] font-[600] flex items-center gap-6 text-foreground">
         <Link className="cursor-pointer" to="/">Home</Link>
         <Link className="cursor-pointer" to="/">Trading E-center</Link>
-        <Link className="cursor-pointer" to="/">Rate Calculator</Link>
+        <Link className="cursor-pointer" to="/rateCalculator">Rate Calculator</Link>
         <DropdownLayout data={CryptoAndFinance} item="Crypto & finance" />
         <Link className="cursor-pointer" to="/">Our blog</Link>
       </div>

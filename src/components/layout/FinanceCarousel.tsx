@@ -64,11 +64,11 @@ export function CarouselCustom({items}: CarouselCustomProps) {
               <div className="p-2 w-full h-full">
                 <div
                   className={cn(
-                    "transition-all duration-300 border border-amber-300",
+                    "transition-all duration-300",
                     isActive ? "scale-110 shadow-xl" : "scale-95 opacity-70"
                   )}
                 >
-                  <div className="flex aspect-square border border-red-700 items-center justify-center text-3xl font-bold">
+                  <div className="flex aspect-square items-center justify-center text-3xl font-bold">
                     <img className="w-full" src={item.image} alt={item.step}/>
                   </div>
                 </div>
