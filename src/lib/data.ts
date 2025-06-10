@@ -375,3 +375,18 @@ export const BuySell = [
     body: "Prefer not to use balance? Pay with card, Apple Pay, Google Pay, Paypal or local options like SEPA, UK Faster payments, Pix, Venmo and U.S. bank transfers. We'll take care of the rest"
   },
 ]
+
+export const FaceBookAds = [
+  {
+    header: "Reaching your billing threshold",
+    body: "Facebook sets a limit where once your ad spend reaches a certain amount, your card is charged automatically."
+  },
+  {
+    header: "Monthly billing date",
+    body: "If you haven't beat the billing threshold, Facebook charges your card on your scheduled monthly bill date."
+  },
+  {
+    header: "Outstanding balances",
+    body: "If a previous payment fails, Facebook will attempt to charge you for the unpaid balance."
+  },
+]

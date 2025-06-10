@@ -1,3 +1,4 @@
+import { CarouselCustom } from "@/components/layout/FinanceCarousel";
 import { BuySell } from "@/lib/data";
 
 const FiveSteps = () => {
@@ -8,7 +9,8 @@ const FiveSteps = () => {
         <p className="font-[400] text-[24px] text-center px-[248px] leading-[33.6px]">A step-by-step guide to purchasing cryptocurrency safely and easily. Learn the best platforms, payment methods, and tips for first-time buyers.</p>
       </div>
       <div className="flex items-start gap-10">
-        {BuySell.map((item, index) => {
+      <CarouselCustom items={BuySell} />
+        {/* {BuySell.map((item, index) => {
           return (
             <div className="w-[219.77px]" key={index}>
               <div>
@@ -20,7 +22,7 @@ const FiveSteps = () => {
               </div>
             </div>
           );
-        })}
+        })} */}
       </div>
     </div>
   )
