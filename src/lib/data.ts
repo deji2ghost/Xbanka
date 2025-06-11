@@ -40,6 +40,15 @@ import fat from "@/assets/fat.svg"
 import step1 from "@/assets/step1.svg"
 import step2 from "@/assets/Step2.svg"
 import step5 from "@/assets/Step4.svg"
+import blog1 from "@/assets/blog1.svg"
+import blog2 from "@/assets/blog2.svg"
+import blog3 from "@/assets/blog3.svg"
+import blog4 from "@/assets/blog4.svg"
+import blog5 from "@/assets/blog5.svg"
+import blog6 from "@/assets/blog6.svg"
+import blog7 from "@/assets/blog7.svg"
+import blog8 from "@/assets/blog8.svg"
+import blog9 from "@/assets/blog9.svg"
 
 export const giftCardsOne = [
   {
@@ -427,5 +436,90 @@ export const CryptoAndFinance = [
   {
     linkName: "Withdrawal & Payment Methods",
     link: "/cryptoFinance/buysell"
+  },
+]
+
+export const List = [
+  "Bitcoin",
+  "XRP",
+  "Blockchain",
+  "Company news",
+  "Airdrop",
+  "Guides",
+  "Investing"
+]
+
+export const blogsData = [
+  {
+    image: blog1,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "What is Bitcoin (BTC)?",
+    body: "Getting started with Bitcoin is easier than you think. This guide breaks down the process of buying Bitcoin, explaining the key steps, covering wallets, exchanges, and essential tips to get started."
+  },
+  {
+    image: blog2,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog3,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog4,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog5,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog6,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog7,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog8,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
+  },
+  {
+    image: blog9,
+    author: "Kim Kerry",
+    date: "23 May 2025",
+    readTime: "5 min read",
+    title: "Top Gift Cards with the Best Resale Value in 2025",
+    body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
   },
 ]

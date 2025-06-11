@@ -1,8 +1,14 @@
+import BlogSection from "@/components/template/ourblog/blogSection"
+import TopSection from "@/components/template/ourblog/topSection"
 
 const Blogs = () => {
+    
   return (
     <div>
-      blogs
+        <div>
+            <TopSection />
+            <BlogSection />
+        </div>
     </div>
   )
 }

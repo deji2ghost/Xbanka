@@ -17,7 +17,7 @@ const HeroSection = () => {
       }}
     >
       <div className="w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
-        <h1 className="mb-[24px] text-[64px] font-[400] text-offWhite leading-[76.8px]">
+        <h1 className="mb-[24px] text-[64px] font-[400] text-offWhite leading-[76.8px] italic">
           Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
           Naira
         </h1>
