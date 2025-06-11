@@ -294,9 +294,21 @@ export const UserSaying = [
   },
   {
     image: fat,
-    userName: "fat",
+    userName: "fatima B.",
     userHandle: "@johnny_12",
     tweet: "As someone new to trading gift cards, I found Xbanka super easy to use. I sold my Steam card, and the payment came through faster than I expected. Plus, I love that I can get paid in Nigerian Naira or crypto.",
+  },
+  {
+    image: fat,
+    userName: "Emeka E.",
+    userHandle: "@johnny_12",
+    tweet: "I sold both my my iTunes giftcard and on XBanka and was amazed at the speed, The rates are very fair and they actually deliver as promised",
+  },
+  {
+    image: fat,
+    userName: "Blessing T.",
+    userHandle: "@johnny_12",
+    tweet: "Xbanka is the most convenient platform i've used to buy and sell cryptocurrency. ive even traded an amazon gift card and received payment in USDT. Everything works perfectly",
   },
 ]
 

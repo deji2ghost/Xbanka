@@ -10,7 +10,7 @@ const UsersSaying = () => {
         <BoxHeader text="20K + HAPPY USERS" />
         <SubHeader text="What our users are saying"/>
       </div>
-      <div className="w-full flex items-start gap-[72px]">
+      <div className="w-full flex items-start gap-[40px]">
         {
           UserSaying.map((item, index) => {
             return(
