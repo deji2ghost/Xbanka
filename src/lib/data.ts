@@ -84,22 +84,27 @@ export const rowOne = [
   {
     image: apple,
     text: "Apple gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: amazon,
     text: "Amazon gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: iTunes,
     text: "iTune gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: Google,
     text: "Google play gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: hulu,
     text: "Hulu gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
 
@@ -107,18 +112,22 @@ export const rowTwo = [
   {
     image: Netflix,
     text: "Netflix gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: steam,
     text: "Steam gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: playstation,
     text: "Playstation gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: ebay,
     text: "ebay gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
 
@@ -126,54 +135,68 @@ export const rowThree = [
   {
     image: disney,
     text: "Disney+ gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: sephora,
     text: "Sephora gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: walmart,
     text: "Walmart gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: nike,
     text: "Nike gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
+
 export const rowFour = [
   {
     image: visa,
     text: "Visa gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: razer,
     text: "Razer gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: spotify,
     text: "Spotify gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: target,
     text: "Target gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
+
 export const rowFive = [
   {
     image: uber,
     text: "Uber/Uber Eats gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: starbucks,
     text: "Starbucks gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: xbox,
     text: "Xbox gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: nord,
     text: "Nordstorm gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
 
@@ -181,14 +204,17 @@ export const rowSix = [
   {
     image: bestbuy,
     text: "Best buy gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: doordash,
     text: "Door dash gift card",
+    route: "https://wa.me/2349039716418"
   },
   {
     image: paramount,
     text: "Paramount+ gift card",
+    route: "https://wa.me/2349039716418"
   },
 ];
 
@@ -431,6 +457,32 @@ export const CryptoAndFinance = [
   },
   {
     linkName: "Crypto Transactions Explained",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Withdrawal & Payment Methods",
+    link: "/cryptoFinance/buysell"
+  },
+]
+export const TradingCenter = [
+  {
+    linkName: "Sell Gift Cards Instantly",
+    link: "/"
+  },
+  {
+    linkName: "Top Gift Cards in Demand",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Most Traded Cards This Week",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "How To Sell Gift Cards",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Instant Conversion Process",
     link: "/cryptoFinance/buysell"
   },
   {

@@ -40,42 +40,42 @@ const Home = () => {
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowOne.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="w-[22.36px] overflow-hidden h-[24px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item?.route} key={index} Icon={<div><img className="w-[22.36px] overflow-hidden h-[24px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowTwo.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" src={item.image} loading="lazy" alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item.route} key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" src={item.image} loading="lazy" alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowThree.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" src={item.image} alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item.route} key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" src={item.image} alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowFour.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item.route} key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowFive.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item.route} key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>
             <div className="flex items-center p-[3px] gap-[45px]">
                 {
                     rowSix.map((item, index) => (
-                        <GiftCards key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
+                        <GiftCards route={item.route} key={index} Icon={<div><img className="min-w-[22.36px] overflow-hidden h-[27.49px] object-contain flex items-center" loading="lazy" src={item.image} alt={item.text} /></div>} text={item.text} />
                     ))
                 }
             </div>

@@ -1,13 +1,16 @@
 import type { JSX } from "react";
+import { Link } from "react-router";
 
 interface GiftCardsProp {
   Icon: JSX.Element;
   text: string;
+  route: string;
 }
 
-const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text }) => {
+const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text, route }) => {
   return (
-    <div
+    <Link
+      to={route}
       style={{
         boxShadow: `
       0px 1.13px 3.4px 1.13px rgba(0, 0, 0, 0.15),
@@ -18,7 +21,7 @@ const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text }) => {
     >
       {Icon}
       <p className="text-[16px] font-[600] leading-[25.35px]">{text}</p>
-    </div>
+    </Link>
   );
 };
 

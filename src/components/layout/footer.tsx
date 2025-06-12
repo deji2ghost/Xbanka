@@ -3,6 +3,7 @@ import pattern from "@/assets/footerPattern.svg";
 import logo from "@/assets/footerLogo.svg";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -23,10 +24,10 @@ const Footer = () => {
             <img src={logo} alt="logo" />
           </div>
           <div className="flex flex-col gap-[33px]">
-            <BsInstagram className="text-offWhite" />
-            <FaXTwitter className="text-offWhite" />
-            <BsYoutube className="text-offWhite" />
-            <FaFacebook className="text-offWhite" />
+            <Link to="https://www.instagram.com/xbanka.ng?igsh=MTJxbmlqdjQ0ZHp2MA%3D%3D&utm_source=qr"><BsInstagram className="text-offWhite" /></Link>
+            <Link to="https://x.com/xbankang?s=21"><FaXTwitter className="text-offWhite" /></Link>
+            <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr"><BsYoutube className="text-offWhite" /></Link>
+            <Link to="https://www.linkedin.com/company/xbanka-ltd/"><FaFacebook className="text-offWhite" /></Link>
           </div>
         </div>
         <div className="flex flex-col gap-[24px] font-[400]">
