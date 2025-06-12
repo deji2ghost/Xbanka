@@ -29,15 +29,15 @@ const Card: React.FC<CardProps> = ({
         none ? undefined : { boxShadow: "0px 6px 12px 6px rgba(0, 0, 0, 0.12)" }
       }
     >
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-2">
       <div>
         <img src={image} loading="lazy" alt={userName} />
       </div>
       {
         (userName || userHandle) &&
-        <div className="flex flex-col gap-1">
-            <h2 className="font-[700] text-[10px]">{userName}</h2> 
-            <p className="font-[600] text-[9px]">{userHandle}</p>
+        <div className="flex flex-col gap-[2px]">
+            <h2 className="font-[700] text-[16px]">{userName}</h2> 
+            <p className="font-[600] text-[12px] text-[#1DA1F2]">{userHandle}</p>
         </div>
       }
       </div>

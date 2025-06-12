@@ -1,13 +1,12 @@
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import Logo from "../../assets/xBankaLogo.svg";
 import { Button } from "../ui/button";
 import DropdownLayout from "./dropdownLayout";
 import { CryptoAndFinance, TradingCenter } from "@/lib/data";
 
 const Navbar = () => {
-  const location = useLocation();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const locationPath = location.pathname;
+  // const location = useLocation();
+  // const locationPath = location.pathname;
   return (
     <div className="sticky top-0 z-50 bg-background overflow-y-hidden flex items-center justify-between px-[120px] py-[8px] shadow-sm">
       <div className="w-[84px] cursor-pointer min-h-[84px]">

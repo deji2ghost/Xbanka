@@ -34,11 +34,11 @@ export function CustomCarousel({ items }: CustomCarouselProps) {
 
   return (
     <div ref={emblaRef} className="overflow-hidden max-w-4xl mx-auto">
-      <div className="flex w-[1050px] py-4 gap-[40px]">
+      <div className="flex w-[1050px] py-4 gap-[30px]">
         {items.map((item, index) => (
             <Card
             key={index}
-              className="w-[218px] p-4 rounded-[8px] border shrink-0 grow-0"
+              className="w-[218px] p-2 gap-3 rounded-[8px] border shrink-0 grow-0"
               paragraph={item.tweet}
               image={item.image}
               userHandle={item.userHandle}

@@ -4,13 +4,13 @@ import { Link } from "react-router";
 interface GiftCardsProp {
   Icon: JSX.Element;
   text: string;
-  route: string;
+  route?: string;
 }
 
 const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text, route }) => {
   return (
     <Link
-      to={route}
+      to={route ? route : ""}
       style={{
         boxShadow: `
       0px 1.13px 3.4px 1.13px rgba(0, 0, 0, 0.15),
