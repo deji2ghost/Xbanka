@@ -42,12 +42,12 @@ const Calculator = () => {
           />
         </div>
         <Button size="sm" className="border border-[#0EA08E] flex items-center justify-between w-full p-2 rounded-[8px]">
-          <div className="flex items-center text-[24px] font-[600] leading-[33.6px]">
+          <div className="flex items-center font-[600] text-[22px] leading-[33.6px]">
             <p>130 BTC</p>
             <span>=</span>
             <p>$108,401.50</p>
           </div>
-          <p className="flex items-center text-[16px] font-[400] leading-[22.4px]">Last updated at 12:05 AM UTC</p>
+          <p className="flex items-center font-[400] text-[14px] leading-[20.8px]">Last updated at 12:05 AM UTC</p>
         </Button>
       </div>
     </div>
