@@ -447,27 +447,19 @@ export const CryptoAndFinance = [
     linkName: "Pay Bills & airtime",
     link: "/cryptoFinance/buysell"
   },
-  {
-    linkName: "Professional Crypto Tools",
-    link: "/cryptoFinance/buysell"
-  },
-  {
-    linkName: "Convert Crypto to Naira",
-    link: "/cryptoFinance/buysell"
-  },
-  {
-    linkName: "Crypto Transactions Explained",
-    link: "/cryptoFinance/buysell"
-  },
-  {
-    linkName: "Withdrawal & Payment Methods",
-    link: "/cryptoFinance/buysell"
-  },
 ]
+
 export const TradingCenter = [
   {
     linkName: "Sell Gift Cards Instantly",
     link: "/"
+  },
+]
+
+export const ResourceCenter = [
+  {
+    linkName: "Rate calculator",
+    link: "/ratecalculator"
   },
   {
     linkName: "Top Gift Cards in Demand",
@@ -483,6 +475,22 @@ export const TradingCenter = [
   },
   {
     linkName: "Instant Conversion Process",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Withdrawal & Payment Methods",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Professional Crypto Tools",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Convert Crypto to Naira",
+    link: "/cryptoFinance/buysell"
+  },
+  {
+    linkName: "Crypto Transactions Explained",
     link: "/cryptoFinance/buysell"
   },
   {
@@ -574,4 +582,87 @@ export const blogsData = [
     title: "Top Gift Cards with the Best Resale Value in 2025",
     body: "Explore which gift cards hold the highest cash or crypto conversion rates and why they remain in demand."
   },
+]
+
+export const CoinList = [
+  {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "name": "Bitcoin"
+  },
+  {
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum"
+  },
+  {
+    "id": "cardano",
+    "symbol": "ada",
+    "name": "Cardano"
+  }
+]
+
+export const Currency = [
+  "btc",
+  "eth",
+  "ltc",
+  "bch",
+  "bnb",
+  "eos",
+  "xrp",
+  "xlm",
+  "link",
+  "dot",
+  "yfi",
+  "usd",
+  "aed",
+  "ars",
+  "aud",
+  "bdt",
+  "bhd",
+  "bmd",
+  "brl",
+  "cad",
+  "chf",
+  "clp",
+  "cny",
+  "czk",
+  "dkk",
+  "eur",
+  "gbp",
+  "gel",
+  "hkd",
+  "huf",
+  "idr",
+  "ils",
+  "inr",
+  "jpy",
+  "krw",
+  "kwd",
+  "lkr",
+  "mmk",
+  "mxn",
+  "myr",
+  "ngn",
+  "nok",
+  "nzd",
+  "php",
+  "pkr",
+  "pln",
+  "rub",
+  "sar",
+  "sek",
+  "sgd",
+  "thb",
+  "try",
+  "twd",
+  "uah",
+  "vef",
+  "vnd",
+  "zar",
+  "xdr",
+  "xag",
+  "xau",
+  "bits",
+  "sats"
 ]

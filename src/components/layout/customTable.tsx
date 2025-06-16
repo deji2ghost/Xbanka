@@ -39,7 +39,7 @@ export function DataTable<TData, TValue>({
       <Table>
         <TableHeader className="rounded-tl-[8px] rounded-tr-[8px]">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow className="bg-[#F2F2F7] py-2 px-6 gap-6 w-full rounded-[8px]" key={headerGroup.id}>
+            <TableRow className="bg-[#F2F2F7] py-2 px-6 gap-6 w-full font-[600] text-[17px] leading-[28px] rounded-[8px]" key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead className="" key={header.id}>
@@ -55,7 +55,7 @@ export function DataTable<TData, TValue>({
             </TableRow>
           ))}
         </TableHeader>
-        <TableBody className="border border-[#D9D9D9]">
+        <TableBody className="border border-[#D9D9D9] font-[600] text-[17px] leading-[28px]">
           { loading ? <Skeleton className="w-full" /> : (table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow

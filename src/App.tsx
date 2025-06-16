@@ -17,7 +17,8 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/rateCalculator" element={<RateCalculator />} />
       <Route path="/blogs" element={<Blogs />} />
-      <Route path="/blogs/:id" element={<BlogsPage />} />
+      {/* <Route path="/blogs/:id" element={<BlogsPage />} /> */}
+      <Route path="/blogs/id" element={<BlogsPage />} />
       <Route path="/cryptoFinance" element={<CryptoFinance />}>
           <Route path='buysell' element={<BuySellCrypto />} />
       </Route>

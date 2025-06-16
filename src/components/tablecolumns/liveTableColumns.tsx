@@ -27,10 +27,10 @@ export const columns: ColumnDef<CoinProps, unknown>[] = [
             <img src={item.image} alt={item.name} />
           </div>
           <div className="flex flex-col gap-1">
-            <p className="cursor-pointer font-[600] text-[20px] leading-[28px]">
+            <p className="cursor-pointer">
               {item.name}
             </p>
-            <p className="cursor-pointer font-[400] text-[14px] leading-[19.6px]">
+            <p className="cursor-pointer">
               {item.symbol}
             </p>
           </div>
@@ -74,12 +74,12 @@ export const columns: ColumnDef<CoinProps, unknown>[] = [
               <MoreHorizontal />
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem>Delete details</DropdownMenuItem>
+          <DropdownMenuContent className="p-0 text-[13px] leading-[28px]" align="center">
+            <DropdownMenuItem className="py-1 px-2 text-[12px]">Delete details</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>View Details</DropdownMenuItem>
+            <DropdownMenuItem className="py-1 px-2 text-[12px]">View Details</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
+            <DropdownMenuItem className="py-1 px-2 text-[12px]">View payment details</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );

@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 const RateCalculator = () => {
   const [data, setData] = useState<CoinProps[] | undefined>([]);
   const [loading, setLoading] = useState<boolean>(false);
+
   const getData = async () => {
     setLoading(true);
     try {
@@ -56,7 +57,7 @@ const RateCalculator = () => {
         <Calculator />
       </div>
       <div className="mt-[419px] pb-[148px] px-[120px]">
-        <h1 className="text-[32px] font-[400] leading-[44.8px]">
+        <h1 className="text-[32px] font-[400] leading-[44.8px] mb-[24px]">
           Asset market
         </h1>
         <div className="font-[600] text-[20px] leading-[28px]">

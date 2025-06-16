@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Logo from "../../assets/xBankaLogo.svg";
 import { Button } from "../ui/button";
 import DropdownLayout from "./dropdownLayout";
-import { CryptoAndFinance, TradingCenter } from "@/lib/data";
+import { CryptoAndFinance, ResourceCenter, TradingCenter } from "@/lib/data";
 
 const Navbar = () => {
   // const location = useLocation();
@@ -14,8 +14,8 @@ const Navbar = () => {
       </div>
       <div className="text-[16px] font-[600] flex items-center gap-6 text-foreground">
         <Link className="cursor-pointer" to="/">Home</Link>
-        <DropdownLayout data={TradingCenter} item="Trading E-center" />
-        <Link className="cursor-pointer" to="/rateCalculator">Rate Calculator</Link>
+        <DropdownLayout data={TradingCenter} item="Gift cards" />
+        <DropdownLayout data={ResourceCenter} item="Resource center" />
         <DropdownLayout data={CryptoAndFinance} item="Crypto & finance" />
         <Link className="cursor-pointer" to="/blogs">Our blog</Link>
       </div>

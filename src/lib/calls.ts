@@ -23,3 +23,16 @@ export const getCoinData = async () => {
     }
   }
 };
+
+export const getCoinList = async () => {
+  try {
+    const response = await axios.get("https://api.coingecko.com/api/v3/coins/list");
+    return response
+  } catch (error) {
+     if (error instanceof Error) {
+      throw error; // ✅ this is now safe
+    } else {
+      throw new Error("Unknown error occurred");
+    }
+  }
+};
