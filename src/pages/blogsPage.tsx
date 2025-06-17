@@ -1,9 +1,35 @@
+import { client } from "@/lib/contentful";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+// import type { Document } from '@contentful/rich-text-types';
+
 const BlogsPage = () => {
+  const [blogDetails, setBlogDetails] = useState({});
+  const [loading, setLoading] = useState(false);
+  const { id } = useParams();
+
+  const getEntriesById = async () => {
+    setLoading(true);
+    try {
+      const response = await client.getEntry(id);
+      console.log(response);
+      setBlogDetails(response.fields);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
+  useEffect(() => {
+    getEntriesById();
+    console.log(id);
+  }, [id]);
   return (
     <div className="border border-red-800 px-[120px] pt-[56px] pb-[60px]">
       <div>
         <p>bread crumbs</p>
-        <h1></h1>
+        <h1>{blogDetails.title}</h1>
         <p>
           Getting started with Bitcoin is easier than you think. This guide
           breaks down the process of buying Bitcoin, explaining the key steps,
@@ -19,7 +45,11 @@ const BlogsPage = () => {
       <div className="flex justify-between">
         <div className="flex items-start">
           <div>
-            <img src="" alt="" loading="lazy" />
+            <img
+              src={blogDetails?.authorImage?.fields?.file?.url}
+              alt={blogDetails?.author}
+              loading="lazy"
+            />
           </div>
           <div>
             <h1>Kim Karry</h1>
@@ -35,25 +65,15 @@ const BlogsPage = () => {
         </div>
       </div>
       <div>
-        <img src="" alt="" />
+        <img
+          src={blogDetails?.blogImage?.fields?.file?.url}
+          alt={blogDetails?.author}
+        />
       </div>
-      <div>
-        <p>
-          Bitcoin (BTC) is a digital currency that allows users to send and
-          receive payments without relying on banks or other intermediaries. It
-          was created in 2009 by an anonymous person or group using the name
-          Satoshi Nakamoto. Unlike traditional currencies, Bitcoin operates on a
-          decentralized network called blockchain, which records all
-          transactions transparently and securely. Bitcoin is often used as a
-          store of value, similar to gold, and as a means of payment for goods
-          and services. It is limited to 21 million coins, making it scarce and
-          resistant to inflation. Transactions are verified by a process called
-          mining, where computers solve complex mathematical problems to confirm
-          transactions and secure the network.
-        </p>
+      <div className="prose prose-neutral max-w-none">
+  {blogDetails?.body && documentToReactComponents(blogDetails.body)}
+</div>
 
-        <div></div>
-      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 
 interface BlogcardProps{
     image: string,
@@ -5,12 +6,13 @@ interface BlogcardProps{
     body: string
     name: string, 
     date: string, 
-    readTime: string 
+    readTime: string,
+    id: string
 }
 
-const Blogcard: React.FC<BlogcardProps> = ({image, title, body, name, date, readTime}) => {
+const Blogcard: React.FC<BlogcardProps> = ({image, title, body, name, date, readTime, id}) => {
   return (
-    <div className="w-[370px] rounded-[7.65px] p-[22.95px] flex flex-col gap-[15.3px]">
+    <Link to={`/blogs/${id}`} className="w-[370px] rounded-[7.65px]  border cursor-pointer p-[22.95px] flex flex-col gap-[15.3px]">
       <div><img src={image} loading="lazy" alt={title} /></div>
       <div className="flex items-center gap-[11.48px] text-subCyan text-[12px] font-[600] leading-[18.74px]">
         <p>{name}</p>
@@ -21,7 +23,7 @@ const Blogcard: React.FC<BlogcardProps> = ({image, title, body, name, date, read
       </div>
       <div className="font-[600] text-[20px] leading-[28px]">{title}</div>
       <p className="font-[400] text-[14px] leading-[19.6px]">{body}</p>
-    </div>
+    </Link>
   )
 }
 
