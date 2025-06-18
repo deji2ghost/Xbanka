@@ -1,32 +1,42 @@
 import Blogcard from "@/components/ui/blogcard";
+import Pagination from "@/components/ui/pagination";
 import { Skeleton } from "@/components/ui/skeleton";
 import { client } from "@/lib/contentful";
-import { blogsData } from "@/lib/data";
+import { formatDate } from "@/lib/dateFormatter";
+import type { BlogCardProps } from "@/lib/types";
 import { useEffect, useState } from "react";
 
 const BlogSection = () => {
-  //  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<BlogCardProps[]>([]);
+  const [page, setPage] = useState<number>(1);
+  const [pageTotal, setPageTotal] = useState<number>();
   const [loading, setLoading] = useState(false);
+  const itemsPerPage = 9
+
+  const startIndex = (page - 1) * itemsPerPage;
+const endIndex = startIndex + itemsPerPage;
+const paginatedPosts = posts.slice(startIndex, endIndex);
 
   const fetchPosts = async () => {
     setLoading(true);
     try {
       const entries = await client.getEntries();
       console.log(entries)
-      const items = entries.items.map((item: any) => ({
+      const totalPages = Math.ceil(entries?.total / itemsPerPage)
+      setPageTotal(totalPages)
+      const items = entries.items.map((item) => ({
         title: item.fields.title,
-        body: item.fields.body,
         summary: item.fields.summary,
         readTime: item.fields.readTime,
         likes: item.fields.likes,
         date: item.fields.date,
         comments: item.fields.comments,
-        blogImage: item.fields.blogImage,
-        authorImage: item.fields.authorImage,
-        author: item.fields.author,
+        blogImage: item?.fields?.blogImage,
+        author: item?.fields?.author,
         id: item.sys.id,
       }));
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       setPosts(items);
       setLoading(false);
     } catch (error) {
@@ -63,20 +73,21 @@ const BlogSection = () => {
         </div>
       ) : (
         <div className="flex flex-wrap gap-[38px]">
-          {posts.map((item, index) => (
+          {paginatedPosts.map((item, index) => (
             <Blogcard
               id={item?.id}
               key={index}
               name={item?.author}
               readTime={item?.readTime}
-              date={item?.date}
-              image={item?.blogImage.fields.file.url}
+              date={formatDate(item?.date)}
+              image={item?.blogImage.fields?.file.url}
               title={item?.title}
               body={item?.summary}
             />
           ))}
         </div>
       )}
+      <Pagination currentPage={page} onPageChange={setPage} totalPages={pageTotal || 0} />
     </div>
   );
 };

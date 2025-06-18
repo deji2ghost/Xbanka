@@ -2,9 +2,10 @@ import pattern from "@/assets/pattern1.svg";
 import card from "@/assets/card-bg-preview.svg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
+import { motion } from "motion/react";
+import { FadeUp } from "@/lib/animations";
 
 const HeroSection = () => {
-  // pt-[196px] pb-[241px]
   return (
     <div
       className="relative overflow-hidden bg-no-repeat pt-[196px] pb-[241px] bg-cover bg-center"
@@ -16,7 +17,12 @@ const HeroSection = () => {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
+      <motion.div 
+      variants={FadeUp(0.2)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
         <h1 className="mb-[24px] text-[64px] font-[400] text-offWhite leading-[76.8px] italic">
           Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
           Naira
@@ -33,10 +39,15 @@ const HeroSection = () => {
         <Link className="" to="https://wa.me/2349039716418">
           <Button size="lg">Get started</Button>
         </Link>
-      </div>
-      <div className="w-full absolute bottom-0 pointer-events-none left-1/2 translate-x-[-50%] translate-y-[45%]">
+      </motion.div>
+      <motion.div
+      variants={FadeUp(0.2)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+       className="w-full absolute bottom-0 pointer-events-none left-1/2 translate-x-[-50%] translate-y-[45%]">
         <img src={card} loading="lazy" className="w-full" alt="gift cards" />
-      </div>
+      </motion.div>
     </div>
   );
 };

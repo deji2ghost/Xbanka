@@ -1,10 +1,19 @@
 import blurBG from "@/assets/purpleSpread.svg";
 import GiftCards from "../ui/giftCards";
 import { giftCardsOne, giftCardsTwo } from "@/lib/data";
+import { motion } from "motion/react";
+import { FadeUp } from "@/lib/animations";
+import React from "react";
 
-export default function RotatingCardOrbit() {
+
+function RotatingCardOrbit() {
   return (
-    <div className="relative w-[608px] overflow-hidden">
+    <motion.div 
+    variants={FadeUp(0.2)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+    className="relative w-[608px] overflow-hidden">
       <div className="absolute w-full mx-auto top-1/2 -translate-y-1/2">
         <img src={blurBG} className="w-full" alt="blur spread" />
       </div>
@@ -62,6 +71,8 @@ export default function RotatingCardOrbit() {
           );
         })}
       </div> */}
-    </div>
+    </motion.div>
   );
 }
+
+export default React.memo(RotatingCardOrbit);

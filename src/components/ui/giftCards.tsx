@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import React from "react";
 import { Link } from "react-router";
 
 interface GiftCardsProp {
@@ -7,7 +8,7 @@ interface GiftCardsProp {
   route?: string;
 }
 
-const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text, route }) => {
+const GiftCards: React.FC<GiftCardsProp> = React.memo(({ Icon, text, route }) => {
   return (
     <Link
       to={route ? route : ""}
@@ -23,6 +24,6 @@ const GiftCards: React.FC<GiftCardsProp> = ({ Icon, text, route }) => {
       <p className="text-[16px] font-[600] leading-[25.35px]">{text}</p>
     </Link>
   );
-};
+});
 
 export default GiftCards;

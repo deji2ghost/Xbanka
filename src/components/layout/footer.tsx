@@ -4,8 +4,9 @@ import logo from "@/assets/footerLogo.svg";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
+import React from "react";
 
-const Footer = () => {
+const Footer = React.memo(() => {
   return (
     <div
       className="relative overflow-hidden bg-no-repeat py-[99px] text-offWhite px-[120px] bg-cover bg-center"
@@ -59,6 +60,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Footer;

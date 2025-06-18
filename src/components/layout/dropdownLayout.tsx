@@ -6,7 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Link } from "react-router";
-import { useState } from "react";
+import React, { useState } from "react";
 
 interface DropdownItemsProp{
     link: string, 
@@ -18,7 +18,7 @@ interface DropdownProp{
     item: string
 }
 
-const DropdownLayout = ({data, item}: DropdownProp) => {
+const DropdownLayout = React.memo(({data, item}: DropdownProp) => {
   const [open, setOpen] = useState(false);
   return (
     <DropdownMenu onOpenChange={setOpen}>
@@ -41,6 +41,6 @@ const DropdownLayout = ({data, item}: DropdownProp) => {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-};
+});
 
 export default DropdownLayout;

@@ -1,7 +1,9 @@
 import pattern from "@/assets/pattern1.svg";
 import BoxHeader from "@/components/ui/boxHeader";
 import Card from "@/components/ui/card";
+import { FadeUp } from "@/lib/animations";
 import { services } from "@/lib/data";
+import { motion } from "motion/react";
 
 const OurServices = () => {
   return (
@@ -16,7 +18,12 @@ const OurServices = () => {
       }}
       className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-[120px] pt-[148px] pb-[102px]"
     >
-      <div className="flex flex-col gap-6">
+      <motion.div 
+      variants={FadeUp(0.2)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+      className="flex flex-col gap-6">
         <div className="px-[215px] flex flex-col gap-6">
             <BoxHeader text="OUR SERVICES"/>
             
@@ -29,14 +36,19 @@ const OurServices = () => {
             and efficient platform.
             </p>
         </div>
-      </div>
-      <div className="grid grid-cols-2 gap-x-[48px] gap-y-[29px] px-[106px] bg-transparent">
+      </motion.div>
+      <motion.div 
+      variants={FadeUp(0.2)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="grid grid-cols-2 gap-x-[48px] gap-y-[29px] px-[106px] bg-transparent">
         {
             services.map((item, index) => (
                 <Card className="bg-[linear-gradient(to_bottom,_#04153E_0%,_#04153E_70%,_#492279_100%)]" key={index} none image={item.image} head={item.header} paragraph={item.paragraph} /> 
             ))
         }
-      </div>
+      </motion.div>
     </div>
   );
 };

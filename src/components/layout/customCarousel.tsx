@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Card from "../ui/card";
 
@@ -13,7 +13,7 @@ interface CustomCarouselProps {
   items: UserSayingProps[];
 }
 
-export function CustomCarousel({ items }: CustomCarouselProps) {
+function CustomCarousel({ items }: CustomCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -49,3 +49,5 @@ export function CustomCarousel({ items }: CustomCarouselProps) {
     </div>
   );
 }
+
+export default React.memo(CustomCarousel);

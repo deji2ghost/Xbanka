@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import React from "react";
 
 interface CardProps {
   head?: string;
@@ -10,7 +11,7 @@ interface CardProps {
   userHandle?: string;
 }
 
-const Card: React.FC<CardProps> = ({
+const Card: React.FC<CardProps> = React.memo(({
   image,
   head,
   paragraph,
@@ -63,6 +64,6 @@ const Card: React.FC<CardProps> = ({
       </div>
     </div>
   );
-};
+});
 
 export default Card;
