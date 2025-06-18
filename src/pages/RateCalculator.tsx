@@ -2,38 +2,55 @@ import pattern from "@/assets/pattern2.svg";
 import Calculator from "@/components/layout/calculator";
 import { DataTable } from "@/components/layout/customTable";
 import { columns } from "@/components/tablecolumns/liveTableColumns";
+import Pagination from "@/components/ui/pagination";
 import { getCoinData } from "@/lib/calls";
 import type { CoinProps } from "@/lib/types";
-import axios from "axios";
+import { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 
 const RateCalculator = () => {
   const [data, setData] = useState<CoinProps[] | undefined>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>('');
+  const [page, setPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>();
+  const itemsPerPage = 7;
 
-  const getData = async () => {
+  const getData = async (pageNumber = 1) => {
     setLoading(true);
+    setError(null);
     try {
-      setLoading(false);
-      const response = await getCoinData();
+      const response = await getCoinData(pageNumber);
       console.log(response?.data);
       setData(response?.data);
+      const totalPages = Math.ceil(100 / itemsPerPage);
+      setTotalPages(totalPages);
+      setLoading(false);
     } catch (error) {
-      if (axios.isAxiosError(error)) {
-      console.error("Axios error:", error.message);
-      throw new Error("Failed to fetch coin data from the server.");
-    } else if (error instanceof Error) {
-      console.error("Unexpected error:", error.message);
-      throw error;
-    } else {
-      console.error("Unknown error:", error);
-      throw new Error("An unknown error occurred.");
-    }
+      let errorMessage = "Failed to load posts. Please try again later.";
+      
+        if (error instanceof AxiosError) {
+          if (error.code === "ERR_NETWORK") {
+            errorMessage = "Network Error";
+          } else if (error.response) {
+            // Server responded with status code outside 2xx
+            errorMessage = `Server error: ${error.response.status} ${error.response.statusText}`;
+          } else if (error.request) {
+            // Request made, no response received
+            errorMessage = "No response received from the server.";
+          }
+        } else if (typeof window !== "undefined" && !navigator.onLine) {
+          errorMessage = "You are offline. Please check your internet connection.";
+        }
+      
+        setError(errorMessage);
     }
   };
+
   useEffect(() => {
-    getData();
-  }, []);
+    getData(page);
+  }, [page]);
+
   return (
     <div className="relative">
       <div
@@ -61,8 +78,18 @@ const RateCalculator = () => {
           Asset market
         </h1>
         <div className="font-[600] text-[20px] leading-[28px]">
-          <DataTable<CoinProps, unknown> loading={loading} data={data} columns={columns} />
+          <DataTable<CoinProps, unknown>
+            loading={loading}
+            data={data}
+            columns={columns}
+            error={error}
+          />
         </div>
+        <Pagination
+          currentPage={page}
+          totalPages={totalPages || 0}
+          onPageChange={setPage}
+        />
       </div>
     </div>
   );

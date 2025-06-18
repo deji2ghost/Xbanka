@@ -12,21 +12,21 @@ const BlogSection = () => {
   const [page, setPage] = useState<number>(1);
   const [pageTotal, setPageTotal] = useState<number>();
   const [loading, setLoading] = useState(false);
-  const itemsPerPage = 9
+  const itemsPerPage = 9;
   const [error, setError] = useState<string | null>(null);
 
   const startIndex = (page - 1) * itemsPerPage;
-const endIndex = startIndex + itemsPerPage;
-const paginatedPosts = posts.slice(startIndex, endIndex);
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedPosts = posts.slice(startIndex, endIndex);
 
   const fetchPosts = async () => {
     setLoading(true);
     setError(null);
     try {
       const entries = await client.getEntries();
-      console.log(entries)
-      const totalPages = Math.ceil(entries?.total / itemsPerPage)
-      setPageTotal(totalPages)
+      console.log(entries);
+      const totalPages = Math.ceil(entries?.total / itemsPerPage);
+      setPageTotal(totalPages);
       const items = entries.items.map((item) => ({
         title: item.fields.title,
         summary: item.fields.summary,
@@ -45,21 +45,22 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
     } catch (error) {
       let errorMessage = "Failed to load posts. Please try again later.";
 
-  if (error instanceof AxiosError) {
-    if (error.code === "ERR_NETWORK") {
-      errorMessage = "Network Error";
-    } else if (error.response) {
-      // Server responded with status code outside 2xx
-      errorMessage = `Server error: ${error.response.status} ${error.response.statusText}`;
-    } else if (error.request) {
-      // Request made, no response received
-      errorMessage = "No response received from the server.";
-    }
-  } else if (typeof window !== "undefined" && !navigator.onLine) {
-    errorMessage = "You are offline. Please check your internet connection.";
-  }
+      if (error instanceof AxiosError) {
+        if (error.code === "ERR_NETWORK") {
+          errorMessage = "Network Error";
+        } else if (error.response) {
+          // Server responded with status code outside 2xx
+          errorMessage = `Server error: ${error.response.status} ${error.response.statusText}`;
+        } else if (error.request) {
+          // Request made, no response received
+          errorMessage = "No response received from the server.";
+        }
+      } else if (typeof window !== "undefined" && !navigator.onLine) {
+        errorMessage =
+          "You are offline. Please check your internet connection.";
+      }
 
-  setError(errorMessage);
+      setError(errorMessage);
       setLoading(false);
     }
   };
@@ -70,27 +71,25 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
 
   return (
     <div className="min-h-[500px]">
-      <h1 className="text-[32px] font-[600] leading-[44.8px] mb-[20px]">Recent post</h1>
-      {error && (
-      <div className="text-red-700 text-center mt-10">
-        {error}
-      </div>
-    )}
+      <h1 className="text-[32px] font-[600] leading-[44.8px] mb-[20px]">
+        Recent post
+      </h1>
+      {error && <div className="text-red-700 text-center mt-10">{error}</div>}
       {loading ? (
         <div className="flex flex-wrap">
-        {Array.from({ length: 9 }).map((_, index) => (
-          <div
-            key={index}
-            className="w-[370px] rounded-[7.65px] p-[22.95px] flex flex-col gap-[15.3px]"
-          >
-            <Skeleton className="w-full h-[125px]" />
-            <div className="flex items-center gap-[11.48px]">
-              <Skeleton className="w-full h-[15px]" />
-              <Skeleton className="w-full h-[15px]" />
-              <Skeleton className="w-full h-[15px]" />
+          {Array.from({ length: 9 }).map((_, index) => (
+            <div
+              key={index}
+              className="w-[370px] rounded-[7.65px] p-[22.95px] flex flex-col gap-[15.3px]"
+            >
+              <Skeleton className="w-full h-[125px]" />
+              <div className="flex items-center gap-[11.48px]">
+                <Skeleton className="w-full h-[15px]" />
+                <Skeleton className="w-full h-[15px]" />
+                <Skeleton className="w-full h-[15px]" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
         </div>
       ) : (
         <div className="flex flex-wrap gap-[38px]">
@@ -108,7 +107,11 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
           ))}
         </div>
       )}
-      <Pagination currentPage={page} onPageChange={setPage} totalPages={pageTotal || 0} />
+      <Pagination
+        currentPage={page}
+        onPageChange={setPage}
+        totalPages={pageTotal || 0}
+      />
     </div>
   );
 };

@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import {
   flexRender,
   getCoreRowModel,
   useReactTable,
   type ColumnDef,
-} from "@tanstack/react-table"
+} from "@tanstack/react-table";
 
 import {
   Table,
@@ -14,32 +14,37 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
-import { Skeleton } from "../ui/skeleton"
+} from "@/components/ui/table";
+import { Skeleton } from "../ui/skeleton";
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[] | undefined
-  data: TData[] | undefined
-  loading: boolean
+  columns: ColumnDef<TData, TValue>[] | undefined;
+  data: TData[] | undefined;
+  loading: boolean;
+  error: string | null;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
-  loading
+  loading,
+  error,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data: data ?? [],
     columns: columns ?? [],
     getCoreRowModel: getCoreRowModel(),
-  })
+  });
 
   return (
     <div className="rounded-[8px]">
       <Table>
         <TableHeader className="rounded-tl-[8px] rounded-tr-[8px]">
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow className="bg-[#F2F2F7] py-2 px-6 gap-6 w-full font-[600] text-[17px] leading-[28px] rounded-[8px]" key={headerGroup.id}>
+            <TableRow
+              className="bg-[#F2F2F7] py-2 px-6 gap-6 w-full font-[600] text-[17px] leading-[28px] rounded-[8px]"
+              key={headerGroup.id}
+            >
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead className="" key={header.id}>
@@ -50,13 +55,22 @@ export function DataTable<TData, TValue>({
                           header.getContext()
                         )}
                   </TableHead>
-                )
+                );
               })}
             </TableRow>
           ))}
         </TableHeader>
         <TableBody className="border border-[#D9D9D9] font-[600] text-[17px] leading-[28px]">
-          { loading ? <Skeleton className="w-full" /> : (table.getRowModel().rows?.length ? (
+          {error && <p className="text-red-800 text-center mt-8">{error}</p>}
+          {loading ? (
+            Array.from({ length: 7 }).map((_, index) => (
+              <TableRow key={index}>
+                <TableCell colSpan={columns?.length}>
+                  <Skeleton className="w-full h-[40px]" />
+                </TableCell>
+              </TableRow>
+            ))
+          ) : table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow
                 className="border-none"
@@ -76,9 +90,9 @@ export function DataTable<TData, TValue>({
                 No results.
               </TableCell>
             </TableRow>
-          ))}
+          )}
         </TableBody>
       </Table>
     </div>
-  )
+  );
 }
