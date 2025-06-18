@@ -42,49 +42,38 @@ const Pagination: React.FC<PaginationProps> = ({
 
   return (
     <div className="flex items-center justify-center gap-2 mt-6 text-sm">
-      <button
-        onClick={() => goToPage(1)}
-        disabled={currentPage === 1}
-        className="px-3 py-1 border rounded disabled:opacity-50"
-      >
-        First
-      </button>
-      <button
+      <Button
+      size="sm"
         onClick={() => goToPage(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-3 py-1 border rounded disabled:opacity-50"
+        className="px-3 py-1 bg-white rounded disabled:opacity-50"
       >
         Prev
-      </button>
+      </Button>
 
       {generatePageNumbers().map((page) => (
         <Button
+            size="sm"
           key={page}
           onClick={() => goToPage(page)}
-          className={`px-3 py-2 rounded-[8px] w-[34px] h-[32px] ${
+          className={`px-3 py-1 text-[13px] w-[32px] rounded-[8px] ${
             page === currentPage
-              ? "bg-[#2C2C2C] text-[#F5F5F5]"
-              : "hover:bg-gray-100 text-[#1E1E1E]"
+              ? "bg-[#2C2C2C] hover:bg-[#2C2C2C]/50 text-[#F5F5F5]"
+              : "hover:bg-gray-100 bg-white text-[#1E1E1E]"
           }`}
         >
           {page}
         </Button>
       ))}
 
-      <button
+      <Button
+      size="sm"
         onClick={() => goToPage(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-3 py-1 border rounded disabled:opacity-50"
+        className="px-3 py-1 text-[13px] bg-white rounded disabled:opacity-50"
       >
         Next
-      </button>
-      <button
-        onClick={() => goToPage(totalPages)}
-        disabled={currentPage === totalPages}
-        className="px-3 py-1 border rounded disabled:opacity-50"
-      >
-        Last
-      </button>
+      </Button>
     </div>
   );
 };

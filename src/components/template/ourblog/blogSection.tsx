@@ -4,6 +4,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { client } from "@/lib/contentful";
 import { formatDate } from "@/lib/dateFormatter";
 import type { BlogCardProps } from "@/lib/types";
+import { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 
 const BlogSection = () => {
@@ -12,6 +13,7 @@ const BlogSection = () => {
   const [pageTotal, setPageTotal] = useState<number>();
   const [loading, setLoading] = useState(false);
   const itemsPerPage = 9
+  const [error, setError] = useState<string | null>(null);
 
   const startIndex = (page - 1) * itemsPerPage;
 const endIndex = startIndex + itemsPerPage;
@@ -19,6 +21,7 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
 
   const fetchPosts = async () => {
     setLoading(true);
+    setError(null);
     try {
       const entries = await client.getEntries();
       console.log(entries)
@@ -40,7 +43,23 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
       setPosts(items);
       setLoading(false);
     } catch (error) {
-      console.log(error);
+      let errorMessage = "Failed to load posts. Please try again later.";
+
+  if (error instanceof AxiosError) {
+    if (error.code === "ERR_NETWORK") {
+      errorMessage = "Network Error";
+    } else if (error.response) {
+      // Server responded with status code outside 2xx
+      errorMessage = `Server error: ${error.response.status} ${error.response.statusText}`;
+    } else if (error.request) {
+      // Request made, no response received
+      errorMessage = "No response received from the server.";
+    }
+  } else if (typeof window !== "undefined" && !navigator.onLine) {
+    errorMessage = "You are offline. Please check your internet connection.";
+  }
+
+  setError(errorMessage);
       setLoading(false);
     }
   };
@@ -49,12 +68,14 @@ const paginatedPosts = posts.slice(startIndex, endIndex);
     fetchPosts();
   }, []);
 
-  useEffect(() => {
-    console.log(posts);
-  }, [posts]);
   return (
-    <div className="">
-      <h1 className="text-[32px] font-[600] leading-[44.8px]">Recent post</h1>
+    <div className="min-h-[500px]">
+      <h1 className="text-[32px] font-[600] leading-[44.8px] mb-[20px]">Recent post</h1>
+      {error && (
+      <div className="text-red-700 text-center mt-10">
+        {error}
+      </div>
+    )}
       {loading ? (
         <div className="flex flex-wrap">
         {Array.from({ length: 9 }).map((_, index) => (

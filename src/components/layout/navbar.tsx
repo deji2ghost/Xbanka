@@ -9,8 +9,8 @@ const Navbar = () => {
   // const locationPath = location.pathname;
   return (
     <div className="sticky top-0 z-50 bg-background overflow-y-hidden flex items-center justify-between px-[80px] py-[8px] shadow-sm">
-      <div className="w-[84px] cursor-pointer min-h-[84px]">
-        <img src={Logo} loading="lazy" alt="XBanka" />
+      <div className="w-[100px] cursor-pointer">
+        <img src={Logo} className="w-full" loading="lazy" alt="XBanka" />
       </div>
       <div className="text-[16px] font-[600] flex items-center gap-6 text-foreground">
         <Link className="cursor-pointer" to="/">Home</Link>
