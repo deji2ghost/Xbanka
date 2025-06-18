@@ -12,7 +12,7 @@ import { MoreHorizontal } from "lucide-react";
 
 export const columns: ColumnDef<CoinProps, unknown>[] = [
   {
-    accessorKey: "current_price",
+    accessorKey: "id",
     header: "#",
     cell: ({ row }) => row.index + 1,
   },
