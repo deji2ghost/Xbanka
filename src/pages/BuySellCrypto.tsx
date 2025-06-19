@@ -14,20 +14,12 @@ const BuySellCrypto = () => {
         <div className="font-[400] flex flex-col gap-8 items-start">
             <div className="flex flex-col gap-4">
                 <h1 className="text-[48px] leading-[62.4px]">How Ads Facebook billing works</h1>
-                <p className="text-[24px] leading-[33.6px] ">Facebook charges advertisers based on how much they spend and under certain billing conditions.</p>
+                <p className="text-[24px] leading-[33.6px]">Facebook charges advertisers based on how much they spend and under certain billing conditions.</p>
             </div>
             <Button>Get started</Button>
         </div>
         <div className="h-[450px]">
             <InfoRotator billingItems={FaceBookAds} />
-            {/* {
-                FaceBookAds.map((item, index) => (
-                    <div key={index}>
-                        <h1 className="font-[600] text-[24px] leading-[33.06px]">{item.header}</h1>
-                        <p className="font-[400] text-[20px] leading-[28px]">{item.body}</p>
-                    </div>
-                ))
-            } */}
         </div>
       </div>
       <FAQ />

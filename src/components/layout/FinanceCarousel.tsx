@@ -51,7 +51,7 @@ export function CarouselCustom({items}: CarouselCustomProps) {
         align: "center",
         loop: true,
       }}
-      className="w-full max-w-4xl"
+      className="w-full max-w-4xl relative"
     >
       <CarouselContent>
         {items.map((item, index) => {
@@ -61,10 +61,10 @@ export function CarouselCustom({items}: CarouselCustomProps) {
               key={index}
               className="basis-1/3 w-[219.77px] transition-transform duration-300"
             >
-              <div className="p-2 w-full h-full">
+              <div className="p-2 w-full h-full flex flex-col gap-6">
                 <div
                   className={cn(
-                    "transition-all duration-300",
+                    "transition-all duration-300 relative",
                     isActive ? "scale-110 shadow-xl" : "scale-95 opacity-70"
                   )}
                 >
@@ -72,13 +72,22 @@ export function CarouselCustom({items}: CarouselCustomProps) {
                     <img className="w-full" src={item.image} alt={item.step}/>
                   </div>
                 </div>
+                {
+                  isActive &&
+                  <div className="flex flex-col gap-4">
+                    <h1 className="font-[600] text-[24px] leading-[33.6px]">{index + 1}. {item.header}</h1>
+                    <p className="font-[400] text-[16px] leading-[22.4px]">{item.body}</p>
+                  </div>
+                }
               </div>
             </CarouselItem>
           );
         })}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+        <div className="absolute bottom-0">
+          <CarouselPrevious className="border-[1.65px] border-[#1E1E1E] w-[20px] h-[20px] text-[#1E1E1E]" />
+          <CarouselNext className="border-[1.65px] border-[#1E1E1E] w-[20px] h-[20px] text-[#1E1E1E]" />
+        </div>
     </Carousel>
   );
 }
