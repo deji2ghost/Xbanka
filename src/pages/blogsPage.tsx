@@ -7,6 +7,11 @@
 // import { formatDate } from "@/lib/dateFormatter";
 // import { BreadcrumbWithCustomSeparator } from "@/components/layout/breadCrumbLayout";
 // import { slugify } from "@/lib/slugify";
+// import { usePosts } from "@/hooks/PostHook";
+// import { Skeleton } from "@/components/ui/skeleton";
+// import Blogcard from "@/components/ui/blogcard";
+// import { BsTwitterX } from "react-icons/bs";
+// import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 // // import type { Document } from '@contentful/rich-text-types';
 
 // const BlogsPage = () => {
@@ -17,9 +22,14 @@
 //   const observerRef = useRef<IntersectionObserver | null>(null);
 
 //   const [blogDetails, setBlogDetails] = useState({});
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState<string | null>("");
+//   const [blogLoading, setBlogLoading] = useState(false);
+//   const [blogError, setBlogError] = useState<string | null>("");
 //   const { id } = useParams();
+//   const { posts, loading, error } = usePosts(9);
+//   const firstThreePosts = posts?.slice(0, 3);
+//   useEffect(() => {
+//     console.log(posts);
+//   }, []);
 
 //   const handleHeaderFound = (text: string, level: number, slug: string) => {
 //     setHeadings((prev) => {
@@ -58,8 +68,8 @@
 //   }, [blogDetails]);
 
 //   const getEntriesById = async () => {
-//     setLoading(true);
-//     setError(null);
+//     setBlogLoading(true);
+//     setBlogError(null);
 //     try {
 //       const response = await client.getEntry(id);
 //       console.log(response);
@@ -72,7 +82,7 @@
 //         ]);
 //       }
 
-//       setLoading(false);
+//       setBlogLoading(false);
 //     } catch (error) {
 //       let errorMessage = "Failed to load posts. Please try again later.";
 
@@ -91,14 +101,46 @@
 //           "You are offline. Please check your internet connection.";
 //       }
 
-//       setError(errorMessage);
-//       setLoading(false);
+//       setBlogError(errorMessage);
+//       setBlogLoading(false);
 //     }
 //   };
+
 //   useEffect(() => {
 //     getEntriesById();
 //     console.log(id);
 //   }, [id]);
+
+//   if (blogError) {
+//     <div>{blogError}</div>;
+//   }
+
+//   if (blogLoading) {
+//     <div className="flex flex-wrap">
+//       {Array.from({ length: 9 }).map((_, index) => (
+//         <div
+//           key={index}
+//           className="w-[370px] rounded-[7.65px] p-[22.95px] flex flex-col gap-[15.3px]"
+//         >
+//           <div className="flex items-center gap-[11.48px]">
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//           </div>
+//           <Skeleton className="w-full h-[125px]" />
+//           <div className="flex items-center gap-[11.48px]">
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//             <Skeleton className="w-full h-[15px]" />
+//           </div>
+//         </div>
+//       ))}
+//     </div>;
+//   }
 
 //   return (
 //     <div className="px-[80px] pt-[56px] pb-[148px]">
@@ -157,10 +199,10 @@
 //             />
 //           </div>
 //         </div>
-//         <div>
+//         <div className="sticky top-[150px] h-fit self-start" >
 //           <div>
-//             <p>In this article:</p>
-//             <ul className="text-sm space-y-2">
+//             <p className="font-[400] text-[16px] leading-[22.4px] text-[#23262F]">In this article:</p>
+//             <ul className="text-sm space-y-2 font-[600] text-[16px] leading-[22.4px] text-[#1E1E1E]">
 //               {headings.map(({ text, slug, level }) => (
 //                 <li key={slug} className={`pl-${(level - 1) * 4}`}>
 //                   <a
@@ -177,7 +219,32 @@
 //               ))}
 //             </ul>
 //           </div>
-//           <div></div>
+//           <div className="flex flex-col gap-6">
+//             <div>
+//               <h1>Suggested posts</h1>
+//               <div className="flex items-center">
+//                 <p>Share on:</p>
+//                 <BsTwitterX />
+//                 <FaInstagram />
+//                 <FaYoutube />
+//                 <FaFacebook />
+//               </div>
+//             </div>
+//             <div>
+//               {firstThreePosts.map((item, index) => (
+//                 <Blogcard
+//                   id={item?.id}
+//                   key={index}
+//                   name={item?.author}
+//                   readTime={item?.readTime}
+//                   date={formatDate(item?.date)}
+//                   image={item?.blogImage.fields?.file.url}
+//                   title={item?.title}
+//                   body={item?.summary}
+//                 />
+//               ))}
+//             </div>
+//           </div>
 //         </div>
 //       </div>
 //       <div className="flex flex-col gap-[32px] w-[793px]">
