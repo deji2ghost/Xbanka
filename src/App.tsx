@@ -9,7 +9,7 @@ const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
 const Blogs = lazy(() => import("./pages/blogs"));
 const BuySellCrypto = lazy(() => import("./pages/BuySellCrypto"));
-const BlogsPage = lazy(() => import("./pages/blogsPage"));
+// const BlogsPage = lazy(() => import("./pages/blogsPage"));
 
 function AppRoutes() {
   return (
@@ -17,7 +17,7 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/rateCalculator" element={<RateCalculator />} />
       <Route path="/blogs" element={<Blogs />} />
-      <Route path="/blogs/:id" element={<BlogsPage />} />
+      {/* <Route path="/blogs/:id" element={<BlogsPage />} /> */}
       <Route path="/cryptoFinance" element={<CryptoFinance />}>
           <Route path='buysell' element={<BuySellCrypto />} />
       </Route>
