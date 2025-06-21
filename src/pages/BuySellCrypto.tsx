@@ -10,7 +10,7 @@ const BuySellCrypto = () => {
     <div>
       <Sellcrypto />
       <FiveSteps />
-      <div className="px-[120px] py-[148px] flex items-start gap-[143.99px]">
+      <div className="md:px-[80px] py-[148px] flex flex-col md:flex-row items-start gap-[143.99px]">
         <div className="font-[400] flex flex-col gap-8 items-start">
             <div className="flex flex-col gap-4">
                 <h1 className="text-[48px] leading-[62.4px]">How Ads Facebook billing works</h1>

@@ -70,7 +70,7 @@ const RateCalculator = () => {
           Quickly calculate rates and view the asset market.
         </p>
       </div>
-      <div className="absolute top-[400px] w-[632px] left-0 right-0 mx-auto rounded-[8px]">
+      <div className="absolute top-[400px] md:w-[632px] left-0 right-0 mx-auto rounded-[8px]">
         <Calculator />
       </div>
       <div className="mt-[419px] pb-[148px] px-[120px]">
