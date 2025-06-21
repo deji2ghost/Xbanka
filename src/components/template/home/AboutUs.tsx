@@ -8,7 +8,7 @@ const AboutUs = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="py-[148px] px-[120px] flex flex-col gap-[48px]"
+      className="py-[148px] px-[80px] flex flex-col gap-[48px]"
     >
       <h1 className="font-[400] text-[48px] text-center">A little about us</h1>
       <iframe

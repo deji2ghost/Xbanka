@@ -22,8 +22,8 @@ const HeroSection = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
-        <h1 className="mb-[24px] text-[64px] font-[400] text-offWhite leading-[76.8px] italic">
+      className="md:w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
+        <h1 className="mb-[24px] text-[32px] md:text-[64px] font-[400] text-offWhite leading-[76.8px]">
           Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
           Naira
         </h1>

@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }} 
-    className="py-[148px] px-[120px] flex flex-col gap-[48px]">
+    className="py-[148px] px-[80px] flex flex-col gap-[48px]">
         <div className="flex flex-col gap-[24px] px-[215px]">
             <BoxHeader text="WHY CHOOSE US?" />
             <p className="text-[48px] font-[400] text-center leading-[52px]">Our Competitive Advantage</p>

@@ -13,7 +13,7 @@ function RotatingCardOrbit() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-    className="relative w-[608px] overflow-hidden">
+    className="relative md:w-[608px] md:overflow-hidden">
       <div className="absolute w-full mx-auto top-1/2 -translate-y-1/2">
         <img src={blurBG} className="w-full" alt="blur spread" />
       </div>

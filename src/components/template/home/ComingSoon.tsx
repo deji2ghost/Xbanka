@@ -13,7 +13,7 @@ const ComingSoon = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-    className="px-[120px] flex gap-[64.38px]">
+    className="px-[80px] flex gap-[64.38px]">
       <div className="flex flex-col gap-[56px]">
         <div className="">
           <BoxHeader text="COMING SOON" />

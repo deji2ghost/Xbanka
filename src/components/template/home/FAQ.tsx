@@ -5,7 +5,7 @@ import { FAQData } from "@/lib/data";
 
 const FAQ = () => {
   return (
-    <div className="py-[148px] px-[120px] gap-12">
+    <div className="py-[148px] px-[80px] gap-12">
       <div className="flex flex-col justify-center gap-6">
         <BoxHeader text="YOUR FAQ" />
         <p className="font-[400] text-[48px] text-center">

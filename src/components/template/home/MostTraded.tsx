@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const MostTraded = () => {
   return (
-    <div className="flex items-center justify-between py-[148px] gap-[17px] px-[120px]">
+    <div className="flex items-center justify-between py-[148px] gap-[17px] px-[80px]">
       <motion.div 
       variants={FadeRight(0.2)}
               initial="hidden"

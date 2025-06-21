@@ -28,11 +28,10 @@ function AppRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      {/* <ScrollTop /> */}
       <Navbar />
       <AppRoutes />
       {/* <ScrollToTop /> */}
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

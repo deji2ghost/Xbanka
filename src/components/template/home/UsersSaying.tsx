@@ -13,7 +13,7 @@ const UsersSaying = React.memo(() => {
              initial="hidden"
              whileInView="visible"
              viewport={{ once: true }}
-     className="px-[120px] pt-[148px] pb-[46px] flex flex-col gap-[48px]">
+     className="px-[80px] pt-[148px] pb-[46px] flex flex-col gap-[48px]">
       <div className="flex flex-col gap-[24px]">
         <BoxHeader text="20K + HAPPY USERS" />
         <SubHeader text="What our users are saying" />

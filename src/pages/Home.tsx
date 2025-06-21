@@ -1,5 +1,3 @@
-
-
 import pattern from "@/assets/pattern2.svg";
 import { Button } from "@/components/ui/button";
 import { rowFive, rowFour, rowOne, rowSix, rowThree, rowTwo } from "@/lib/data";
@@ -33,7 +31,7 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
           backgroundBlendMode: "overlay",
         }}
-        className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-[120px] py-[148px]"
+        className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center md:px-[80px] py-[148px]"
       >
         <motion.div
           variants={FadeUp(0.2)}
@@ -56,13 +54,13 @@ const Home = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="px-[120px] py-[148px] flex flex-col gap-[48px]"
+        className="md:px-[80px] py-[148px] flex flex-col gap-[48px]"
       >
         <h1 className="text-foreground font-[400] text-[32px] leading-[41.6px]">
           Top gift cards in demand:
         </h1>
         <div className="flex flex-col gap-[45px]">
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowOne.map((item, index) => (
               <GiftCards
                 route={item?.route}
@@ -81,7 +79,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowTwo.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -100,7 +98,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowThree.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -118,7 +116,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowFour.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -137,7 +135,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowFive.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -156,7 +154,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="flex items-center p-[3px] gap-[45px]">
+          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowSix.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -179,11 +177,11 @@ const Home = () => {
       </motion.div>
       <OurServices />
       <MostTraded />
-      <WhyChooseUs />
-      <AboutUs />
-      <ComingSoon />
-      <UsersSaying />
-      <FAQ />
+      {/* <WhyChooseUs /> */}
+      {/* <AboutUs /> */}
+      {/* <ComingSoon /> */}
+      {/* <UsersSaying /> */}
+      {/* <FAQ /> */}
     </div>
   );
 };
