@@ -3,17 +3,18 @@ import { Button } from "@/components/ui/button";
 import AppleWhite from "@/assets/AppleWhite.svg";
 import googlePlay from "@/assets/PlaystoreDark.svg";
 import iphone12 from "@/assets/iPhone12Pro.svg";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import { FadeUp } from "@/lib/animations";
 
 const ComingSoon = () => {
   return (
-    <motion.div 
-    variants={FadeUp(0.2)}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-    className="px-[80px] flex gap-[64.38px]">
+    <motion.div
+      variants={FadeUp(0.2)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="px-[80px] flex md:flex-row flex-col gap-[64.38px]"
+    >
       <div className="flex flex-col gap-[56px]">
         <div className="">
           <BoxHeader text="COMING SOON" />

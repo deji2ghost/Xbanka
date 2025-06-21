@@ -7,21 +7,28 @@ import { motion } from "motion/react";
 const WhyChooseUs = () => {
   return (
     <motion.div
-     variants={FadeUp(0.2)}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }} 
-    className="py-[148px] px-[80px] flex flex-col gap-[48px]">
-        <div className="flex flex-col gap-[24px] px-[215px]">
-            <BoxHeader text="WHY CHOOSE US?" />
-            <p className="text-[48px] font-[400] text-center leading-[52px]">Our Competitive Advantage</p>
-        </div>
-      <div className="grid grid-cols-3 gap-x-[48px] gap-y-[29px]">
-        {
-            competitiveAdvantage.map((item, index) => (
-                <Card className={index % 2 === 1 ? "bg-abstractCyan" : "bg-background"} key={index} image={item.image} head={item.heading} paragraph={item.paragraph} />
-            ))
-        }
+      variants={FadeUp(0.2)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="py-[148px] md:px-[80px] flex flex-col gap-[48px]"
+    >
+      <div className="flex flex-col gap-[24px] md:px-[215px]">
+        <BoxHeader text="WHY CHOOSE US?" />
+        <p className="text-[48px] border border-red-700 font-[400] text-center leading-[52px]">
+          Our Competitive Advantage
+        </p>
+      </div>
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-x-[48px] gap-y-[29px]">
+        {competitiveAdvantage.map((item, index) => (
+          <Card
+            className={index % 2 === 1 ? "bg-abstractCyan" : "bg-background"}
+            key={index}
+            image={item.image}
+            head={item.heading}
+            paragraph={item.paragraph}
+          />
+        ))}
       </div>
     </motion.div>
   );

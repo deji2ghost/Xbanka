@@ -177,11 +177,11 @@ const Home = () => {
       </motion.div>
       <OurServices />
       <MostTraded />
-      {/* <WhyChooseUs /> */}
-      {/* <AboutUs /> */}
-      {/* <ComingSoon /> */}
-      {/* <UsersSaying /> */}
-      {/* <FAQ /> */}
+      <WhyChooseUs />
+      <AboutUs />
+      <ComingSoon />
+      <UsersSaying />
+      <FAQ />
     </div>
   );
 };
