@@ -9,7 +9,7 @@ const Navbar = () => {
   // const location = useLocation();
   // const locationPath = location.pathname;
   return (
-    <div className="sticky top-0 z-50 bg-background overflow-x-hidden border md:overflow-y-hidden flex items-center justify-between px-2 md:px-[80px] md:py-[8px] md:shadow-sm">
+    <div className="sticky top-0 z-50 bg-background md:overflow-y-hidden flex items-center justify-between px-2 md:px-[80px] md:py-[8px] md:shadow-sm">
       <div className="w-[50px] md:w-[100px] cursor-pointer">
         <img src={Logo} className="w-full" loading="lazy" alt="XBanka" />
       </div>
