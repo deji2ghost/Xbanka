@@ -6,7 +6,7 @@ interface SubHeaderProps{
 
 const SubHeader = React.memo(({text}: SubHeaderProps) => {
   return (
-    <p className="leading-[52px] font-[400] text-[48px] mt-[24px] text-center">
+    <p className="md:leading-[52px] text-[28px] leading-[36px] font-[400] md:text-[48px] mt-[24px] text-center">
       {text}
     </p>
   )

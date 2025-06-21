@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <AppRoutes />
       {/* <ScrollToTop /> */}
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

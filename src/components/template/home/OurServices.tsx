@@ -16,7 +16,7 @@ const OurServices = () => {
         backgroundRepeat: "no-repeat",
         backgroundBlendMode: "overlay",
       }}
-      className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center md:px-[80px] pt-[148px] pb-[102px]"
+      className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-4 py-7 md:px-[80px] md:pt-[148px] md:pb-[102px]"
     >
       <motion.div
         variants={FadeUp(0.2)}
@@ -25,15 +25,15 @@ const OurServices = () => {
         viewport={{ once: true }}
         className="flex flex-col gap-6"
       >
-        <div className="px-[215px] flex flex-col gap-6">
+        <div className="md:px-[215px] flex flex-col gap-6">
           <BoxHeader text="OUR SERVICES" />
 
-          <h1 className="font-[400] text-[48px] leading-[52px]">
+          <h1 className="font-[400] text-[28px] leading-[36px] md:text-[48px] md:leading-[52px]">
             What you can do on Xbanka
           </h1>
         </div>
-        <div className="px-[248px]">
-          <p className="font-[400] text-[24px] leading-[33.6px]">
+        <div className="md:px-[248px]">
+          <p className="font-[400] text-[16px] md:text-[24px] md:leading-[33.6px]">
             Simplify your digital transactions with tools built for gift card
             trading, crypto conversion, and seamless payments. All in one secure
             and efficient platform.
@@ -45,7 +45,7 @@ const OurServices = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex flex-col md:grid md:grid-cols-2 gap-x-[48px] gap-y-[29px] px-[106px] bg-transparent"
+        className="flex flex-col md:grid md:grid-cols-2 md:gap-x-[48px] gap-6 md:gap-y-[29px] md:px-[106px] bg-transparent"
       >
         {services.map((item, index) => (
           <Card

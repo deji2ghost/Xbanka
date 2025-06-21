@@ -27,7 +27,7 @@ const HeroSection = () => {
           Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
           Naira
         </h1>
-        <p className="mb-[48px] font-[600] text-[24px] text-offWhite leading-[33.6px]">
+        <p className="mb-[48px] font-[600] text-[16px] leading-[24px] md:text-[24px] text-offWhite md:leading-[33.6px]">
           Xbanka makes it easy to trade gift cards, convert crypto, and pay for
           services — all in Naira, USD, or Crypto.{" "}
           <span className="font-[400]">

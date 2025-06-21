@@ -13,12 +13,12 @@ const ComingSoon = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="px-[80px] flex md:flex-row flex-col gap-[64.38px]"
+      className="px-4 py-7 md:py-0 md:px-[80px] flex md:flex-row flex-col gap-[64.38px]"
     >
       <div className="flex flex-col gap-[56px]">
         <div className="">
           <BoxHeader text="COMING SOON" />
-          <p className="leading-[52px] font-[400] text-[48px] mt-[24px]">
+          <p className="md:leading-[52px] text-[28px] leading-[36px] font-[400] md:text-[48px] mt-[24px]">
             Explore more on Xbanka on our mobile app...
           </p>
         </div>
@@ -43,7 +43,7 @@ const ComingSoon = () => {
               </div>
             </div>
           </div>
-          <Button>Join the waitlist</Button>
+          <Button className="mx-auto md:mx-0">Join the waitlist</Button>
         </div>
       </div>
       <div>

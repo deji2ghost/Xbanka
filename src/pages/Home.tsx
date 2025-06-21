@@ -31,19 +31,19 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
           backgroundBlendMode: "overlay",
         }}
-        className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center md:px-[80px] py-[148px]"
+        className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-4 py-7 md:px-[80px] md:py-[148px]"
       >
         <motion.div
           variants={FadeUp(0.2)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col gap-6 px-[180px]"
+          className="flex flex-col gap-6 md:px-[180px]"
         >
-          <h3 className="font-[600] text-[20px] text-abstractCyan py-2 px-4 leading-[22.4px]">
+          <h3 className="font-[600] text-[16px] md:text-[20px] text-abstractCyan py-2 px-4 leading-[22.4px]">
             WE GOT YOU COVERED
           </h3>
-          <h1 className="font-[400] text-[48px] text-offWhite leading-[52px]">
+          <h1 className="font-[400] text-[28px] leading-[36px] md:text-[48px] text-offWhite md:leading-[52px]">
             No more waiting. Get paid in Naira, crypto, or USD — your choice.
           </h1>
         </motion.div>
@@ -54,7 +54,7 @@ const Home = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="md:px-[80px] py-[148px] flex flex-col gap-[48px]"
+        className="px-4 py-7 md:px-[80px] md:py-[148px] flex flex-col gap-[48px]"
       >
         <h1 className="text-foreground font-[400] text-[32px] leading-[41.6px]">
           Top gift cards in demand:
