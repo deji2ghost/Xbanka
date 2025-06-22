@@ -4,7 +4,7 @@ import TopSection from "@/components/template/ourblog/topSection"
 const Blogs = () => {
     
   return (
-    <div className="md:px-[80px] pt-[164px] pb-[148px]">
+    <div className="px-4 md:px-[80px] py-7 md:pt-[164px] md:pb-[148px]">
         <div>
             <TopSection />
             <BlogSection />

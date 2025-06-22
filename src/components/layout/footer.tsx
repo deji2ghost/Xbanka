@@ -9,7 +9,7 @@ import React from "react";
 const Footer = React.memo(() => {
   return (
     <div
-      className="relative overflow-hidden bg-no-repeat py-[99px] text-offWhite px-[120px] bg-cover bg-center"
+      className="relative overflow-hidden bg-no-repeat px-4 py-7 md:py-[99px] text-offWhite md:px-[120px] bg-cover bg-center"
       style={{
         backgroundColor: "#04153E",
         backgroundImage: `url(${pattern})`,
@@ -19,16 +19,27 @@ const Footer = React.memo(() => {
         backgroundBlendMode: "overlay",
       }}
     >
+      <div className="md:hidden">
+          <img src={logo} alt="logo" />
+      </div>
       <div className="flex items-start justify-between mb-[116px]">
-        <div className="flex flex-col items-center gap-[33px]">
+        <div className="hidden md:flex flex-col items-center gap-[33px]">
           <div>
             <img src={logo} alt="logo" />
           </div>
           <div className="flex flex-col gap-[33px]">
-            <Link to="https://www.instagram.com/xbanka.ng?igsh=MTJxbmlqdjQ0ZHp2MA%3D%3D&utm_source=qr"><BsInstagram className="text-offWhite" /></Link>
-            <Link to="https://x.com/xbankang?s=21"><FaXTwitter className="text-offWhite" /></Link>
-            <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr"><BsYoutube className="text-offWhite" /></Link>
-            <Link to="https://www.linkedin.com/company/xbanka-ltd/"><FaFacebook className="text-offWhite" /></Link>
+            <Link to="https://www.instagram.com/xbanka.ng?igsh=MTJxbmlqdjQ0ZHp2MA%3D%3D&utm_source=qr">
+              <BsInstagram className="text-offWhite" />
+            </Link>
+            <Link to="https://x.com/xbankang?s=21">
+              <FaXTwitter className="text-offWhite" />
+            </Link>
+            <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr">
+              <BsYoutube className="text-offWhite" />
+            </Link>
+            <Link to="https://www.linkedin.com/company/xbanka-ltd/">
+              <FaFacebook className="text-offWhite" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-[24px] font-[400]">
@@ -51,12 +62,26 @@ const Footer = React.memo(() => {
           </div>
         </div>
       </div>
-      <div className="flex items-center font-[400] text-[16px] justify-center gap-[56px]">
+      <div className="flex items-center font-[400] text-[16px] justify-center md:justify-start gap-[15px] md:gap-[56px] mb-[10px] md:mb-0">
         <p>Terms of Service</p>
         <p>Privacy policy</p>
         <div className="flex items-center gap-[8px]">
           <Copyright /> <p>2025 Xbanka</p>
         </div>
+      </div>
+      <div className="flex gap-[33px]">
+        <Link to="https://www.instagram.com/xbanka.ng?igsh=MTJxbmlqdjQ0ZHp2MA%3D%3D&utm_source=qr">
+          <BsInstagram className="text-offWhite" />
+        </Link>
+        <Link to="https://x.com/xbankang?s=21">
+          <FaXTwitter className="text-offWhite" />
+        </Link>
+        <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr">
+          <BsYoutube className="text-offWhite" />
+        </Link>
+        <Link to="https://www.linkedin.com/company/xbanka-ltd/">
+          <FaFacebook className="text-offWhite" />
+        </Link>
       </div>
     </div>
   );

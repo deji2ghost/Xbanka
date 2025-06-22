@@ -16,7 +16,7 @@ const BlogSection = () => {
 
   return (
     <div className="min-h-[500px]">
-      <h1 className="text-[32px] font-[600] leading-[44.8px] mb-[20px]">
+      <h1 className="text-[32px]  font-[600] leading-[44.8px] mb-[20px]">
         Recent post
       </h1>
       {error && <div className="text-red-700 text-center mt-10">{error}</div>}
@@ -37,7 +37,7 @@ const BlogSection = () => {
           ))}
         </div>
       ) : (
-        <div className="flex flex-wrap gap-[38px]">
+        <div className="flex flex-wrap justify-center gap-[38px]">
           {paginatedPosts.map((item, index) => (
             <Blogcard
               id={item?.id}

@@ -10,11 +10,11 @@ const BuySellCrypto = () => {
     <div>
       <Sellcrypto />
       <FiveSteps />
-      <div className="md:px-[80px] py-[148px] flex flex-col md:flex-row items-start gap-[143.99px]">
-        <div className="font-[400] flex flex-col gap-8 items-start">
-            <div className="flex flex-col gap-4">
-                <h1 className="text-[48px] leading-[62.4px]">How Ads Facebook billing works</h1>
-                <p className="text-[24px] leading-[33.6px]">Facebook charges advertisers based on how much they spend and under certain billing conditions.</p>
+      <div className="px-4 py-7 md:px-[80px] md:py-[148px] flex flex-col md:flex-row items-start gap-[143.99px]">
+        <div className="font-[400] flex flex-col gap-4 md:gap-8 items-start">
+            <div className="flex flex-col gap-2 md:gap-4">
+                <h1 className="text-[28px] leading-[36px] md:text-[48px] md:leading-[62.4px]">How Ads Facebook billing works</h1>
+                <p className="text-[16px] leading-[24px] md:text-[24px] md:leading-[33.6px]">Facebook charges advertisers based on how much they spend and under certain billing conditions.</p>
             </div>
             <Button>Get started</Button>
         </div>

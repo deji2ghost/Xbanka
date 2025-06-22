@@ -13,7 +13,7 @@ const Calculator = () => {
   return (
     <div className="rounded-[8px] p-4 bg-[#F7F7F7] flex flex-col gap-4">
       <div className="w-[103px] flex flex-col">
-        <h1 className="font-[400] text-[16px] leading-[22.4px]">
+        <h1 className="font-[400] text-[10px] md:text-[16px] leading-[22.4px]">
           Enter amount
         </h1>
         <input

@@ -41,14 +41,14 @@ const InfoRotator = ({ billingItems }: billingItemsProps) => {
 
 
   return (
-    <div className="flex flex-col gap-4 h-[400px] border-l-[1.48px]">
+    <div className="flex flex-col gap-4 h-[400px] md:border-l-[1.48px]">
       {billingItems.map((item, index) => (
         <div key={index} className={`${showBody[index] ? 'border-l-[1.48px] border-abstractCyan' : ''} pl-4 flex flex-col gap-2`}>
           <motion.h3
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="font-[600] text-[24px] leading-[33.06px]"
+            className="font-[600] text-[20px] leading-[24px] md:text-[24px] md:leading-[33.06px]"
           >
             {item.header}
           </motion.h3>
@@ -61,7 +61,7 @@ const InfoRotator = ({ billingItems }: billingItemsProps) => {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.5 }}
-                className="font-[400] text-[20px] leading-[28px]"
+                className="font-[400] text-[16px] md:text-[20px] md:leading-[28px]"
               >
                 {item.body}
               </motion.p>

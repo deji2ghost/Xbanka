@@ -33,10 +33,8 @@ const RateCalculator = () => {
           if (error.code === "ERR_NETWORK") {
             errorMessage = "Network Error";
           } else if (error.response) {
-            // Server responded with status code outside 2xx
             errorMessage = `Server error: ${error.response.status} ${error.response.statusText}`;
           } else if (error.request) {
-            // Request made, no response received
             errorMessage = "No response received from the server.";
           }
         } else if (typeof window !== "undefined" && !navigator.onLine) {
@@ -63,17 +61,17 @@ const RateCalculator = () => {
           backgroundBlendMode: "overlay",
         }}
       >
-        <h1 className="text-[64px] font-[400] leading-[76.8px]">
+        <h1 className="text-[32px] md:text-[64px] font-[400] leading-[76.8px]">
           Rate calculator
         </h1>
-        <p className="text-[24px] font-[400] leading-[33.6px]">
+        <p className="text-[16px] md:text-[24px] font-[400] leading-[33.6px]">
           Quickly calculate rates and view the asset market.
         </p>
       </div>
       <div className="absolute top-[400px] md:w-[632px] left-0 right-0 mx-auto rounded-[8px]">
         <Calculator />
       </div>
-      <div className="mt-[419px] pb-[148px] px-[120px]">
+      <div className="mt-[419px] pb-[148px] px-4 md:px-[120px]">
         <h1 className="text-[32px] font-[400] leading-[44.8px] mb-[24px]">
           Asset market
         </h1>

@@ -5,10 +5,10 @@ import { useState } from "react";
 const TopSection = () => {
     const [ blogContent, setBlogContent ] = useState("")
   return (
-    <div className="mb-[64px] px-[60.5px]">
+    <div className="mb-[64px] md:px-[60.5px]">
       <div className="md:px-[80px] mb-[48px]">
-        <h1 className="font-[400] text-[64px] leading-[76.8px] text-center mb-[24px]">Latest Crypto & Gift Card News And Blog</h1>
-        <p className="font-[400] text-[24px] leading-[33.6px] text-center mb-[64px]">
+        <h1 className="font-[400] text-[32px] md:text-[64px] md:leading-[76.8px] text-center mb-2 md:mb-[24px]">Latest Crypto & Gift Card News And Blog</h1>
+        <p className="font-[400] text-[16px] md:text-[24px] md:leading-[33.6px] text-center mb-[64px]">
           Get expert tips and updates on crypto trading, gift card exchange, and
           digital finance — all in one place.
         </p>
