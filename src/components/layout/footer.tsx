@@ -62,14 +62,14 @@ const Footer = React.memo(() => {
           </div>
         </div>
       </div>
-      <div className="flex items-center font-[400] text-[16px] justify-center md:justify-start gap-[15px] md:gap-[56px] mb-[10px] md:mb-0">
+      <div className="flex items-center font-[400] text-[16px] justify-center gap-[15px] md:gap-[56px] mb-[10px] md:mb-0">
         <p>Terms of Service</p>
         <p>Privacy policy</p>
         <div className="flex items-center gap-[8px]">
           <Copyright /> <p>2025 Xbanka</p>
         </div>
       </div>
-      <div className="flex gap-[33px]">
+      <div className="flex gap-[33px] md:hidden">
         <Link to="https://www.instagram.com/xbanka.ng?igsh=MTJxbmlqdjQ0ZHp2MA%3D%3D&utm_source=qr">
           <BsInstagram className="text-offWhite" />
         </Link>

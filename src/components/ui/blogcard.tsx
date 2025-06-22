@@ -12,7 +12,7 @@ interface BlogcardProps{
 
 const Blogcard: React.FC<BlogcardProps> = ({image, title, body, name, date, readTime, id}) => {
   return (
-    <Link to={`/blogs/${id}`} className="w-[370px] rounded-[7.65px]  border cursor-pointer p-[22.95px] flex flex-col gap-[15.3px]">
+    <Link to={`/blogs/${id}`} className="w-[370px] rounded-[7.65px] cursor-pointer p-[22.95px] flex flex-col gap-[15.3px]">
       <div><img src={image} loading="lazy" alt={title} /></div>
       <div className="flex items-center gap-[11.48px] text-subCyan text-[12px] font-[600] leading-[18.74px]">
         <p>{name}</p>

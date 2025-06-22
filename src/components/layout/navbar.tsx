@@ -9,7 +9,7 @@ const Navbar = () => {
   // const location = useLocation();
   // const locationPath = location.pathname;
   return (
-    <div className="sticky top-0 z-50 bg-background md:overflow-y-hidden flex items-center justify-between px-4 md:px-[80px] md:py-[8px] md:shadow-sm">
+    <div className="fixed w-full top-0 z-[9999] bg-background flex items-center justify-between px-4 md:px-[80px] md:py-[8px] md:shadow-sm">
       <div className="w-[50px] md:w-[100px] cursor-pointer">
         <img src={Logo} className="w-full" loading="lazy" alt="XBanka" />
       </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <Button size="sm">Get started</Button>
         </Link>
       </div>
-      <FaBars />
+      <FaBars className="md:hidden" />
       <div className="hidden">
         <div className="text-[16px] font-[600] flex flex-col items-center gap-6 text-foreground">
           <Link className="cursor-pointer" to="/">

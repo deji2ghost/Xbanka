@@ -1,3 +1,5 @@
+import type { Document } from "@contentful/rich-text-types";
+
 export interface CoinProps {
   id: string;
   name: string;
@@ -71,7 +73,7 @@ export interface ContentfulImageProps{
 // types.ts or within same file
 export interface BlogPostFields {
   title: string;
-  body: string;
+  body:  Document;
   summary: string;
   readTime: string;
   likes: number;
