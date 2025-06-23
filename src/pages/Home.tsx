@@ -13,9 +13,7 @@ import ComingSoon from "@/components/template/home/ComingSoon";
 import GiftCards from "@/components/ui/giftCards";
 import UsersSaying from "@/components/template/home/UsersSaying";
 import FAQ from "@/components/template/home/FAQ";
-
-
-
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -47,7 +45,9 @@ const Home = () => {
             No more waiting. Get paid in Naira, crypto, or USD — your choice.
           </h1>
         </motion.div>
-        <Button>Start trading gift cards</Button>
+        <Link to="https://wa.me/2349039716418">
+          <Button>Start trading gift cards</Button>
+        </Link>
       </div>
       <motion.div
         variants={FadeUp(0.2)}

@@ -5,6 +5,7 @@ import googlePlay from "@/assets/PlaystoreDark.svg";
 import iphone12 from "@/assets/iPhone12Pro.svg";
 import { motion } from "motion/react";
 import { FadeUp } from "@/lib/animations";
+import { Link } from "react-router";
 
 const ComingSoon = () => {
   return (
@@ -43,7 +44,9 @@ const ComingSoon = () => {
               </div>
             </div>
           </div>
-          <Button className="mx-auto md:mx-0">Join the waitlist</Button>
+          <Link to="https://wa.me/2349039716418">
+            <Button className="mx-auto md:mx-0">Join the waitlist</Button>
+          </Link>
         </div>
       </div>
       <div>

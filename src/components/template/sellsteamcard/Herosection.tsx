@@ -1,11 +1,11 @@
 import pattern from "@/assets/pattern1.webp";
 import card from "@/assets/card-bg-preview.svg";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router";
-import { motion } from "motion/react";
-import { FadeUp } from "@/lib/animations";
+import { Button } from "@/components/ui/button"
+import { FadeUp } from "@/lib/animations"
+import { motion } from "motion/react"
+import { Link } from "react-router"
 
-const HeroSection = () => {
+const Herosection = () => {
   return (
     <div
       className="relative overflow-hidden bg-no-repeat pt-8 pb-[100px] md:pt-[196px] md:pb-[241px] bg-cover bg-center"
@@ -17,23 +17,20 @@ const HeroSection = () => {
         backgroundBlendMode: "overlay",
       }}
     >
-      <motion.div 
-      variants={FadeUp(0.2)}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className="md:w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
+      <motion.div
+        variants={FadeUp(0.2)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="md:w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite"
+      >
         <h1 className="mb-[24px] text-[32px] md:text-[64px] font-[400] text-offWhite md:leading-[76.8px]">
-          Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
-          Naira
+          Sell Steam Gift Card For Cash In Nigeria
         </h1>
         <p className="mb-[48px] font-[600] text-[16px] leading-[24px] md:text-[24px] text-offWhite md:leading-[33.6px]">
-          Xbanka makes it easy to trade gift cards, convert crypto, and pay for
-          services — all in Naira, USD, or Crypto.{" "}
-          <span className="font-[400]">
-            Fast, flexible, and transparent digital asset management, all in one
-            place.
-          </span>
+          Steam gift cards are one of the most popular gift cards you can find
+          in Nigeria. NOSH allows you to convert steam card to cash instantly.
+          Get started today.
         </p>
 
         <Link className="" to="https://wa.me/2349039716418">
@@ -41,15 +38,16 @@ const HeroSection = () => {
         </Link>
       </motion.div>
       <motion.div
-      variants={FadeUp(0.2)}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-       className="w-full absolute bottom-0 pointer-events-none left-1/2 translate-x-[-50%] translate-y-[45%]">
+        variants={FadeUp(0.2)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="w-full absolute bottom-0 pointer-events-none left-1/2 translate-x-[-50%] translate-y-[45%]"
+      >
         <img src={card} loading="lazy" className="w-full" alt="gift cards" />
       </motion.div>
     </div>
   );
 };
 
-export default HeroSection;
+export default Herosection;

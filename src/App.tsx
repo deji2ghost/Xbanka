@@ -10,6 +10,7 @@ const RateCalculator = lazy(() => import("./pages/RateCalculator"));
 const Blogs = lazy(() => import("./pages/blogs"));
 const BuySellCrypto = lazy(() => import("./pages/BuySellCrypto"));
 const BlogsPage = lazy(() => import("./pages/blogsPage"));
+const Sellsteamcard = lazy(() => import("./pages/sellsteamcard"));
 
 function AppRoutes() {
   return (
@@ -20,6 +21,9 @@ function AppRoutes() {
       <Route path="/blogs/:id" element={<BlogsPage />} />
       <Route path="/cryptoFinance" element={<CryptoFinance />}>
           <Route path='buysell' element={<BuySellCrypto />} />
+      </Route>
+      <Route path="/giftCards" element={<CryptoFinance />}>
+          <Route path='sellGiftCardsInNaira' element={<Sellsteamcard />} />
       </Route>
     </Routes>
   );

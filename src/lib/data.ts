@@ -489,7 +489,7 @@ export const TradingCenter = [
     items: [
       {
         linkName: "Sell Gift Cards In Naira",
-        link: "/"
+        link: "/giftCards/sellGiftCardsInNaira"
       },
       {
         linkName: "Sell Gift Cards In Cedis",
