@@ -1,4 +1,4 @@
-import pattern from "@/assets/pattern2.svg";
+import pattern from "@/assets/pattern1.webp";
 import { Button } from "@/components/ui/button";
 import { rowFive, rowFour, rowOne, rowSix, rowThree, rowTwo } from "@/lib/data";
 import { motion } from "motion/react";
