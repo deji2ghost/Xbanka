@@ -440,26 +440,142 @@ export const FaceBookAds = [
 
 export const CryptoAndFinance = [
   {
-    linkName: "Buy & Sell Cryptocurrency",
-    link: "/cryptoFinance/buysell"
+    linkHeader: "Buy & Sell Cryptocurrency",
+    items: [
+      {
+        linkName: "Convert BTC to Cash",
+        link: "/"
+      },
+      {
+        linkName: "Convert LTC to Cash",
+        link: "/"
+      },
+      {
+        linkName: "Convert DOGE to Cash",
+        link: "/"
+      },
+    ],
   },
   {
-    linkName: "Pay Bills & airtime",
-    link: "/cryptoFinance/buysell"
+    linkHeader: "Pay Bills & airtime",
+    items: [
+      {
+        linkName: "Buy Airtime (soon)",
+        link: "/"
+      },
+      {
+        linkName: "Buy Data (soon)",
+        link: "/"
+      },
+      {
+        linkName: "Buy Electricity Token (soon)",
+        link: "/"
+      },
+      {
+        linkName: "Pay Cable TV Subscription (soon)",
+        link: "/"
+      },
+      {
+        linkName: "Topup Betting Account (soon)",
+        link: "/"
+      },
+    ],
   },
 ]
 
 export const TradingCenter = [
   {
-    linkName: "Sell Gift Cards Instantly",
-    link: "/"
+    linkHeader: "Sell Giftcards",
+    items: [
+      {
+        linkName: "Sell Gift Cards In Naira",
+        link: "/"
+      },
+      {
+        linkName: "Sell Gift Cards In Cedis",
+        link: "/"
+      },
+      {
+        linkName: "Sell Gift Cards For USD",
+        link: "/"
+      },
+      {
+        linkName: "Sell Steam Gift Card ",
+        link: "/"
+      },
+      {
+        linkName: "Sell Google Play Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Sell Amazon Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Sell Razer Gold Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Sell Apple Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Sell eBay Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Sell Sephora Gift Card",
+        link: "/"
+      },
+    ]
+  },
+  {
+    linkHeader: "Buy Giftcards",
+    items: [
+      {
+        linkName: "Buy Gift Cards",
+        link: "/"
+      },
+      {
+        linkName: "Buy Steam Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy Google Play Gift Card ",
+        link: "/"
+      },
+      {
+        linkName: "Buy Amazon Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy Amex Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy Razer Gold Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy Apple Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy eBay Gift Card",
+        link: "/"
+      },
+      {
+        linkName: "Buy Sephora Gift Card",
+        link: "/"
+      },
+    ]
   },
 ]
 
 export const ResourceCenter = [
   {
-    linkName: "Rate calculator",
-    link: "/ratecalculator"
+    linkName: "Our blog",
+    link: "/blogs"
   },
   {
     linkName: "Top Gift Cards in Demand",

@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import DropdownLayout from "./dropdownLayout";
 import { CryptoAndFinance, ResourceCenter, TradingCenter } from "@/lib/data";
 import { FaBars } from "react-icons/fa6";
+import DropdownLayoutCustomContent from "./dropdownLayoutCustomContent";
 
 const Navbar = () => {
   // const location = useLocation();
@@ -17,11 +18,15 @@ const Navbar = () => {
         <Link className="cursor-pointer" to="/">
           Home
         </Link>
-        <DropdownLayout data={TradingCenter} item="Gift cards" />
+        {/* <DropdownLayout data={TradingCenter} item="Gift cards" /> */}
+        <DropdownLayoutCustomContent data={TradingCenter} item="Gift cards" />
         <DropdownLayout data={ResourceCenter} item="Resource center" />
-        <DropdownLayout data={CryptoAndFinance} item="Crypto & finance" />
-        <Link className="cursor-pointer" to="/blogs">
-          Our blog
+        <DropdownLayoutCustomContent
+          data={CryptoAndFinance}
+          item="Crypto & finance"
+        />
+        <Link className="cursor-pointer" to="/rateCalculator">
+          Rate calculator
         </Link>
       </div>
       <div className="hidden md:flex items-center gap-6">
@@ -38,11 +43,14 @@ const Navbar = () => {
           <Link className="cursor-pointer" to="/">
             Home
           </Link>
-          <DropdownLayout data={TradingCenter} item="Gift cards" />
+          <DropdownLayoutCustomContent data={TradingCenter} item="Gift cards" />
           <DropdownLayout data={ResourceCenter} item="Resource center" />
-          <DropdownLayout data={CryptoAndFinance} item="Crypto & finance" />
-          <Link className="cursor-pointer" to="/blogs">
-            Our blog
+          <DropdownLayoutCustomContent
+            data={CryptoAndFinance}
+            item="Crypto & finance"
+          />
+          <Link className="cursor-pointer" to="/rateCalculator">
+            Rate calculator
           </Link>
         </div>
         <div className="flex flex-col items-center gap-6">
