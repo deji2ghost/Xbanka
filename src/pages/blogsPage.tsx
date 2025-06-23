@@ -215,8 +215,8 @@ const BlogsPage = () => {
               In this article:
             </p>
             <ul className="text-sm space-y-2 font-[600] text-[16px] leading-[22.4px] text-[#1E1E1E]">
-              {headings.map(({ text, slug, level }) => (
-                <li key={slug} className={`pl-${(level - 1) * 4}`}>
+              {headings.map(({ text, slug, level }, index) => (
+                <li key={`${slug}-${index}`} className={`pl-${(level - 1) * 4}`}>
                   <a
                     href={`#${slug}`}
                     className={`hover:underline ${

@@ -9,7 +9,7 @@ import {
   documentToReactComponents,
   type Options,
 } from "@contentful/rich-text-react-renderer";
-import type { ReactNode } from "react";
+import { useEffect, useMemo, useRef, type ReactNode } from "react";
 import { slugify } from "@/lib/slugify";
 
 type Props = {
@@ -18,7 +18,7 @@ type Props = {
   onBoldFound?: (boldText: string) => void;
 };
 
-let boldKey = 0;
+// let boldKey = 0;
 
 // Type guard for Block
 const isBlock = (node: Block | Inline): node is Block =>
@@ -29,6 +29,9 @@ const RichTextWithDetection = ({
   onHeaderFound,
   onBoldFound,
 }: Props) => {
+  const collectedHeaders = useRef<{ text: string; level: number; slug: string }[]>([]);
+  const collectedBolds = useRef<string[]>([]);
+  let boldKey = 0;
   const renderHeading =
     (level: number) => (node: Block | Inline, children: ReactNode) => {
       if (!isBlock(node)) return null;
@@ -37,7 +40,8 @@ const RichTextWithDetection = ({
         .map((c) => ("value" in c ? c.value : ""))
         .join("");
       const slug = slugify(text);
-      onHeaderFound?.(text, level, slug);
+      collectedHeaders.current.push({ text, level, slug });
+      // onHeaderFound?.(text, level, slug);
 
       const Tag = `h${level}` as React.ElementType;
       return <Tag id={slug}>{children}</Tag>;
@@ -55,17 +59,30 @@ const RichTextWithDetection = ({
     renderMark: {
       [MARKS.BOLD]: (text: ReactNode) => {
         const str = typeof text === "string" ? text : "";
-        if (str) onBoldFound?.(str);
+        if (str) collectedBolds.current.push(str);
         return (
-          <p className="mt-5 mb-1" key={`bold-${boldKey++}`}>
-            <strong className="text-[22px] font-[600] leading-[34px]">{text}</strong>
-          </p>
+          <strong key={`bold-${boldKey++}`} className="text-[22px] font-[600] block leading-[34px] mt-2 mb-1">
+            {text}
+          </strong>
         );
       },
     },
   };
 
-  return <div>{documentToReactComponents(richTextDocument, options)}</div>;
+  const rendered = useMemo(
+    () => documentToReactComponents(richTextDocument, options),
+    [richTextDocument]
+  );
+
+  useEffect(() => {
+    collectedHeaders.current.forEach((h) =>
+      onHeaderFound?.(h.text, h.level, h.slug)
+    );
+    collectedBolds.current.forEach((b) => onBoldFound?.(b));
+  }, [onHeaderFound, onBoldFound]);
+
+  return <div>{rendered}</div>;
+
 };
 
 export default RichTextWithDetection;
