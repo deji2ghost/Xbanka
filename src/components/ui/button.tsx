@@ -22,9 +22,9 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default:"min-h-12 px-6 py-2 has-[>svg]:px-3 text-[24px] overflow-hidden",
-        sm: "min-h-8 rounded-md gap-1.5 px-4 text-[16px]",
-        lg: "min-h-[44px] rounded-md py-4 px-8 text-[24px]",
+        default:"min-h-10 px-4 py-2 text-[20px] md:min-h-12 md:px-6 md:py-2 has-[>svg]:px-3 md:text-[24px] md:overflow-hidden",
+        sm: "min-h-7 px-3 py-1.5 text-[14px] md:min-h-8 md:rounded-md md:gap-1.5 md:px-4 md:text-[16px]",
+        lg: "min-h-11 px-6 py-3 text-[20px] md:min-h-[44px] md:rounded-md md:py-4 md:px-8 md:text-[24px]",
         icon: "size-9",
       },
     },

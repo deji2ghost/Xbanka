@@ -8,7 +8,7 @@ import { FadeUp } from "@/lib/animations";
 const HeroSection = () => {
   return (
     <div
-      className="relative overflow-hidden bg-no-repeat pt-[196px] pb-[241px] bg-cover bg-center"
+      className="relative overflow-hidden bg-no-repeat pt-8 pb-[100px] md:pt-[196px] md:pb-[241px] bg-cover bg-center"
       style={{
         backgroundImage: `linear-gradient(135deg, rgba(4, 21, 62, 0.93) 0%, rgba(4, 21, 62,0.93) 20%, rgba(73,34,121,0.93) 70%), url(${pattern})`,
         backgroundSize: "cover",
@@ -23,7 +23,7 @@ const HeroSection = () => {
       whileInView="visible"
       viewport={{ once: true }}
       className="md:w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite">
-        <h1 className="mb-[24px] text-[32px] md:text-[64px] font-[400] text-offWhite leading-[76.8px]">
+        <h1 className="mb-[24px] text-[32px] md:text-[64px] font-[400] text-offWhite md:leading-[76.8px]">
           Xbanka: Trade Apple Gift Card, Crypto & More — Instantly in Nigerian
           Naira
         </h1>

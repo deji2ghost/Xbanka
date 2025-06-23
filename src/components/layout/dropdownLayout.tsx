@@ -30,7 +30,7 @@ const DropdownLayout = React.memo(({data, item}: DropdownProp) => {
           />
           </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 p-2 flex flex-col gap-2" align="start">
+      <DropdownMenuContent className="w-56 p-2 flex flex-col gap-2 z-90" align="start">
         {
             data.map((item) => (
                 <DropdownMenuItem className="hover:bg-abstractCyan p-0">

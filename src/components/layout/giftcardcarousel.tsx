@@ -20,7 +20,7 @@ function RotatingCardOrbit() {
       <div className="md:absolute md:top-1/2 md:-translate-y-1/2 flex flex-col gap-12 justify-center">
         <div className="flex items-center">
           {giftCardsOne.map((items, index) => (
-            <div className={`${index === 1 ? "md:relative md:-mt-16" : ""} "flex items-center"`} key={index}>
+            <div className={`${index === 1 ? "relative -mt-16" : ""} "flex items-center"`} key={index}>
               <GiftCards
                 key={index}
                 Icon={
@@ -40,7 +40,7 @@ function RotatingCardOrbit() {
         </div>
         <div className="flex items-center">
           {giftCardsTwo.map((items, index) => (
-            <div className={`${index === 1 ? "md:relative md:-mt-16" : ""} "flex items-center"`} key={index}>
+            <div className={`${index === 1 ? "relative -mt-16" : ""} "flex items-center"`} key={index}>
               <GiftCards
                 key={index}
                 Icon={

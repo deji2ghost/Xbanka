@@ -11,10 +11,10 @@ const SellGift = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="md:w-[535px]">
+      className="md:w-[535px] mb-14 md:mb-0">
         <h1 className="mb-[16px] font-[400] text-[28px] leading-[36px] md:text-[48px] md:leading-[62.4px]">Sell gift cards instantly</h1>
         <p className="mb-[32px] font-[400] text-[16px] leading-[24px] md:text-[24px] md:leading-[31.2px]">Trade all your favorite gift cards at the best rates in Nigeria:</p>
-        <Button>Get Started</Button>
+        <Button className="mx-auto md:mx-0 flex justify-center md:justify-start">Get Started</Button>
       </motion.div>
       <RotatingCardOrbit />
     </div>
