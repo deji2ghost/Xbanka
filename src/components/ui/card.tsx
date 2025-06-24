@@ -9,6 +9,7 @@ interface CardProps {
   image: string;
   userName?: string;
   userHandle?: string;
+  imageStyle?: string
 }
 
 const Card: React.FC<CardProps> = React.memo(({
@@ -18,7 +19,8 @@ const Card: React.FC<CardProps> = React.memo(({
   className,
   none,
   userName,
-  userHandle
+  userHandle,
+  imageStyle
 }) => {
   return (
     <div
@@ -31,7 +33,7 @@ const Card: React.FC<CardProps> = React.memo(({
       }
     >
       <div className="flex items-start gap-2">
-      <div>
+      <div className={ imageStyle && imageStyle }>
         <img src={image} loading="lazy" alt={userName} />
       </div>
       {
