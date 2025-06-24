@@ -58,7 +58,7 @@ const Footer = React.memo(() => {
           <div className="flex flex-col gap-[16px] text-[16px]">
             <p>Contact Us</p>
             <p>Live Chat / Help Center</p>
-            <p>Blog</p>
+            <Link to="/blogs">Blog</Link>
           </div>
         </div>
       </div>

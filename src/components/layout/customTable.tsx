@@ -61,7 +61,6 @@ export function DataTable<TData, TValue>({
           ))}
         </TableHeader>
         <TableBody className="border border-[#D9D9D9] font-[600] text-[17px] leading-[28px]">
-          {error && <p className="text-red-800 text-center mt-8">{error}</p>}
           {loading ? (
             Array.from({ length: 7 }).map((_, index) => (
               <TableRow key={index}>
@@ -70,7 +69,7 @@ export function DataTable<TData, TValue>({
                 </TableCell>
               </TableRow>
             ))
-          ) : table.getRowModel().rows?.length ? (
+          ) : error ? <p className="text-red-800 text-center mt-8">{error}</p> : table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow
                 className="border-none"

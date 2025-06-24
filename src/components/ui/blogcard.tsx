@@ -19,7 +19,7 @@ const Blogcard: React.FC<BlogcardProps> = ({image, title, body, name, date, read
         <div className="w-[0.96px] h-full bg-subCyan"></div>
         <p>{date}</p>
         <div className="w-[0.96px] h-full bg-subCyan"></div>
-        <p>{readTime}</p>
+        <p>{readTime} min read</p>
       </div>
       <div className="font-[600] text-[20px] leading-[28px]">{title}</div>
       <p className="font-[400] text-[14px] leading-[19.6px]">{body}</p>

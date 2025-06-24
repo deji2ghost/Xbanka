@@ -3,7 +3,7 @@ import { steamFAQData } from "@/lib/data"
 
 const FAQ = () => {
   return (
-    <div className="px-[80px]">
+    <div className="px-4 md:px-[80px]">
         <p className="text-[28px] font-[400] md:text-[48px] text-center">
           Frequently Asked Questions
         </p>
