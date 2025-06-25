@@ -2,7 +2,7 @@ import { Copyright } from "lucide-react";
 import pattern from "@/assets/footerPattern.svg";
 import logo from "@/assets/footerLogo.svg";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
-import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
 import React from "react";
 
@@ -56,7 +56,7 @@ const Footer = React.memo(() => {
         <div className="flex flex-col gap-[24px]">
           <h1 className="text-[20px]">Support</h1>
           <div className="flex flex-col gap-[16px] text-[16px]">
-            <p>Contact Us</p>
+            <Link to="https://wa.me/2349039716418">Contact Us</Link>
             <p>Live Chat / Help Center</p>
             <Link to="/blogs">Blog</Link>
           </div>
@@ -76,10 +76,10 @@ const Footer = React.memo(() => {
         <Link to="https://x.com/xbankang?s=21">
           <FaXTwitter className="text-offWhite" />
         </Link>
-        <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr">
-          <BsYoutube className="text-offWhite" />
-        </Link>
         <Link to="https://www.linkedin.com/company/xbanka-ltd/">
+          <FaLinkedin className="text-offWhite" />
+        </Link>
+        <Link to="https://www.facebook.com/share/15YnD6RX1x/?mibextid=wwXIfr">
           <FaFacebook className="text-offWhite" />
         </Link>
       </div>

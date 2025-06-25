@@ -4,6 +4,7 @@ import Navbar from './components/layout/navbar';
 import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
+import ScrollToTop from './components/ui/scrollToTop';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -32,6 +33,7 @@ function AppRoutes() {
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Navbar />
       <div className='mt-[50px] md:mt-[110px]'>
       <AppRoutes />

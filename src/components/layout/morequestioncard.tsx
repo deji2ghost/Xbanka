@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import { Button } from "../ui/button"
 
 interface MoreQuestionCardProps{
@@ -13,9 +14,11 @@ const Morequestioncard:React.FC<MoreQuestionCardProps> = ({Header, body, text}) 
         <h1 className="text-[24px] md:text-[32px] font-[600]">{Header}</h1>
         <p className="text-[16px] md:text-[24px] font-[400] text-center">{body}</p>
       </div>
-      <Button className="w-full max-w-[300px] md:w-[350px] mx-auto">
-        {text}
-      </Button>
+      <Link to="https://wa.me/2349039716418">
+        <Button className="w-full max-w-[300px] md:w-[350px] mx-auto">
+          {text}
+        </Button>
+      </Link>
     </div>
   )
 }
