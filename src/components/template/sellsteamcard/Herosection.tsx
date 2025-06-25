@@ -29,7 +29,7 @@ const Herosection = () => {
         </h1>
         <p className="mb-[48px] font-[600] text-[16px] leading-[24px] md:text-[24px] text-offWhite md:leading-[33.6px]">
           Steam gift cards are one of the most popular gift cards you can find
-          in Nigeria. NOSH allows you to convert steam card to cash instantly.
+          in Nigeria. Xbanka allows you to convert steam card to cash instantly.
           Get started today.
         </p>
 

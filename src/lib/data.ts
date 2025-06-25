@@ -795,17 +795,17 @@ export const xbankasteamcard = [
     {
         image: cryptoCurrency,
         header: "High rates",
-        paragraph: "If high steam rates are one of the factors you consider before picking a trading platform, Nosh is your safe haven."
+        paragraph: "If high steam rates are one of the factors you consider before picking a trading platform, Xbanka is your safe haven."
     },
     {
         image: cryptoTool,
         header: "Secured transaction.",
-        paragraph: "Security is the number one priority at Nosh. We understand the importance of keeping your data and funds safe."
+        paragraph: "Security is the number one priority at Xbanka. We understand the importance of keeping your data and funds safe."
     },
     {
         image: Airtime,
         header: "Easy transaction",
-        paragraph: "To trade steam gift card on Nosh is quite intuitive. It can be done with no written guide."
+        paragraph: "To trade steam gift card on Xbanka is quite intuitive. It can be done with no written guide."
     },
     {
         image: Airtime,
@@ -817,7 +817,7 @@ export const HowToSellSteam = [
     {
         image: phone,
         header: "Get the app.",
-        paragraph: "Download the Nosh app. Sign up and verify your identity in a few steps."
+        paragraph: "Download the Xbanka app. Sign up and verify your identity in a few steps."
     },
     {
         image: steamCard,
@@ -838,7 +838,7 @@ export const steamFAQData= [
   },
   {
     header: "How Much Is A $100 Steam Gift Card In Naira?",
-    body: "Currently, a $100 Steam gift card on Nosh ranges between NGN80,000 to NGN125,000. Note that this rate varies according to the gift card market conditions. Other factors include the gift card type and dollar-naira exchange rate. To be up to date with the current rate, leverage the rate calculator on Nosh.",
+    body: "Currently, a $100 Steam gift card on Xbanka ranges between NGN80,000 to NGN125,000. Note that this rate varies according to the gift card market conditions. Other factors include the gift card type and dollar-naira exchange rate. To be up to date with the current rate, leverage the rate calculator on Xbanka.",
   },
   {
     header: "Where Can I Sell My Steam Card In Nigeria?",
@@ -858,6 +858,6 @@ export const steamFAQData= [
   },
   {
     header: "What Gift Cards Can I Sell onXbanka?",
-    body: "On Nosh, you can Sell Steam Gift Card, Sell Google Play Gift Card, Sell Amazon Gift Card, Sell Amex Gift Card, Sell Razer Gold Gift Card, Sell Apple Gift Card, Sell eBay Gift Card, Sell Sephora Gift Card and 100+ other gift cards.",
+    body: "On Xbanka, you can Sell Steam Gift Card, Sell Google Play Gift Card, Sell Amazon Gift Card, Sell Amex Gift Card, Sell Razer Gold Gift Card, Sell Apple Gift Card, Sell eBay Gift Card, Sell Sephora Gift Card and 100+ other gift cards.",
   },
 ]
