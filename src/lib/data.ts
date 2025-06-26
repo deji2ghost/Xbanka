@@ -37,9 +37,6 @@ import adaobi from "@/assets/Adaobi.svg"
 import chinedu from "@/assets/Chinedu.svg"
 import ifeoma from "@/assets/ifeoma.svg"
 import fat from "@/assets/fat.svg"
-import steamCard from "@/assets/steamCard.svg"
-import phone from "@/assets/phone.svg"
-import wallet from "@/assets/wallet.svg"
 import step1 from "@/assets/step1.svg"
 import step2 from "@/assets/Step2.svg"
 import step5 from "@/assets/Step4.svg"
@@ -447,7 +444,7 @@ export const CryptoAndFinance = [
     items: [
       {
         linkName: "Convert BTC to Cash",
-        link: "/"
+        link: "/cryptoFinance/buysell"
       },
       {
         linkName: "Convert LTC to Cash",
@@ -789,75 +786,53 @@ export const Currency = [
 export const xbankasteamcard = [
     {
         image: giftCard,
-        header: "Quick transaction speed",
-        paragraph: "The steps involved in trading your steam gift cards are short and straightforward. Within an average of 5 minutes, your steam gift card trade is being processed."
+        header: "Gift Card Exchange",
+        paragraph: "Exchange any gift card for Naira and receive payment instantly from your device."
     },
     {
         image: cryptoCurrency,
-        header: "High rates",
-        paragraph: "If high steam rates are one of the factors you consider before picking a trading platform, Xbanka is your safe haven."
+        header: "Best Gift Card Rates",
+        paragraph: "Experience our top gift card trading app with excellent rates."
     },
     {
         image: cryptoTool,
-        header: "Secured transaction.",
-        paragraph: "Security is the number one priority at Xbanka. We understand the importance of keeping your data and funds safe."
+        header: "Various Gift Card Options",
+        paragraph: "You can sell up to 30 brands of gift cards at the best exchange rates."
     },
     {
         image: Airtime,
-        header: "Easy transaction",
-        paragraph: "To trade steam gift card on Xbanka is quite intuitive. It can be done with no written guide."
-    },
-    {
-        image: Airtime,
-        header: "24/7 customer support",
-        paragraph: "Need to contact customer support at any time of the day? We got you covered."
-    },
-]
-export const HowToSellSteam = [
-    {
-        image: phone,
-        header: "Get the app.",
-        paragraph: "Download the Xbanka app. Sign up and verify your identity in a few steps."
-    },
-    {
-        image: steamCard,
-        header: "Select steam Gift Card",
-        paragraph: "Go to Sell Gift Card. Select steam gift card as the brand. Specify subcategory and amount. Upload images and then complete your sale."
-    },
-    {
-        image: wallet,
-        header: "Your Wallet Gets Credited",
-        paragraph: "Once the transaction is approved, your wallet will be credited immediately!"
+        header: "Safe and Reliable",
+        paragraph: "Enjoy hassle-free gift card trading with our high-level security features and dependable service."
     },
 ]
 
 export const steamFAQData= [
   {
-    header: "What Are Steam Gift Cards?",
-    body: "Steam gift cards are one of the best gift cards a gamer can own. They can be used to buy or download any game available on the Steam platform. When you want to buy a Steam gift card, you can decide to get the physical or Ecode form.",
+    header: "What does it mean to sell a gift card?",
+    body: "Gift cards hold monetary value. If you don’t need yours, you can sell it for cash instead of letting it go to waste. In simple terms, selling a gift card means exchanging an unused or unwanted card for instant money.",
   },
   {
-    header: "How Much Is A $100 Steam Gift Card In Naira?",
-    body: "Currently, a $100 Steam gift card on Xbanka ranges between NGN80,000 to NGN125,000. Note that this rate varies according to the gift card market conditions. Other factors include the gift card type and dollar-naira exchange rate. To be up to date with the current rate, leverage the rate calculator on Xbanka.",
+    header: "What types of gift cards can I sell in Nigeria?",
+    body: "With Xbanka, you can sell a wide range of gift cards, both local and international brands. We accept popular cards from the US, UK, Canada, Australia, UAE, South Africa, and more. Check our live rates page to see which brands have the best payout today.",
   },
   {
-    header: "Where Can I Sell My Steam Card In Nigeria?",
-    body: "Xbanka is the best place to sell your Steam gift card online in Nigeria. The platform offers you the most convenient means to exchange Steam gift card for cash without delay.",
+    header: "Can I sell a partially used gift card?",
+    body: "Sometimes, yes. Some brands allow you to sell a partially used or reloadable card, but the payout will be lower than for a brand new card. To avoid issues, we recommend trading fully unused cards for the best value.",
   },
   {
-    header: "Does Steam Gift Card Expire?",
-    body: "No, Steam gift card does not expire. Regardless of how long you’ve owned your Steam gift card, you can trade it on Xbanka.",
-  },
-  {
-    header: "Can I Sell Physical Steam Gift Cards In Nigeria?",
-    body: "Yes, you can sell your physical Steam gift card. Take clear shots of your Steam gift card > upload the images on Xbanka > enter other necessary details > sell. As simple as ABC",
-  },
-  {
-    header: "How Much Is A $50 Steam Gift Card To Naira?",
-    body: "A $50 Steam gift card when converted to naira should be around NGN40,000 to NGN60,000",
-  },
-  {
-    header: "What Gift Cards Can I Sell onXbanka?",
-    body: "On Xbanka, you can Sell Steam Gift Card, Sell Google Play Gift Card, Sell Amazon Gift Card, Sell Amex Gift Card, Sell Razer Gold Gift Card, Sell Apple Gift Card, Sell eBay Gift Card, Sell Sephora Gift Card and 100+ other gift cards.",
-  },
+    header: "Is it safe to sell a gift card online in Nigeria?",
+    body: "Yes,  as long as you use a trusted platform like Xbanka. We protect your personal and financial details with secure systems and ensure your payout happens fast, with no stories.",
+  }
 ]
+
+
+
+
+
+
+
+
+
+
+
+

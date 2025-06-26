@@ -15,6 +15,7 @@ const RateCalculator = () => {
   const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>();
   const itemsPerPage = 7;
+  
 
   const getData = async (pageNumber = 1) => {
     setLoading(true);

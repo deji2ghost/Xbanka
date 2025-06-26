@@ -25,12 +25,10 @@ const Herosection = () => {
         className="md:w-[888px] flex flex-col text-center items-center justify-center mx-auto text-offWhite"
       >
         <h1 className="mb-[24px] text-[32px] md:text-[64px] font-[400] text-offWhite md:leading-[76.8px]">
-          Sell Steam Gift Card For Cash In Nigeria
+          Sell Gift Cards Online in Nigeria
         </h1>
         <p className="mb-[48px] font-[600] text-[16px] leading-[24px] md:text-[24px] text-offWhite md:leading-[33.6px]">
-          Steam gift cards are one of the most popular gift cards you can find
-          in Nigeria. Xbanka allows you to convert steam card to cash instantly.
-          Get started today.
+          Instantly convert gift cards to Naira using Xbanka. We offer the best gift card rates and unmatched transaction speed.
         </p>
 
         <Link className="" to="https://wa.me/2349039716418">

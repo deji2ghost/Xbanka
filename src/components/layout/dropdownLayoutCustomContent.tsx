@@ -2,19 +2,20 @@ import { FaChevronDown } from "react-icons/fa6";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import React, { useState } from "react";
 import { Link } from "react-router";
 
-export interface itemDataProps{
-  linkName: string,
-        link: string
+export interface itemDataProps {
+  linkName: string;
+  link: string;
 }
 
-export interface dataProps{
-    linkHeader: string
-    items: itemDataProps[]
+export interface dataProps {
+  linkHeader: string;
+  items: itemDataProps[];
 }
 
 interface DropdownProp {
@@ -41,16 +42,29 @@ const DropdownLayoutCustomContent = React.memo(
           className="inline-flex mx-auto p-2 items-start justify-start gap-10 z-90"
           align="start"
         >
-            {data.map((item) => (
-              <div>
-                <h1 className="text-[20px] font-[500] leading-[28px] mb-2">{item.linkHeader}</h1>
-                <div className="flex flex-col">
-                  {item.items.map((item) => (
-                    <Link className="text-[14px] font-[500] leading-[28px] hover:underline hover:text-subCyan" to={item.link}>{item.linkName}</Link>
-                  ))}
-                </div>
+          {data.map((item) => (
+            <div onSelect={() => setOpen(false)}>
+              <h1 className="text-[20px] font-[500] leading-[28px] mb-2">
+                {item.linkHeader}
+              </h1>
+              <div className="flex flex-col">
+                {item.items.map((item) => (
+                  <DropdownMenuItem
+                    key={item.link}
+                    className="text-[14px] font-[500] cursor-pointer leading-[28px] hover:underline hover:text-subCyan hover:bg-none p-1"
+                    asChild
+                    onSelect={() => setOpen(false)}
+                  >
+                    <Link
+                      to={item.link}
+                    >
+                      {item.linkName}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
               </div>
-            ))}
+            </div>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     );
