@@ -488,44 +488,48 @@ export const TradingCenter = [
     linkHeader: "Sell Giftcards",
     items: [
       {
+        linkName: "Sell Gift Cards Online in Nigeria",
+        link: "/giftCards/sellGiftCardsOnlineNigeria"
+      },
+      {
         linkName: "Sell Gift Cards In Naira",
         link: "/giftCards/sellGiftCardsInNaira"
       },
       {
         linkName: "Sell Gift Cards In Cedis",
-        link: "/"
+        link: "/giftCards/sellGiftCardsInCedis"
       },
       {
         linkName: "Sell Gift Cards For USD",
-        link: "/"
+        link: "/giftCards/sellGiftCardsInUSD"
       },
       {
         linkName: "Sell Steam Gift Card ",
-        link: "/"
+        link: "/giftCards/sellSteamGiftCard"
       },
       {
         linkName: "Sell Google Play Gift Card",
-        link: "/"
+        link: "/giftCards/sellGooglePlayGiftCard"
       },
       {
         linkName: "Sell Amazon Gift Card",
-        link: "/"
+        link: "/giftCards/sellAmazonGiftCard"
       },
       {
         linkName: "Sell Razer Gold Gift Card",
-        link: "/"
+        link: "/giftCards/sellRazerGoldGiftCards"
       },
       {
         linkName: "Sell Apple Gift Card",
-        link: "/"
+        link: "/giftCards/sellAppleGiftCards"
       },
       {
         linkName: "Sell eBay Gift Card",
-        link: "/"
+        link: "/giftCards/sellEbayGiftCards"
       },
       {
         linkName: "Sell Sephora Gift Card",
-        link: "/"
+        link: "/giftCards/sellSephoraGiftCards"
       },
     ]
   },
@@ -824,6 +828,73 @@ export const steamFAQData= [
     body: "Yes,  as long as you use a trusted platform like Xbanka. We protect your personal and financial details with secure systems and ensure your payout happens fast, with no stories.",
   }
 ]
+export const GiftCardsNairaFAQData= [
+  {
+    header: "How can I sell gift cards for Naira?",
+    body: "It’s simple with Xbanka: create an account, pick the gift card you want to sell, enter your card details, and get paid instantly in Naira.",
+  },
+  {
+    header: "What gift cards can I convert to Naira?",
+    body: "You can trade a wide range of gift cards — from Amazon, iTunes, Google Play, Amex, Steam, Sephora, and many more. Check our rates page for a full list.",
+  },
+  {
+    header: "How long does it take to get paid?",
+    body: "No delays here. Once you submit your card details, Xbanka processes your trade immediately and pays you in Naira within minutes.",
+  },
+  {
+    header: "How do I know the current exchange rate?",
+    body: "Use our live rate calculator anytime to see the exact payout you’ll receive. Rates are updated in real-time, so you always get the best deal.",
+  },
+  {
+    header: "Is it safe to sell gift cards online in Nigeria?",
+    body: "Absolutely. Xbanka uses top-grade security to protect your information and funds. Your trade is secure from start to finish.",
+  },
+]
+export const GiftCardsCedisFAQData= [
+  {
+    header: "Where can I trade gift cards for cash in Ghana?",
+    body: "Xbanka is the best place to sell gift cards in Ghana. Skip the stress and delays,  trade gift cards and get paid in Cedis instantly. Our secure process protects your privacy and funds every time.",
+  },
+  {
+    header: "Is it safe to sell a gift card online in Ghana?",
+    body: "Yes, trading gift cards online is safe when you use a trusted platform like Xbanka. We use advanced security to keep your details and money protected from start to finish.",
+  },
+  {
+    header: "What is the best place to trade gift cards in Ghana?",
+    body: "Xbanka is your reliable plug for trading gift cards in Ghana. You get the best rates, fast payouts, and round-the-clock access,  all in one place.",
+  },
+  {
+    header: "What types of gift cards can I sell in Ghana?",
+    body: "Xbanka accepts many popular gift card brands,  local and international. Trade cards from the US, UK, Canada, UAE, Australia, and more. Check our live rates page for all supported cards.",
+  },
+  {
+    header: "Which gift card has the highest rate in Ghana?",
+    body: "Currently, Steam gift cards have some of the highest rates in Ghana. For example, a $100 UK Steam card can fetch up to 1,069 Cedis on Xbanka. Rates change often, use our calculator to see which card gives you the most value today.",
+  },
+]
+export const SteamGiftCardFAQData= [
+  {
+    header: "What are Steam gift cards?",
+    body: "Steam gift cards are digital or physical cards that gamers use to buy or download games and content on the Steam platform. They’re one of the best gifts for gaming enthusiasts and can hold great resale value, too.",
+  },
+  {
+    header: "Where can I sell my Steam gift card in Nigeria?",
+    body: "Xbanka is your trusted plug to sell Steam gift cards online in Nigeria. Enjoy top rates, fast payouts, and a stress-free process from start to finish.",
+  },
+  {
+    header: "Does a Steam gift card expire?",
+    body: "No,  Steam gift cards do not expire. Whether your card is new or has been sitting in your drawer for a while, you can trade it anytime on Xbanka.",
+  },
+  {
+    header: "Can I sell physical Steam gift cards in Nigeria?",
+    body: "Yes. To sell a physical Steam card on Xbanka, just take clear photos of the card, upload them, fill in the required details, and submit. We’ll handle the rest and pay you fast.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  },
+]
+
 
 
 

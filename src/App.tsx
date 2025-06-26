@@ -11,7 +11,12 @@ const RateCalculator = lazy(() => import("./pages/RateCalculator"));
 const Blogs = lazy(() => import("./pages/blogs"));
 const BuySellCrypto = lazy(() => import("./pages/BuySellCrypto"));
 const BlogsPage = lazy(() => import("./pages/blogsPage"));
-const Sellsteamcard = lazy(() => import("./pages/sellsteamcard"));
+const SellOnlineNigeria = lazy(() => import("./pages/sellOnlineNigeria"));
+const SellNairaCards = lazy(() => import("./pages/SellNairaCards"));
+const SellCediscard = lazy(() => import("./pages/SellCediscard"));
+const SellUSDcard = lazy(() => import("./pages/SellUSDcard"));
+const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
+const SellGooglePlaycard = lazy(() => import("./pages/SellGooglePlaycard"));
 
 function AppRoutes() {
   return (
@@ -24,7 +29,17 @@ function AppRoutes() {
           <Route path='buysell' element={<BuySellCrypto />} />
       </Route>
       <Route path="/giftCards" element={<CryptoFinance />}>
-          <Route path='sellGiftCardsInNaira' element={<Sellsteamcard />} />
+          <Route path='sellGiftCardsOnlineNigeria' element={<SellOnlineNigeria />} />
+          <Route path='sellGiftCardsInNaira' element={<SellNairaCards />} />
+          <Route path='sellGiftCardsInCedis' element={<SellCediscard />} />
+          <Route path='sellGiftCardsInUSD' element={<SellUSDcard />} />
+          <Route path='sellSteamGiftCard' element={<Sellsteamcard />} />
+          <Route path='sellGooglePlayGiftCard' element={<SellGooglePlaycard />} />
+          {/* <Route path='sellAmazonGiftCard' element={<Sellsteamcard />} /> */}
+          {/* <Route path='sellRazerGoldGiftCards' element={<Sellsteamcard />} /> */}
+          {/* <Route path='sellAppleGiftCards' element={<Sellsteamcard />} /> */}
+          {/* <Route path='sellEbayGiftCards' element={<Sellsteamcard />} /> */}
+          {/* <Route path='sellSephoraGiftCards' element={<Sellsteamcard />} />  */}
       </Route>
     </Routes>
   );

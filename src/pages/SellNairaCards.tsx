@@ -1,9 +1,9 @@
-import FaqLayout from "@/components/layout/FaqLayout"
-import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus"
-import Herosection from "@/components/template/steamcardsell/Herosection"
-import { SteamGiftCardFAQData } from "@/lib/data"
+import FaqLayout from "@/components/layout/FaqLayout";
+import Herosection from "@/components/template/SellNairaCards/Herosection";
+import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus";
+import { GiftCardsNairaFAQData } from "@/lib/data";
 
-const sellsteamcard = () => {
+const SellNairaCards = () => {
   return (
     <div>
       <Herosection />
@@ -18,9 +18,12 @@ const sellsteamcard = () => {
           cards, iTunes gift cards, and Google Play gift cards.
         </p>
       </div>
-      <FaqLayout header="FAQs About Selling Steam Gift Cards" data={SteamGiftCardFAQData} />
+      <FaqLayout
+        header="FAQs About Selling Gift Cards in Naira"
+        data={GiftCardsNairaFAQData}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default sellsteamcard
+export default SellNairaCards;

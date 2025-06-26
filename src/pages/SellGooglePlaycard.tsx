@@ -1,9 +1,5 @@
-import FaqLayout from "@/components/layout/FaqLayout"
-import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus"
-import Herosection from "@/components/template/steamcardsell/Herosection"
-import { SteamGiftCardFAQData } from "@/lib/data"
 
-const sellsteamcard = () => {
+const SellGooglePlaycard = () => {
   return (
     <div>
       <Herosection />
@@ -23,4 +19,4 @@ const sellsteamcard = () => {
   )
 }
 
-export default sellsteamcard
+export default SellGooglePlaycard

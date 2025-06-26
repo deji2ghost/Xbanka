@@ -1,9 +1,10 @@
 import FaqLayout from "@/components/layout/FaqLayout"
+import Herosection from "@/components/template/SellCedisCard/Herosection"
 import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus"
-import Herosection from "@/components/template/steamcardsell/Herosection"
-import { SteamGiftCardFAQData } from "@/lib/data"
+import { GiftCardsCedisFAQData } from "@/lib/data"
 
-const sellsteamcard = () => {
+
+const SellCediscard = () => {
   return (
     <div>
       <Herosection />
@@ -18,9 +19,9 @@ const sellsteamcard = () => {
           cards, iTunes gift cards, and Google Play gift cards.
         </p>
       </div>
-      <FaqLayout header="FAQs About Selling Steam Gift Cards" data={SteamGiftCardFAQData} />
+      <FaqLayout header="FAQs About Exchanging Gift Cards to Cedis" data={GiftCardsCedisFAQData} />
     </div>
   )
 }
 
-export default sellsteamcard
+export default SellCediscard
