@@ -1178,41 +1178,41 @@ export const BuySteamCard = [
     },
 ]
 
-export const BuyNigeriaCardFAQData= [
-  {
-    header: "What is a gift card?",
-    body: "A gift card is a prepaid card that can be used to make purchases or access services from a specific merchant or brand. That is, an apple gift card can be used to make purchases on apple store, or access Apple services, as the case may be.",
-  },
-  {
-    header: "How do I buy a gift card in Nigeria?",
-    body: "In Nigeria, you can buy gift cards from physical stores, online stores, and from the merchants or brands themselves.",
-  },
-  {
-    header: "Can I buy a gift card online in Nigeria?",
-    body: "Yes, you can buy gift cards online in Nigeria using Usenosh.com platform or mobile app.",
-  },
-  {
-    header: "How do I use a gift card?",
-    body: "To use a gift card, you need to redeem it by entering the unique code provided on the card. You can do this either online or in-person, depending on the merchant or brand. Note that you can only use a gift card to make purchases at the designated brand E.G You can only use steam gift card to pay on steam website; you cannot use it on walmart website."
-  },
-  {
-    header: "Can I give a gift card as a gift?",
-    body: "Yes, gift cards are often given as gifts; in fact, 30% of birthday gifts around the world as of 2021 were gift cards. This is because gift cards allow the recipient to choose whatever they want to buy without limiting them to certain items or products.",
-  },
-  {
-    header: "What types of gift cards are available in Nigeria?",
-    body: "In Nigeria, there are different types of gift cards available for purchase, including electronic gift cards, physical gift cards, and mobile gift cards. On Usenosh.com, you can buy up to 10,000 different gift cards.",
-  },
-  {
-    header: "Are gift cards secure to use?",
-    body: "Yes, gift cards are secure to use as long as you purchase them from a reputable merchant or brand like Usenosh.com and you follow the instructions for redemption carefully. Also, ensure that you do not expose the gift code to anyone.",
-  },
-  {
-    header: "How do I activate the gift cards?",
-    body: "Gift cards purchased on Usenosh.com are automatically activated before delivered to you, so you don’t have to worry about that.",
-  },
-  {
-    header: "What Gift Cards Can I Buy on Xbanka?",
-    body: "On Xbanka, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards",
-  },
-]
+// export const BuyNigeriaCardFAQData= [
+//   {
+//     header: "What is a gift card?",
+//     body: "A gift card is a prepaid card that can be used to make purchases or access services from a specific merchant or brand. That is, an apple gift card can be used to make purchases on apple store, or access Apple services, as the case may be.",
+//   },
+//   {
+//     header: "How do I buy a gift card in Nigeria?",
+//     body: "In Nigeria, you can buy gift cards from physical stores, online stores, and from the merchants or brands themselves.",
+//   },
+//   {
+//     header: "Can I buy a gift card online in Nigeria?",
+//     body: "Yes, you can buy gift cards online in Nigeria using Usenosh.com platform or mobile app.",
+//   },
+//   {
+//     header: "How do I use a gift card?",
+//     body: "To use a gift card, you need to redeem it by entering the unique code provided on the card. You can do this either online or in-person, depending on the merchant or brand. Note that you can only use a gift card to make purchases at the designated brand E.G You can only use steam gift card to pay on steam website; you cannot use it on walmart website."
+//   },
+//   {
+//     header: "Can I give a gift card as a gift?",
+//     body: "Yes, gift cards are often given as gifts; in fact, 30% of birthday gifts around the world as of 2021 were gift cards. This is because gift cards allow the recipient to choose whatever they want to buy without limiting them to certain items or products.",
+//   },
+//   {
+//     header: "What types of gift cards are available in Nigeria?",
+//     body: "In Nigeria, there are different types of gift cards available for purchase, including electronic gift cards, physical gift cards, and mobile gift cards. On Usenosh.com, you can buy up to 10,000 different gift cards.",
+//   },
+//   {
+//     header: "Are gift cards secure to use?",
+//     body: "Yes, gift cards are secure to use as long as you purchase them from a reputable merchant or brand like Usenosh.com and you follow the instructions for redemption carefully. Also, ensure that you do not expose the gift code to anyone.",
+//   },
+//   {
+//     header: "How do I activate the gift cards?",
+//     body: "Gift cards purchased on Usenosh.com are automatically activated before delivered to you, so you don’t have to worry about that.",
+//   },
+//   {
+//     header: "What Gift Cards Can I Buy on Xbanka?",
+//     body: "On Xbanka, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards",
+//   },
+// ]

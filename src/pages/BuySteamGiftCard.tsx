@@ -1,7 +1,7 @@
 import FaqLayout from "@/components/layout/FaqLayout";
 import RusableHerosectionLayout from "@/components/layout/rusableHerosectionLayout";
 import WhyBuyFromUs from "@/components/layout/whyBuyFromUs";
-import { BuyCardNigeria, BuyNigeriaCardFAQData, BuySteamCard } from "@/lib/data";
+import { BuyNigeriaCardFAQData, BuySteamCard } from "@/lib/data";
 
 const BuySteamGiftCard = () => {
   return (
