@@ -17,6 +17,12 @@ const SellCediscard = lazy(() => import("./pages/SellCediscard"));
 const SellUSDcard = lazy(() => import("./pages/SellUSDcard"));
 const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
 const SellGooglePlaycard = lazy(() => import("./pages/SellGooglePlaycard"));
+const SellAmazoncard = lazy(() => import("./pages/SellAmazoncard"));
+const SellRazerGoldcard = lazy(() => import("./pages/SellRazerGoldcard"));
+const SellApplecard = lazy(() => import("./pages/SellApplecard"));
+const SellEbaycard = lazy(() => import("./pages/SellApplecard"));
+const SellSephoracard = lazy(() => import("./pages/SellSephoracard"));
+const SellAmexcard = lazy(() => import("./pages/SellSephoracard"));
 
 function AppRoutes() {
   return (
@@ -35,11 +41,12 @@ function AppRoutes() {
           <Route path='sellGiftCardsInUSD' element={<SellUSDcard />} />
           <Route path='sellSteamGiftCard' element={<Sellsteamcard />} />
           <Route path='sellGooglePlayGiftCard' element={<SellGooglePlaycard />} />
-          {/* <Route path='sellAmazonGiftCard' element={<Sellsteamcard />} /> */}
-          {/* <Route path='sellRazerGoldGiftCards' element={<Sellsteamcard />} /> */}
-          {/* <Route path='sellAppleGiftCards' element={<Sellsteamcard />} /> */}
-          {/* <Route path='sellEbayGiftCards' element={<Sellsteamcard />} /> */}
-          {/* <Route path='sellSephoraGiftCards' element={<Sellsteamcard />} />  */}
+          <Route path='sellAmazonGiftCard' element={<SellAmazoncard />} />
+          <Route path='sellRazerGoldGiftCards' element={<SellRazerGoldcard />} />
+          <Route path='sellAppleGiftCards' element={<SellApplecard />} />
+          <Route path='sellEbayGiftCards' element={<SellEbaycard />} />
+          <Route path='sellSephoraGiftCards' element={<SellSephoracard />} /> 
+          <Route path='sellAmexGiftCards' element={<SellAmexcard />} /> 
       </Route>
     </Routes>
   );

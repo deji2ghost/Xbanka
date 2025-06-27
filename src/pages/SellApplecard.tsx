@@ -1,9 +1,9 @@
-import FaqLayout from "@/components/layout/FaqLayout"
-import Herosection from "@/components/template/SellGooglePlayCard/Herosection"
-import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus"
-import { GooglePlayGiftCardFAQData } from "@/lib/data"
+import FaqLayout from "@/components/layout/FaqLayout";
+import Herosection from "@/components/template/SellApplecard/Herosection";
+import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus";
+import { AppleCardFAQData } from "@/lib/data";
 
-const SellGooglePlaycard = () => {
+const SellApplecard = () => {
   return (
     <div>
       <Herosection />
@@ -18,9 +18,12 @@ const SellGooglePlaycard = () => {
           cards, iTunes gift cards, and Google Play gift cards.
         </p>
       </div>
-      <FaqLayout header="FAQs About Selling Google Play Gift Cards" data={GooglePlayGiftCardFAQData} />
+      <FaqLayout
+        header="FAQs About Selling Apple Gift Cards"
+        data={AppleCardFAQData}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SellGooglePlaycard
+export default SellApplecard;

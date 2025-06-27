@@ -1,19 +1,41 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import SelectBox from "./selectBox";
-import usa from "@/assets/USA.svg";
-import btc from "@/assets/btc.svg";
+import debounce from "lodash/debounce";
+// import usa from "@/assets/USA.svg";
+// import btc from "@/assets/btc.svg";
 import axios from "axios";
+import type { CoinProps } from "@/lib/types";
 
 const fiatOptions = [
-  { id: "usd", label: "USD", description: "US Dollar", image: "https://flagcdn.com/us.svg" },
-  { id: "ngn", label: "NGN", description: "Nigerian Naira", image: "https://flagcdn.com/ng.svg" },
-  { id: "eur", label: "EUR", description: "Euro", image: "https://flagcdn.com/eu.svg" },
-  { id: "gbp", label: "GBP", description: "British Pound", image: "https://flagcdn.com/gb.svg" },
+  {
+    id: "usd",
+    label: "USD",
+    description: "US Dollar",
+    image: "https://flagcdn.com/us.svg",
+  },
+  {
+    id: "ngn",
+    label: "NGN",
+    description: "Nigerian Naira",
+    image: "https://flagcdn.com/ng.svg",
+  },
+  {
+    id: "eur",
+    label: "EUR",
+    description: "Euro",
+    image: "https://flagcdn.com/eu.svg",
+  },
+  {
+    id: "gbp",
+    label: "GBP",
+    description: "British Pound",
+    image: "https://flagcdn.com/gb.svg",
+  },
 ];
 
-const Calculator = () => {
-  const [coinOptions, setCoinOptions] = useState([]);
+export const Calculator = () => {
+  const [coinOptions, setCoinOptions] = useState<CoinProps[]>([]);
   const [selectedCoinId, setSelectedCoinId] = useState("bitcoin");
   const [selectedCurrency, setSelectedCurrency] = useState("usd");
   const [amount, setAmount] = useState(1);
@@ -30,8 +52,11 @@ const Calculator = () => {
         },
       })
       .then((res) => {
-        setCoinOptions(res.data);
-        setSelectedCoinId(res.data[0]?.id || "bitcoin");
+        const filtered = res.data.filter((coin: { id: string; }) =>
+          ["bitcoin", "ethereum", "tether", "solana", "usdc"].includes(coin.id)
+        );
+        setCoinOptions(filtered);
+        setSelectedCoinId(filtered[0]?.id || "bitcoin");
       });
   }, []);
 
@@ -51,9 +76,16 @@ const Calculator = () => {
       });
   }, [selectedCoinId, selectedCurrency]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const debouncedSetAmount = useCallback(
+  debounce((val: string) => setAmount(Number(val)), 200),
+  []
+);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setAmount(e.target.value);
+    debouncedSetAmount(e.target.value);
   };
+  
   return (
     <div className="rounded-[8px] p-4 bg-[#F7F7F7] flex flex-col gap-4">
       <div className="w-[103px] flex flex-col">
@@ -71,32 +103,37 @@ const Calculator = () => {
       <div className="flex flex-col gap-[22px]">
         <div className="bg-white border-none rounded-[8px]">
           <SelectBox
-            options={coinOptions.map((coin) => ({
-          id: coin.id,
-          label: coin.name,
-          description: coin.symbol.toUpperCase(),
-          image: coin.image,
-        }))}
+            options={coinOptions?.map((coin) => ({
+              id: coin?.id,
+              label: coin?.name,
+              description: coin?.symbol?.toUpperCase(),
+              image: coin?.image,
+            }))}
             label="Select coin"
             value={selectedCoinId}
-        onChange={setSelectedCoinId}
-        placeholder="Select coin"
+            onChange={setSelectedCoinId}
           />
         </div>
         <div className="bg-white border-none rounded-[8px]">
           <SelectBox
             options={fiatOptions}
-        value={selectedCurrency}
-        onChange={setSelectedCurrency}
-        placeholder="Select currency"
+            value={selectedCurrency}
+            onChange={setSelectedCurrency}
             label="Select currency"
           />
         </div>
-        <Button size="sm" className="border border-[#0EA08E] flex items-center justify-between w-full p-2 rounded-[8px]">
+        <Button
+          size="sm"
+          className="border border-[#0EA08E] flex items-center justify-between w-full p-2 rounded-[8px]"
+        >
           <div className="flex items-center font-[600] text-[22px] leading-[33.6px]">
-            {amount} {selectedCoinId.toUpperCase()} = {(conversion * amount).toLocaleString()} {selectedCurrency.toUpperCase()}
+            {amount} {selectedCoinId.toUpperCase()} ={" "}
+            {conversion && (conversion * amount).toLocaleString()}{" "}
+            {selectedCurrency.toUpperCase()}
           </div>
-          <p className="flex items-center font-[400] text-[14px] leading-[20.8px]">Last updated at 12:05 AM UTC</p>
+          <p className="flex items-center font-[400] text-[14px] leading-[20.8px]">
+            Last updated at 12:05 AM UTC
+          </p>
         </Button>
       </div>
     </div>

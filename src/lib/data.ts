@@ -894,16 +894,201 @@ export const SteamGiftCardFAQData= [
     body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
   },
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const GooglePlayGiftCardFAQData= [
+  {
+    header: "What is a Google Play gift card?",
+    body: "A Google Play gift card is prepaid credit you can use to buy apps, games, books, movies, or music on the Google Play Store. It’s popular among Android users for topping up their Google account balance.",
+  },
+  {
+    header: "What can I use a Google Play gift card for?",
+    body: "You can redeem a Google Play gift card to buy apps, games, movies, books, and even pay for YouTube subscriptions, all through the Play Store.",
+  },
+  {
+    header: "Can I use a Google Play gift card on an iPhone?",
+    body: "Yes, but you’ll need to redeem it on your Google account first and use it for Google apps or YouTube services on your iPhone.",
+  },
+  {
+    header: "Why is my Google Play gift card not working?",
+    body: "Double-check that you entered the code correctly, with no extra spaces or typos. If the issue continues, it could be a region restriction; reach out to Google Play support for help.",
+  },
+  {
+    header: "Does a Google Play gift card expire?",
+    body: "No, Google Play gift cards do not expire. You can use or sell them anytime on Xbanka for instant cash.",
+  },
+  {
+    header: "Can I sell a Google Play gift card for Naira?",
+    body: "Absolutely! Xbanka lets you convert your Google Play gift card to Naira quickly and securely, with top rates and no delays.",
+  },
+  {
+    header: "Where can I exchange a Google Play gift card for cash?",
+    body: "Xbanka is your trusted plug to exchange Google Play gift cards for cash. Get paid in Naira, Cedis, or even USD — all with transparent rates and fast payouts.",
+  },
+  {
+    header: "Where can I exchange a Google Play gift card for cash?",
+    body: "Xbanka is your trusted plug to exchange Google Play gift cards for cash. Get paid in Naira, Cedis, or even USD — all with transparent rates and fast payouts.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  },
+]
+export const AmazonCardFAQData= [
+  {
+    header: "What is an Amazon gift card used for?",
+    body: "An Amazon gift card is your direct pass to shop millions of products on Amazon — from electronics and groceries to fashion and kitchen items. You can buy it as an e-code, order it physically, or grab one in-store. They don’t expire and can even be reloaded.",
+  },
+  {
+    header: "Can I exchange my Amazon gift card for another gift card?",
+    body: "No, you can’t swap an Amazon gift card directly for another brand’s card. But with Xbanka, you can easily convert your Amazon gift card to cash at the best rates.",
+  },
+  {
+    header: "Is it safe to sell my Amazon gift card online?",
+    body: "Yes. Selling your Amazon gift card online is safe when you use a trusted, secure platform like Xbanka. We protect your data and pay you fast, with no stories.",
+  },
+  {
+    header: "Why is my Amazon gift card not working?",
+    body: "Common reasons include trying to redeem it in the wrong country or entering an incorrect code. Double-check your code, and ensure you’re using it in the correct Amazon store region.",
+  },
+  {
+    header: "Where can I sell an Amazon gift card for cash in Nigeria?",
+    body: "Xbanka is your go-to platform to sell Amazon gift cards for cash in Nigeria. Sign up on our website or app, trade instantly, and enjoy quick payouts in Naira.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  }
+]
+export const RazorGoldCardFAQData= [
+  {
+    header: "What is a Razer Gold gift card used for?",
+    body: "A Razer Gold gift card is used to buy games, in-game items, virtual currencies, and exclusive skins on the Razer platform. It’s popular with gamers worldwide.",
+  },
+  {
+    header: "Do Razer Gold gift cards expire?",
+    body: "No — Razer Gold gift cards do not expire. You can redeem or sell them for cash on Xbanka anytime you’re ready.",
+  },
+  {
+    header: "How do I redeem a Razer Gold gift card?",
+    body: "To redeem, sign up or log in to your Razer account, pick your game or item, and use the card code at checkout.",
+  },
+  {
+    header: "Where can I sell a Razer Gold gift card in Nigeria?",
+    body: "Xbanka is your trusted plug to sell Razer Gold gift cards in Nigeria. Enjoy quick trades, fair rates, and instant payouts in Naira.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  }
+]
+export const AppleCardFAQData= [
+  {
+    header: "What is an Apple gift card?",
+    body: "An Apple gift card is a payment option issued by Apple. You can use it to buy Apple products like iPhones, MacBooks, accessories, apps, games, or subscriptions for services like Apple Music and iCloud.",
+  },
+  {
+    header: "Is an Apple gift card the same as an iTunes card?",
+    body: "No. While they’re similar, they serve different purposes. An Apple gift card can be used for hardware (like buying devices in the Apple Store) and digital purchases. An iTunes card is strictly for digital content like music, apps, and subscriptions.",
+  },
+  {
+    header: "Why is my Apple gift card showing invalid?",
+    body: "Make sure you’re redeeming the card in the correct store. For example, an Apple Store gift card can’t be used on iTunes. Double-check the code and the store region.",
+  },
+  {
+    header: "Where can I buy an Apple gift card in Nigeria?",
+    body: "You can buy an Apple gift card safely and easily through Xbanka. We make the process quick and secure."
+  },
+  {
+    header: "Can I convert an Apple gift card to cash?",
+    body: "Yes! With Xbanka, you can sell your Apple gift card for cash in Naira at great rates and get paid instantly.",
+  },
+  {
+    header: "Where can I sell an Apple gift card for instant cash?",
+    body: "Xbanka is your trusted plug to exchange Apple gift cards for cash, fast. Once your trade is verified, your payout hits your account instantly.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  }
+]
+export const EbayCardFAQData= [
+  {
+    header: "What is an eBay gift card?",
+    body: "An eBay gift card is prepaid credit you can use to shop on eBay. It can cover the full cost of an order or part of it, making it flexible for all kinds of purchases.",
+  },
+  {
+    header: "Can an eBay gift card be refunded?",
+    body: "No. Once you buy an eBay gift card, it can’t be refunded. Make sure you’re certain before completing your purchase.",
+  },
+  {
+    header: "Do eBay gift cards expire?",
+    body: "No, eBay gift cards do not expire. You can use or sell them anytime on Xbanka for instant cash.",
+  },
+  {
+    header: "Why is my eBay gift card not working?",
+    body: "Common reasons include an empty balance or typing the code incorrectly. Double-check your code and balance to be sure."
+  },
+  {
+    header: "Can I sell my eBay gift card online?",
+    body: "Yes! Xbanka lets you sell eBay gift cards online for Naira, Cedis, or even USD. Enjoy high rates and fast payouts.",
+  },
+  {
+    header: "How do I exchange an eBay gift card for cash?",
+    body: "It’s easy on Xbanka: sign in, choose eBay as your card type, enter the card details, and get paid in cash instantly.",
+  },
+  {
+    header: "Where can I sell my eBay gift cards instantly?",
+    body: "Xbanka is your go-to for selling eBay gift cards with no waiting time. Quick process, fair rates, instant payout, every time.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  },
+]
+export const SephoraCardFAQData= [
+  {
+    header: "What is a Sephora gift card?",
+    body: "A Sephora gift card is a prepaid credit loaded with a set amount, usually from $15 to $500. It can be used to shop for beauty, skincare, and cosmetics at any Sephora store or online.",
+  },
+  {
+    header: "Does a Sephora gift card expire?",
+    body: "No — Sephora gift cards don’t expire. You can use or trade your card anytime on Xbanka for instant cash.",
+  },
+  {
+    header: "Why is my Sephora gift card not working?",
+    body: "Double-check your gift code and remove any spaces or typos. If the code is still rejected, confirm you’re redeeming it in the correct region.",
+  },
+  {
+    header: "Are there any fees with a Sephora gift card?",
+    body: "No, there are no hidden redemption or inactivity fees. Still, it’s good practice to check the terms and conditions when buying a Sephora gift card."
+  },
+  {
+    header: "Where can I sell my Sephora gift card in Nigeria?",
+    body: "Xbanka is your trusted plug to sell Sephora gift cards in Nigeria. Convert your card to Naira at top rates and get paid fast, all in minutes.",
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates.",
+  }
+]
+export const AmexCardFAQData= [
+  {
+    header: "What is an Amex gift card?",
+    body: "An American Express (Amex) gift card is an open-loop card, allowing you to use it almost anywhere Amex is accepted. Unlike store-specific cards such as Amazon or Steam, Amex cards can be used at retail stores, restaurants, gas stations, and more.",
+  },
+  {
+    header: "Is there an activation fee for Amex gift cards?",
+    body: "No. Once you purchase an Amex gift card, there’s no extra activation fee required.",
+  },
+  {
+    header: "Can I reload an Amex gift card?",
+    body: "No, Amex gift cards are not reloadable. Once you use up the balance, you’ll need to get a new card.",
+  },
+  {
+    header: "How can I exchange an Amex gift card for cash?",
+    body: "Selling your Amex gift card on Xbanka is easy. Just upload a clear image or enter the correct e-code. We’ll process your trade fast and pay you in Naira."
+  },
+  {
+    header: "What other gift cards can I sell on Xbanka?",
+    body: "With Xbanka, you can trade Steam gift cards plus other popular brands like Google Play, Amazon, Amex, Razer Gold, Apple, eBay, Sephora, and many more, all at great rates",
+  },
+]

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Select,
   SelectContent,
@@ -17,14 +18,12 @@ interface CustomSelectProps {
   options: SelectOption[];
   value: string;
   onChange: (val: string) => void;
-  placeholder?: string;
 }
 
 const CustomSelect = ({
   options,
   value,
-  onChange,
-  placeholder,
+  onChange
 }: CustomSelectProps) => {
   return (
     <Select value={value} onValueChange={onChange}>
@@ -54,4 +53,4 @@ const CustomSelect = ({
   );
 };
 
-export default CustomSelect;
+export default React.memo(CustomSelect);;
