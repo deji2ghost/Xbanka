@@ -5,7 +5,7 @@ import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
 import ScrollToTop from './components/ui/scrollToTop';
-import Sellsteamcard from './pages/Sellsteamcard';
+import Sellsteamcard from './pages/Sellsteamcard.tsx';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
