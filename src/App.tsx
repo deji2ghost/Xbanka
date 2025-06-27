@@ -5,6 +5,7 @@ import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
 import ScrollToTop from './components/ui/scrollToTop';
+import Sellsteamcard from './pages/Sellsteamcard';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -15,7 +16,7 @@ const SellOnlineNigeria = lazy(() => import("./pages/sellOnlineNigeria"));
 const SellNairaCards = lazy(() => import("./pages/SellNairaCards"));
 const SellCediscard = lazy(() => import("./pages/SellCediscard"));
 const SellUSDcard = lazy(() => import("./pages/SellUSDcard"));
-const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
+// const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
 const SellGooglePlaycard = lazy(() => import("./pages/SellGooglePlaycard"));
 const SellAmazoncard = lazy(() => import("./pages/SellAmazoncard"));
 const SellRazerGoldcard = lazy(() => import("./pages/SellRazerGoldcard"));
