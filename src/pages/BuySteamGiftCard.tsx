@@ -1,16 +1,16 @@
 import FaqLayout from "@/components/layout/FaqLayout";
 import RusableHerosectionLayout from "@/components/layout/rusableHerosectionLayout";
 import WhyBuyFromUs from "@/components/layout/whyBuyFromUs";
-import { BuyCardNigeria, BuyNigeriaCardFAQData } from "@/lib/data";
+import { BuyCardNigeria, BuyNigeriaCardFAQData, BuySteamCard } from "@/lib/data";
 
-const BuyGiftCardNigeria = () => {
+const BuySteamGiftCard = () => {
   return (
     <div>
       <RusableHerosectionLayout
-        Header="Buy Gift Cards Online In Nigeria."
-        paragraph="Buy gift cards instantly with naira. Xbanka is where to buy any gift cards online in Nigeria with no stress. Cheap gift cards available from over 120 countries."
+        Header="Buy Steam Gift Cards in Nigeria"
+        paragraph="Level up your gaming experience! Get your Steam Gift Card instantly on Xbanka and unlock a universe of games, upgrades, and endless adventures."
       />
-      <WhyBuyFromUs data={BuyCardNigeria} />
+      <WhyBuyFromUs data={BuySteamCard} />
       <div className="px-[80px]">
         <h1 className="mb-[16px] font-[400] text-[28px] leading-[36px] text-center md:text-[48px] md:leading-[62.4px]">
           Xbanka Makes Smart Trading Simple.
@@ -24,7 +24,7 @@ const BuyGiftCardNigeria = () => {
         data={BuyNigeriaCardFAQData}
       />
     </div>
-  );
-};
+  )
+}
 
-export default BuyGiftCardNigeria;
+export default BuySteamGiftCard

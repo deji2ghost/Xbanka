@@ -5,7 +5,13 @@ import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
 import ScrollToTop from './components/ui/scrollToTop';
-import SteamCardSale from './pages/SteamCardSale';
+import BuyGooglePlayGiftCard from './pages/BuyGooglePlayGiftCard';
+import BuyAmazonGiftCard from './pages/BuyAmazonGiftCard';
+import BuyAmexGiftCard from './pages/BuyAmexGiftCard';
+import BuyRazerGiftCard from './pages/BuyRazerGiftCard';
+import BuyAppleGiftCard from './pages/BuyAppleGiftCard';
+import BuyEbayGiftCard from './pages/BuyEbayGiftCard';
+import BuySephoraGiftCard from './pages/BuySephoraGiftCard';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -16,7 +22,7 @@ const SellOnlineNigeria = lazy(() => import("./pages/sellOnlineNigeria"));
 const SellNairaCards = lazy(() => import("./pages/SellNairaCards"));
 const SellCediscard = lazy(() => import("./pages/SellCediscard"));
 const SellUSDcard = lazy(() => import("./pages/SellUSDcard"));
-// const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
+const SteamCardSale = lazy(() => import("./pages/SteamCardSale"));
 const SellGooglePlaycard = lazy(() => import("./pages/SellGooglePlaycard"));
 const SellAmazoncard = lazy(() => import("./pages/SellAmazoncard"));
 const SellRazerGoldcard = lazy(() => import("./pages/SellRazerGoldcard"));
@@ -25,6 +31,7 @@ const SellEbaycard = lazy(() => import("./pages/SellApplecard"));
 const SellSephoracard = lazy(() => import("./pages/SellSephoracard"));
 const SellAmexcard = lazy(() => import("./pages/SellSephoracard"));
 const BuyGiftCardNigeria = lazy(() => import("./pages/buyGiftCardNigeria"));
+const BuySteamGiftCard = lazy(() => import("./pages/BuySteamGiftCard"));
 
 function AppRoutes() {
   return (
@@ -50,6 +57,14 @@ function AppRoutes() {
           <Route path='sellSephoraGiftCards' element={<SellSephoracard />} /> 
           <Route path='sellAmexGiftCards' element={<SellAmexcard />} />
           <Route path='buyGiftCards' element={<BuyGiftCardNigeria />} />
+          <Route path='buySteamGiftCards' element={<BuySteamGiftCard />} />
+          <Route path='buyGooglePlayGiftCards' element={<BuyGooglePlayGiftCard />} />
+          <Route path='buyAmazonGiftCards' element={<BuyAmazonGiftCard />} />
+          <Route path='buyAmexGiftCards' element={<BuyAmexGiftCard />} />
+          <Route path='buyRazerGiftCards' element={<BuyRazerGiftCard />} />
+          <Route path='buyAppleGiftCards' element={<BuyAppleGiftCard />} />
+          <Route path='buyEbayGiftCards' element={<BuyEbayGiftCard />} />
+          <Route path='buySephoraGiftCards' element={<BuySephoraGiftCard />} />
       </Route>
     </Routes>
   );
