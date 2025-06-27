@@ -5,6 +5,7 @@ import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
 import ScrollToTop from './components/ui/scrollToTop';
+import SteamCardSale from './pages/SteamCardSale';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -40,7 +41,7 @@ function AppRoutes() {
           <Route path='sellGiftCardsInNaira' element={<SellNairaCards />} />
           <Route path='sellGiftCardsInCedis' element={<SellCediscard />} />
           <Route path='sellGiftCardsInUSD' element={<SellUSDcard />} />
-          {/* <Route path='sellSteamGiftCard' element={<Sellsteamcard />} /> */}
+          <Route path='sellSteamGiftCard' element={<SteamCardSale />} />
           <Route path='sellGooglePlayGiftCard' element={<SellGooglePlaycard />} />
           <Route path='sellAmazonGiftCard' element={<SellAmazoncard />} />
           <Route path='sellRazerGoldGiftCards' element={<SellRazerGoldcard />} />
