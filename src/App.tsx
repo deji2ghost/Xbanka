@@ -23,6 +23,7 @@ const SellApplecard = lazy(() => import("./pages/SellApplecard"));
 const SellEbaycard = lazy(() => import("./pages/SellApplecard"));
 const SellSephoracard = lazy(() => import("./pages/SellSephoracard"));
 const SellAmexcard = lazy(() => import("./pages/SellSephoracard"));
+const BuyGiftCardNigeria = lazy(() => import("./pages/buyGiftCardNigeria"));
 
 function AppRoutes() {
   return (
@@ -46,7 +47,8 @@ function AppRoutes() {
           <Route path='sellAppleGiftCards' element={<SellApplecard />} />
           <Route path='sellEbayGiftCards' element={<SellEbaycard />} />
           <Route path='sellSephoraGiftCards' element={<SellSephoracard />} /> 
-          <Route path='sellAmexGiftCards' element={<SellAmexcard />} /> 
+          <Route path='sellAmexGiftCards' element={<SellAmexcard />} />
+          <Route path='buyGiftCards' element={<BuyGiftCardNigeria />} />
       </Route>
     </Routes>
   );
