@@ -15,7 +15,7 @@ const SellOnlineNigeria = lazy(() => import("./pages/sellOnlineNigeria"));
 const SellNairaCards = lazy(() => import("./pages/SellNairaCards"));
 const SellCediscard = lazy(() => import("./pages/SellCediscard"));
 const SellUSDcard = lazy(() => import("./pages/SellUSDcard"));
-// const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
+const Sellsteamcard = lazy(() => import("./pages/Sellsteamcard"));
 const SellGooglePlaycard = lazy(() => import("./pages/SellGooglePlaycard"));
 const SellAmazoncard = lazy(() => import("./pages/SellAmazoncard"));
 const SellRazerGoldcard = lazy(() => import("./pages/SellRazerGoldcard"));
@@ -40,7 +40,7 @@ function AppRoutes() {
           <Route path='sellGiftCardsInNaira' element={<SellNairaCards />} />
           <Route path='sellGiftCardsInCedis' element={<SellCediscard />} />
           <Route path='sellGiftCardsInUSD' element={<SellUSDcard />} />
-          {/* <Route path='sellSteamGiftCard' element={<Sellsteamcard />} /> */}
+          <Route path='sellSteamGiftCard' element={<Sellsteamcard />} />
           <Route path='sellGooglePlayGiftCard' element={<SellGooglePlaycard />} />
           <Route path='sellAmazonGiftCard' element={<SellAmazoncard />} />
           <Route path='sellRazerGoldGiftCards' element={<SellRazerGoldcard />} />

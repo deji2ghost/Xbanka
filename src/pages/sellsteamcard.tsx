@@ -3,7 +3,7 @@ import WhyUseUs from "@/components/template/sellsteamcard/Whyuseus"
 import Herosection from "@/components/template/steamcardsell/Herosection"
 import { SteamGiftCardFAQData } from "@/lib/data"
 
-const sellsteamcard = () => {
+const Sellsteamcard = () => {
   return (
     <div>
       <Herosection />
@@ -23,4 +23,4 @@ const sellsteamcard = () => {
   )
 }
 
-export default sellsteamcard
+export default Sellsteamcard
