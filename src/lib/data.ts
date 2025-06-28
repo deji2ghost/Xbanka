@@ -1178,41 +1178,300 @@ export const BuySteamCard = [
     },
 ]
 
-// export const BuyNigeriaCardFAQData= [
-//   {
-//     header: "What is a gift card?",
-//     body: "A gift card is a prepaid card that can be used to make purchases or access services from a specific merchant or brand. That is, an apple gift card can be used to make purchases on apple store, or access Apple services, as the case may be.",
-//   },
-//   {
-//     header: "How do I buy a gift card in Nigeria?",
-//     body: "In Nigeria, you can buy gift cards from physical stores, online stores, and from the merchants or brands themselves.",
-//   },
-//   {
-//     header: "Can I buy a gift card online in Nigeria?",
-//     body: "Yes, you can buy gift cards online in Nigeria using Usenosh.com platform or mobile app.",
-//   },
-//   {
-//     header: "How do I use a gift card?",
-//     body: "To use a gift card, you need to redeem it by entering the unique code provided on the card. You can do this either online or in-person, depending on the merchant or brand. Note that you can only use a gift card to make purchases at the designated brand E.G You can only use steam gift card to pay on steam website; you cannot use it on walmart website."
-//   },
-//   {
-//     header: "Can I give a gift card as a gift?",
-//     body: "Yes, gift cards are often given as gifts; in fact, 30% of birthday gifts around the world as of 2021 were gift cards. This is because gift cards allow the recipient to choose whatever they want to buy without limiting them to certain items or products.",
-//   },
-//   {
-//     header: "What types of gift cards are available in Nigeria?",
-//     body: "In Nigeria, there are different types of gift cards available for purchase, including electronic gift cards, physical gift cards, and mobile gift cards. On Usenosh.com, you can buy up to 10,000 different gift cards.",
-//   },
-//   {
-//     header: "Are gift cards secure to use?",
-//     body: "Yes, gift cards are secure to use as long as you purchase them from a reputable merchant or brand like Usenosh.com and you follow the instructions for redemption carefully. Also, ensure that you do not expose the gift code to anyone.",
-//   },
-//   {
-//     header: "How do I activate the gift cards?",
-//     body: "Gift cards purchased on Usenosh.com are automatically activated before delivered to you, so you don’t have to worry about that.",
-//   },
-//   {
-//     header: "What Gift Cards Can I Buy on Xbanka?",
-//     body: "On Xbanka, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards",
-//   },
-// ]
+export const BuySteamCardFAQData = [
+  {
+    header: "How Do I Redeem My Steam Gift Card?",
+    body: "To redeem your Steam gift card for games or other gaming items, go to the Steam website or download the app. To redeem for cash, XBANKA is your best bet",
+  },
+  {
+    header: "How Do I Check My Steam Gift Card Balance?",
+    body: "You can check your Steam gift card balance on the Steam app. Sign in and tap on your profile drop-down. Click on the Gift Card Balance and your current",
+  },
+  {
+    header: "Can Steam Gift Cards Be Traced?",
+    body: "No, Steam gift cards cannot be traced. Once used or activated, a Steam gift card cannot be traced. It's best to keep your gift card safe to avoid stories that touch",
+  },
+  {
+    header: "Why Should I Buy a Steam Gift Card From Xbanka?",
+    body: "Xbanka has a user-friendly platform so it is very easy and convenient for you to purchase Steam gift cards."
+  },
+  {
+    header: "Can I Sell Steam Gift Cards In Nigeria?",
+    body: "How To Buy a Steam Gift Card Online? Yes, you can easily sell Steam gift cards in Nigeria. To get started, sign up on XBANKA.",
+  },
+  {
+    header: "How Much Is a Steam Gift Card In Nigeria?",
+    body: "You can purchase Steam gift cards online via the XBANKA website or app. Sign up or log into an existing account and click on the Buy Gift Card option.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on Xbanka?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards.",
+  }
+]
+
+export const steamUseCase = [
+  {
+    header: "Buy Digital Software",
+    paragraph: "Steam isn’t just for games—you can use your gift card to purchase a variety of digital software, including graphic design tools, video editing programs, and more."
+  },
+  {
+    header: "Purchase In-Game Content",
+    paragraph: "Enhance your gameplay with exclusive in-game content. From powerful weapons and unique character skins to in-game currency, your Steam card gives you access to premium add-ons."
+  },
+  {
+    header: "Game Purchases",
+    paragraph: "Discover and buy any game of your choice from Steam’s massive library—whether you're into action, strategy, simulation, or indie titles."
+  },
+  {
+    header: "Buy Gaming Hardware",
+    paragraph: "Your Steam gift card also works for hardware purchases. Grab Steam Decks, controllers, VR headsets, and other gaming accessories directly from the Steam store."
+  },
+  {
+    header: "Gifting Made Easy",
+    paragraph: "Looking for the perfect gift for a gamer friend or loved one? A Steam gift card is a thoughtful and flexible option for birthdays, holidays, or just because."
+  },
+]
+
+export const GoogleUseCase = [
+  {
+    header: "Google Play Music",
+    paragraph: "It’s the perfect way to unwind and set the mood.."
+  },
+  {
+    header: "Movies & TV Shows",
+    paragraph: "Use your gift card to rent or buy blockbuster movies and trending TV shows directly from the Play Store—anytime, anywhere."
+  },
+  {
+    header: "Ebooks & Magazines",
+    paragraph: "Whether you're a boUse Cases of Google Play Gift Card"
+  },
+  {
+    header: "Games",
+    paragraph: "Unlock and enjoy a massive collection of games on the Play Store. From action-packed adventures to relaxing puzzles, your Google Play gift card has you covered."
+  },
+  {
+    header: "Premium Apps",
+    paragraph: "Access top-rated premium applications across various categories—productivity, fitness, creativity, and more—with ease using your gift card."
+  },
+  {
+    header: "Music",
+    paragraph: "Love music? Stream or purchase your favorite tracks and albums on ok lover or magazine enthusiast, a Google Play gift card gives you access to thousands of titles ready to be explored."
+  },
+]
+
+export const BuyGoogleCardFAQData = [
+  {
+    header: "Why Is My Google Play Gift Card Not Working?",
+    body: "Your Google Play gift card may not be working due to several reasons. It could be that you entered an incorrect code or your gift card is not yet activated.",
+  },
+  {
+    header: "Does Google Play Gift Card Expire?",
+    body: "An expiration date does not apply to a Google Play gift card. You can redeem it anytime you are ready.",
+  },
+  {
+    header: "Can Google Play Gift Cards Be Used Outside Your Country?",
+    body: "A Google Play gift card can only be redeemed in the country it was purchased. Otherwise, you will get the “this code cannot be used in this region”  error.",
+  },
+  {
+    header: "Can Google Play Gift Cards Be Used On Other Platforms?",
+    body: "Aside from Google PlayStore, you can use a Google Play gift card to make payments on YouTube and Disney"
+  },
+  {
+    header: "How To Buy Google Play Gift Cards With Naira?",
+    body: "Purchase Google Play gift cards on XBANKA at affordable rates. At XBANKA, you can securely buy gift cards in naira.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on XBANKA?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards.",
+  }
+]
+
+export const AmexUseCase = [
+  {
+    header: "Shopping",
+    paragraph: "Shop freely at a wide range of retail stores—online and offline. Since Amex gift cards aren’t tied to a specific store, you can use them to buy clothes, electronics, groceries, and more."
+  },
+  {
+    header: "Travel",
+    paragraph: "Use your Amex gift card to pay for flights, hotel stays, or car rentals—just confirm that your preferred travel provider accepts Amex as a payment method."
+  },
+  {
+    header: "Dining",
+    paragraph: "Enjoy delicious meals at restaurants, cafés, and lounges that accept Amex. Whether it’s a casual outing or a fine dining experience, your gift card has you covered."
+  },
+  {
+    header: "Gifting Made Easy",
+    paragraph: "An Amex gift card is a perfect gift for any occasion—flexible and versatile, it allows the recipient to choose whatever they truly want."
+  },
+  {
+    header: "Exchange for Cash",
+    paragraph: "Want to turn your card into cash? Trade your Amex gift card on XBANKA at competitive rates—fast, secure, and stress-free."
+  }
+]
+
+export const BuyAmexCardFAQData = [
+  {
+    header: "Can I Buy an Amex Gift Card In Nigeria?",
+    body: "Yes, you can buy an Amex gift card in Nigeria. There are several platforms in Nigeria offering this service. XBANKA stands out offering the most convenient approach for gift card purchases.",
+  },
+  {
+    header: "Where Can I Use My Amex Gift Card?",
+    body: "Amex gift cards can be used practically anywhere as long as they accept an Amex card as a payment option. This includes retail stores, restaurants, and filling stations.",
+  },
+  {
+    header: "Can I Use My Amex Gift Cards For Online Purchases?",
+    body: "Yes, Amex gift cards can be used to make online purchases. Details needed to make your purchase include gift card number, security code, and expiration date.",
+  },
+  {
+    header: "Are There Fees Associated With Amex Gift Cards?",
+    body: "There are no maintenance or usage fees for Amex gift cards after purchase. However, there are activation fees associated with certain Amex gift cards depending on the amount before you can use them."
+  },
+  {
+    header: "Is There An Expiration Date For Amex Gift Cards?",
+    body: "Yes, there is an expiration date attached to the Amex gift card. Read the terms and conditions of your gift card to find out the date. To avoid wastage, ensure to redeem or sell your Amex gift card before it expires.",
+  },
+  {
+    header: "Can I Reload My Amex Gift Card?",
+    body: "No, you cannot reload an Amex gift card. You will need to buy a new Amex gift card which you can easily get on XBANKA.",
+  },
+  {
+    header: "What Should I Do If My Amex Gift Card Is Lost Or Stolen?",
+    body: "Contact Amex customer support via 1-888-846-4308 to report the case. Ensure you have your gift card number written somewhere safe.",
+  },
+  {
+    header: "Can I Buy an Amex Gift Card At the Store?",
+    body: "You can purchase Amex gift cards in-store or online. You can also sign up on XBANKA to make your gift card purchases.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on Xbanka?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards",
+  },
+]
+
+export const AppleUseCase = [
+  {
+    header: "Movies & TV Shows",
+    paragraph: "Kick back and enjoy top-rated movies and TV shows from the Apple Store. Rent or buy, then stream your favorites as many times as you like."
+  },
+  {
+    header: "Apple Devices & Gadgets",
+    paragraph: "Love Apple products? Use your gift card to shop for iPhones, iPads, MacBooks, Apple Watches, AirPods, and more—directly from Apple."
+  },
+  {
+    header: "Games",
+    paragraph: "Explore and download exciting games from the App Store using your Apple Gift Card. From casual to competitive, there's something for every gamer."
+  },
+  {
+    header: "iCloud Storage",
+    paragraph: "Running out of space? Use your gift card to upgrade your iCloud storage and keep your photos, videos, and files securely backed up."
+  },
+  {
+    header: "Subscriptions",
+    paragraph: "Unlock premium access to Apple Music, Apple Arcade, Apple TV, and other Apple services—all with your gift card."
+  },
+  {
+    header: "Premium Apps",
+    paragraph: "Download and pay for top-rated apps on the App Store without linking your card. Your Apple Gift Card covers it all—securely and conveniently"
+  }
+]
+
+export const BuyAppleCardFAQData = [
+  {
+    header: "Do Apple Gift Cards Expire?",
+    body: "No, Apple gift cards do not have an expiration date. However, always make sure to read the terms and conditions before purchase.",
+  },
+  {
+    header: "Can I Sell My Apple Gift Card For Cash?",
+    body: "Yes, you can sell an Apple gift card for naira, dollar, or cedis on the XBANKA platform.",
+  },
+  {
+    header: "Why Is My Apple Gift Card Not Working?",
+    body: "This may be because your Apple gift card is not activated. Call customer support to get it resolved",
+  },
+  {
+    header: "How To Check Apple Gift Card Balance?",
+    body: "To check Apple gift card balance, leverage the App/iTunes store or call Apple customer support."
+  },
+  {
+    header: "How To Redeem Apple Gift Cards?",
+    body: "It’s quite straightforward to redeem an Apple gift card as long as you follow the necessary steps. Open the App Store on your device and click on your profile name. Click “Redeem Gift Card” and input your details or upload the picture of your gift card.",
+  },
+  {
+    header: "How To Buy an Apple Gift Card Online?",
+    body: "You can purchase Apple gift cards online swiftly via the XBANKA website or mobile app. Log in and select the buy gift card option. Search for the country and enter the amount and quantity you want to buy",
+  },
+  {
+    header: "Can I Get an Apple Gift Card In Nigeria?",
+    body: "Yes, it is pretty straightforward to purchase an Apple gift card in Nigeria.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on Xbanka?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards.",
+  }
+]
+
+export const EbayUseCase = [
+  {
+    header: "Movies & TV Shows",
+    paragraph: "Browse through a wide selection of movies and TV series in various genres. Use your eBay gift card to purchase or download your favorites with ease."
+  },
+  {
+    header: "Health & Beauty",
+    paragraph: "Take care of yourself inside and out. From skincare to wellness products, your eBay gift card gives you access to top health and beauty essentials."
+  },
+  {
+    header: "Electronics",
+    paragraph: "Upgrade your tech game! Use your eBay gift card to shop for electronics—from home gadgets to office tools and school devices."
+  },
+  {
+    header: "Food & Beverages",
+    paragraph: "Stock up your kitchen with everything from snacks to groceries. Your eBay gift card makes food shopping easy and convenient."
+  },
+  {
+    header: "Jewelry & Watches",
+    paragraph: " Love to accessorize? Shop a stunning range of jewelry, watches, and fashion pieces using your eBay gift card."
+  },
+  {
+    header: " Pet Supplies",
+    paragraph: "For all the pet lovers out there—get everything your furry friend needs, from food to grooming products, all with your eBay gift card."
+  }
+]
+
+export const BuyEbayCardFAQData = [
+  {
+    header: "How To Check My eBay Gift Card Balance?",
+    body: "To check your eBay gift card balance, visit the eBay gift card balance checker page. Enter your eBay gift card number and click on the “Check Balance” button.",
+  },
+  {
+    header: "Where Can I Use an eBay Gift Card?",
+    body: "eBay gift cards are accepted as a payment option on the eBay website and at the physical stores.",
+  },
+  {
+    header: "What Can I Buy With an eBay Gift Card?",
+    body: "You can use your eBay gift card to buy any items available at the eBay store. However, it can not be used to buy coupons, paper money, third-party gift cards, and virtual currency.",
+  },
+  {
+    header: "Do eBay Gift Cards Have A Shopping Limit?",
+    body: "Yes, eBay gift cards have a spending threshold and time limit. You can not purchase beyond $1000 daily or $1500 monthly."
+  },
+  {
+    header: "Is eBay Gift Card Refundable?",
+    body: "No, eBay gift cards are not refundable. Make sure you need it before making a purchase.",
+  },
+  {
+    header: "Does eBay Gift Card Expire?",
+    body: "No, your eBay gift card cannot expire. It doesn’t attract inactivity or service fees as well. You can redeem or sell your eBay gift card on XBANKA when you want to.",
+  },
+  {
+    header: "Why Is My eBay Gift Card Not Working?",
+    body: "Confirm you have sufficient balance on your eBay gift card for that purchase. Also, you can only input 4 eBay gift codes for a single transaction.",
+  },
+  {
+    header: "How To Buy eBay Gift Cards Online?",
+    body: "You can purchase an eBay gift card within the range of $5 to $100 on the XBANKA app. Sign in to the app and enter the details of the eBay gift card like brand name, amount and quantity.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on XBANKA?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards.",
+  },
+]
