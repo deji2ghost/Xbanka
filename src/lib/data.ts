@@ -444,15 +444,15 @@ export const CryptoAndFinance = [
     items: [
       {
         linkName: "Convert BTC to Cash",
-        link: "/cryptoFinance/buysell"
+        link: "/cryptoFinance/convertBTCToCash"
       },
       {
         linkName: "Convert LTC to Cash",
-        link: "/"
+        link: "/cryptoFinance/convertLTCToCash"
       },
       {
         linkName: "Convert DOGE to Cash",
-        link: "/"
+        link: "/cryptoFinance/convertDOGEToCash"
       },
     ],
   },
@@ -514,6 +514,10 @@ export const TradingCenter = [
       {
         linkName: "Sell Amazon Gift Card",
         link: "/giftCards/sellAmazonGiftCard"
+      },
+      {
+        linkName: "Sell Amex Gift Card",
+        link: "/giftCards/sellAmexGiftCards"
       },
       {
         linkName: "Sell Razer Gold Gift Card",
@@ -1473,5 +1477,146 @@ export const BuyEbayCardFAQData = [
   {
     header: "What Gift Cards Can I Buy on XBANKA?",
     body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards.",
+  },
+]
+
+export const SephoraUseCase = [
+  {
+    header: "Beauty Products",
+    paragraph: "From makeup essentials to luxury beauty items, use your Sephora gift card to shop top brands for any occasion—be it a birthday, graduation, or just because."
+  },
+  {
+    header: "Skincare Essentials",
+    paragraph: "No matter your skin type or routine, Sephora offers a wide range of skincare products to meet your needs. Your gift card gives you access to the best in beauty care."
+  },
+  {
+    header: "Hair Care Products",
+    paragraph: "Whether you're into styling, treatment, or maintenance, discover a full collection of hair care items you can purchase with your Sephora gift card."
+  },
+  {
+    header: "Perfect for Gifting",
+    paragraph: "A Sephora gift card is a go-to gift for beauty lovers. It’s the perfect surprise for a sister, girlfriend, or any special woman in your life."
+  },
+  {
+    header: "Convert to Cash",
+    paragraph: "Prefer cash instead? Exchange your Sephora gift card on XBANKA at great rates—quick, safe, and hassle-free."
+  }
+]
+
+export const BuySephoraCardFAQData = [
+  {
+    header: "Why Is My Sephora Gift Card Not Working?",
+    body: "If you are getting an invalid error message, that means you didn’t enter the gift card number correctly. Any other error message can be discussed with customer care.",
+  },
+  {
+    header: "How Do I Redeem My Sephora Gift Card?",
+    body: "Go to the Sephora website and select the items you want to buy. At checkout, scroll to the “Payment Method” section, and enter your gift card number and PIN. Click on the Apply button and the total amount of your purchase will be deducted from your Sephora gift card balance.",
+  },
+  {
+    header: "How To Check Sephora Gift Card Balance?",
+    body: "To check Sephora gift card balance, go to the Sephora gift card balance checker page. Enter your gift card number and pin. Finally, hit the “Check” button.",
+  },
+  {
+    header: "Can I Use Sephora Gift Cards Elsewhere?",
+    body: "No, Sephora gift cards can only be redeemed at Sephora physical and online stores."
+  },
+  {
+    header: "Can I Sell My Sephora Gift Card For Cash??",
+    body: "Yes, you can sell your sephora  for cash. With the consistently high rates at XBANKA, you will be able to maximize the value of your gift card.",
+  },
+  {
+    header: "How Can I Get A Sephora Gift Card Online?",
+    body: "Purchase a Sephora gift card online and get it within a few minutes. Pay with the XBANKA naira wallet.",
+  },
+  {
+    header: "What Gift Cards Can I Buy on XBANKA?",
+    body: "On XBANKA, you can Buy Steam Gift Card, Buy Google Play Gift Card, Buy Amazon Gift Card, Buy Amex Gift Card, Buy Razer Gold Gift Card, Buy Apple Gift Card, Buy eBay Gift Card, Buy Sephora Gift Card and 100+ other gift cards",
+  }
+]
+
+export const BtcToCashUseCase = [
+  {
+    header: "Competitive Rates",
+    paragraph: "Maximum Value With XBANKA, you always trade smart. Enjoy top-tier crypto rates and use our live rate calculator to see exactly what your coins are worth. It is fast, fair, and fully transparent."
+  },
+  {
+    header: "Fast & Easy Crypto Cash-Out",
+    paragraph: "Need cash quickly? XBANKA auto-converts your crypto in minutes, no stress, just speed."
+  },
+  {
+    header: "Safe & Sound, Always",
+    paragraph: "Your security is our priority. With advanced safeguards in place, XBANKA ensures your funds and personal info stay protected at every step of the way."
+  },
+  {
+    header: "Multiple Crypto Choices",
+    paragraph: "With XBANKA, you’ve got options. Convert your Bitcoin, Litecoin, or Dogecoin into Naira or Cedis fast, easy, and on your terms."
+  }
+]
+
+export const BtcToCashFAQData= [
+  {
+    header: "What Cryptos Can You Cash Out on XBANKA?",
+    body: "It’s simple. Bitcoin, Litecoin, and Dogecoin are all welcome here. Just trade them for Naira or Cedis in a few quick steps, and once the deal is done, your cash heads straight to your bank account. Seamless, secure, and built for speed, that’s how XBANKA does crypto.",
+  },
+  {
+    header: "How Do I Turn My Bitcoin into Cash on XBANKA?",
+    body: "It’s easy, Create your Bitcoin wallet address on XBANKA. Link it to your Naira or Cedis wallet. Transfer your BTC into the wallet.XBANKA auto-converts it to fiat—no clicks, no delays. Withdraw straight to your bank account.",
+  },
+  {
+    header: "Looking for Where to Sell Your Bitcoin for Cash?",
+    body: "Look no further, XBANKA  is the top platform in Nigeria and Ghana for fast, secure, and reliable Bitcoin-to-cash conversions.",
+  },
+  {
+    header: "How Long Does It Take to Convert Bitcoin to Cash on XBANKA?",
+    body: "Send your BTC, get fiat in minutes auto-converted and credited after network confirmation. No extra steps, no waiting."
+  },
+  {
+    header: "Are There Any Fees for Converting Bitcoin to Cash?",
+    body: "Nope, no hidden fees, no surprises. With XBANKA, what you see on the rate calculator is exactly what you get. We keep it transparent and cost-effective, so you always get full value when selling Bitcoin in Nigeria or Ghana.",
+  },
+]
+
+export const LtcToCashFAQData= [
+  {
+    header: "What Cryptos Can You Cash Out on XBANKA?",
+    body: "It’s simple. Bitcoin, Litecoin, and Dogecoin are all welcome here. Just trade them for Naira or Cedis in a few quick steps, and once the deal is done, your cash heads straight to your bank account. Seamless, secure, and built for speed, that’s how XBANKA does crypto.",
+  },
+  {
+    header: "How Do I Turn My Litecoin into Cash on XBANKA?",
+    body: "It’s easy, Create your Litecoin wallet address on XBANKA. Link it to your Naira or Cedis wallet. Transfer your BTC into the wallet.XBANKA auto-converts it to fiat—no clicks, no delays. Withdraw straight to your bank account.",
+  },
+  {
+    header: "Looking for Where to Sell Your Litecoin for Cash?",
+    body: "Look no further, XBANKA  is the top platform in Nigeria and Ghana for fast, secure, and reliable Litecoin-to-cash conversions.",
+  },
+  {
+    header: "How Long Does It Take to Convert Litecoin to Cash on XBANKA?",
+    body: "Send your LTC, get fiat in minutes auto-converted and credited after network confirmation. No extra steps, no waiting."
+  },
+  {
+    header: "Are There Any Fees for Converting Litecoin to Cash?",
+    body: "Nope, no hidden fees, no surprises. With XBANKA, what you see on the rate calculator is exactly what you get. We keep it transparent and cost-effective, so you always get full value when selling Litecoin in Nigeria or Ghana.",
+  },
+]
+export const DOGEToCashFAQData= [
+  {
+    header: "What Cryptos Can You Cash Out on XBANKA?",
+    body: "It’s simple. Bitcoin, Litecoin, and Dogecoin are all welcome here. Just trade them for Naira or Cedis in a few quick steps, and once the deal is done, your cash heads straight to your bank account. Seamless, secure, and built for speed, that’s how XBANKA does crypto.",
+  },
+  {
+    header: "How Do I Turn My Dogecoin into Cash on XBANKA?",
+    body: "It’s easy, Create your Dogecoin wallet address on XBANKA. Link it to your Naira or Cedis wallet. Transfer your BTC into the wallet.XBANKA auto-converts it to fiat—no clicks, no delays. Withdraw straight to your bank account.",
+  },
+  {
+    header: "Looking for Where to Sell Your Dogecoin for Cash?",
+    body: "Look no further, XBANKA  is the top platform in Nigeria and Ghana for fast, secure, and reliable Dogecoin-to-cash conversions.",
+  },
+  {
+    header: "How Long Does It Take to Convert Dogecoin to Cash on XBANKA?",
+    body: "Send your DOGE, get fiat in minutes auto-converted and credited after network confirmation. No extra steps, no waiting."
+  },
+  {
+    header: "Are There Any Fees for Converting Dogecoin to Cash?",
+    body: "Nope, no hidden fees, no surprises. With XBANKA, what you see on the rate calculator is exactly what you get. We keep it transparent and cost-effective, so you always get full value when selling Dogecoin in Nigeria or Ghana.",
   },
 ]

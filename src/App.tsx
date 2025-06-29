@@ -5,13 +5,6 @@ import Footer from './components/layout/footer';
 import { lazy } from 'react';
 import CryptoFinance from './components/layout/cryptolayout/layout';
 import ScrollToTop from './components/ui/scrollToTop';
-import BuyGooglePlayGiftCard from './pages/BuyGooglePlayGiftCard';
-import BuyAmazonGiftCard from './pages/BuyAmazonGiftCard';
-import BuyAmexGiftCard from './pages/BuyAmexGiftCard';
-import BuyRazerGiftCard from './pages/BuyRazerGiftCard';
-import BuyAppleGiftCard from './pages/BuyAppleGiftCard';
-import BuyEbayGiftCard from './pages/BuyEbayGiftCard';
-import BuySephoraGiftCard from './pages/BuySephoraGiftCard';
 
 const Home = lazy(() => import("./pages/Home"));
 const RateCalculator = lazy(() => import("./pages/RateCalculator"));
@@ -32,6 +25,16 @@ const SellSephoracard = lazy(() => import("./pages/SellSephoracard"));
 const SellAmexcard = lazy(() => import("./pages/SellSephoracard"));
 const BuyGiftCardNigeria = lazy(() => import("./pages/buyGiftCardNigeria"));
 const BuySteamGiftCard = lazy(() => import("./pages/BuySteamGiftCard"));
+const BuyGooglePlayGiftCard = lazy(() => import("./pages/BuyGooglePlayGiftCard"));
+const BuyAmazonGiftCard = lazy(() => import("./pages/BuyAmazonGiftCard"));
+const BuyAmexGiftCard = lazy(() => import("./pages/BuyAmexGiftCard"));
+const BuyRazerGiftCard = lazy(() => import("./pages/BuyRazerGiftCard"));
+const BuyAppleGiftCard = lazy(() => import("./pages/BuyAppleGiftCard"));
+const BuyEbayGiftCard = lazy(() => import("./pages/BuyEbayGiftCard"));
+const BuySephoraGiftCard = lazy(() => import("./pages/BuySephoraGiftCard"));
+const ConvertBTCToCash = lazy(() => import("./pages/ConvertBTCToCash"));
+const ConvertLTCToCash = lazy(() => import("./pages/ConvertLTCToCash"));
+const ConvertDOGEToCash = lazy(() => import("./pages/ConvertDOGEToCash"));
 
 function AppRoutes() {
   return (
@@ -41,6 +44,9 @@ function AppRoutes() {
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:id" element={<BlogsPage />} />
       <Route path="/cryptoFinance" element={<CryptoFinance />}>
+          <Route path='convertBTCToCash' element={<ConvertBTCToCash />} />
+          <Route path='convertLTCToCash' element={<ConvertLTCToCash />} />
+          <Route path='convertDOGEToCash' element={<ConvertDOGEToCash />} />
           <Route path='buysell' element={<BuySellCrypto />} />
       </Route>
       <Route path="/giftCards" element={<CryptoFinance />}>
