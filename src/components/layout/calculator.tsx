@@ -55,8 +55,19 @@ export const Calculator = () => {
         const filtered = res.data.filter((coin: { id: string; }) =>
           ["bitcoin", "ethereum", "tether", "solana", "usdc"].includes(coin.id)
         );
-        setCoinOptions(filtered);
-        setSelectedCoinId(filtered[0]?.id || "bitcoin");
+        const modified = filtered.map((coin: CoinProps) => {
+        if (coin.id === "tether") {
+          return {
+            ...coin,
+            name: "USDT", // Override display name
+            symbol: "USDT", // Optional, reinforce symbol too
+          };
+        }
+        return coin;
+      });
+
+      setCoinOptions(modified);
+      setSelectedCoinId(modified[0]?.id || "bitcoin");
       });
   }, []);
 

@@ -15,7 +15,7 @@ const MostTraded = () => {
         viewport={{ once: true }}
         className="flex flex-col items-center md:items-start gap-3 md:gap-8"
       >
-        <h1 className="md:leading-[62.4px] text-center font-[400] text-[28px] md:text-[48px]">
+        <h1 className="md:leading-[62.4px] md:text-left text-center font-[400] text-[28px] md:text-[48px]">
           Most traded cards this week
         </h1>
         <Button>Get started</Button>
