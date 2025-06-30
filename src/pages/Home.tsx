@@ -56,11 +56,11 @@ const Home = () => {
         viewport={{ once: true }}
         className="px-4 py-7 md:px-[80px] md:py-[148px] flex flex-col gap-[48px]"
       >
-        <h1 className="text-foreground font-[400] text-[32px] leading-[41.6px]">
+        <h1 className="text-foreground text-center md:text-left font-[400] text-[32px] leading-[41.6px]">
           Top gift cards in demand:
         </h1>
-        <div className="flex flex-col gap-[45px]">
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+        <div className="flex flex-col gap-y-[10px] md:gap-y-0 md:gap-[45px]">
+          <div className="flex gap-y-[10px] md:gap-y-0 items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowOne.map((item, index) => (
               <GiftCards
                 route={item?.route}
@@ -79,7 +79,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+          <div className="flex gap-y-[10px] md:gap-y-0 items-center p-[3px] md:gap-[45px] flex-wrap">
             {rowTwo.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -98,7 +98,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+          <div className="flex items-center gap-y-[10px] md:gap-y-0 p-[3px] md:gap-[45px] flex-wrap">
             {rowThree.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -116,7 +116,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+          <div className="flex items-center gap-y-[10px] md:gap-y-0 p-[3px] md:gap-[45px] flex-wrap">
             {rowFour.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -135,7 +135,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+          <div className="flex items-center gap-y-[10px] md:gap-y-0 p-[3px] md:gap-[45px] flex-wrap">
             {rowFive.map((item, index) => (
               <GiftCards
                 route={item.route}
@@ -154,7 +154,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="md:flex items-center p-[3px] md:gap-[45px] flex-wrap">
+          <div className="flex items-center gap-y-[10px] md:gap-y-0 p-[3px] md:gap-[45px] flex-wrap">
             {rowSix.map((item, index) => (
               <GiftCards
                 route={item.route}

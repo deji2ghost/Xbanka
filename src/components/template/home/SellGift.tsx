@@ -14,10 +14,10 @@ const SellGift = () => {
         viewport={{ once: true }}
         className="md:w-[535px] mb-14 md:mb-0"
       >
-        <h1 className="mb-[16px] font-[400] text-[28px] leading-[36px] md:text-[48px] md:leading-[62.4px]">
+        <h1 className="mb-[16px] font-[400] text-center md:text-left text-[28px] leading-[36px] md:text-[48px] md:leading-[62.4px]">
           Sell gift cards instantly
         </h1>
-        <p className="mb-[32px] font-[400] text-[16px] leading-[24px] md:text-[24px] md:leading-[31.2px]">
+        <p className="mb-[32px] font-[400] text-center md:text-left text-[16px] leading-[24px] md:text-[24px] md:leading-[31.2px]">
           Trade all your favorite gift cards at the best rates in Nigeria:
         </p>
         <Link to="https://wa.me/2349039716418">

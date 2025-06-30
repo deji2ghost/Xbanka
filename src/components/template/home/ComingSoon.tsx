@@ -18,7 +18,7 @@ const ComingSoon = () => {
     >
       <div className="flex flex-col gap-[56px]">
         <div className="">
-          <BoxHeader text="COMING SOON" />
+          <BoxHeader className="block w-[130px] md:w-[200px] md:mx-0 mx-auto" text="COMING SOON" />
           <p className="md:leading-[52px] text-[28px] leading-[36px] font-[400] md:text-[48px] mt-[24px]">
             Explore more on Xbanka on our mobile app...
           </p>
@@ -44,7 +44,7 @@ const ComingSoon = () => {
               </div>
             </div>
           </div>
-          <Link to="https://wa.me/2349039716418">
+          <Link className="mx-auto" to="https://wa.me/2349039716418">
             <Button className="mx-auto md:mx-0">Join the waitlist</Button>
           </Link>
         </div>

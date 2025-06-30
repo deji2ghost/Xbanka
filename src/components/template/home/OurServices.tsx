@@ -16,16 +16,16 @@ const OurServices = () => {
         backgroundRepeat: "no-repeat",
         backgroundBlendMode: "overlay",
       }}
-      className="flex flex-col gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-4 py-7 md:px-[80px] md:pt-[148px] md:pb-[102px]"
+      className="flex flex-col gap-9 md:gap-[56px] justify-center items-center text-center overflow-hidden bg-no-repeat bg-cover bg-center px-4 py-7 md:px-[80px] md:pt-[148px] md:pb-[102px]"
     >
       <motion.div
         variants={FadeUp(0.2)}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex flex-col gap-6"
+        className="flex flex-col gap-2 md:gap-6"
       >
-        <div className="md:px-[215px] flex flex-col gap-6">
+        <div className="md:px-[215px] flex flex-col gap-2 md:gap-6">
           <BoxHeader text="OUR SERVICES" />
 
           <h1 className="font-[400] text-[28px] leading-[36px] md:text-[48px] md:leading-[52px]">
